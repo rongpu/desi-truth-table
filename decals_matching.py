@@ -52,7 +52,7 @@ region_q = True # match only overlapping regions to reduce computation time
 correct_offset_q = True
 plot_q = True
 
-data_dir = "/project/projectdirs/desi/target/analysis/truth/dr4.0/allmatches/"
+parent_dir = '/project/projectdirs/desi/target/analysis/truth/parent/'
 output_dir = "/project/projectdirs/desi/target/analysis/truth/dr4.0/allmatches/"
 sweep_dir = "/global/project/projectdirs/cosmo/data/legacysurvey/dr4/sweep/4.0/"
 
@@ -62,7 +62,7 @@ for cat2_index in range(len(cat2_filenames)):
 
     cat2_filename = cat2_filenames[cat2_index]
     output_filename = output_filenames[cat2_index]
-    cat2_path = os.path.join(data_dir, cat2_filename)
+    cat2_path = os.path.join(parent_dir, cat2_filename)
     output_path = os.path.join(output_dir, output_filename)
     print('\n'+cat2_filename)
 
@@ -89,7 +89,6 @@ for cat2_index in range(len(cat2_filenames)):
 
         cat1_path = cat1_paths[fileindex]
         filename = cat1_path[-26:-5]
-        print('%d - '%fileindex + filename)
 
         # Match only overlapping regions to reduce computation time
         if region_q:
@@ -108,7 +107,7 @@ for cat2_index in range(len(cat2_filenames)):
                 dec1max = -dec1max
             mask = (ra2full<ra1max+1/60.) & (ra2full>ra1min-1/60.) & (dec2full<dec1max+1/360.) & (dec2full>dec1min-1/360.)
             if np.sum(mask)==0:
-                print('0 matches')
+                # print('0 matches')
                 continue
             # bar keeps track of cat2 original index
             bar = np.arange(len(cat2))
@@ -116,6 +115,7 @@ for cat2_index in range(len(cat2_filenames)):
             ra2 = ra2full[mask]
             dec2 = dec2full[mask]
             bar = bar[mask]
+            print('%d - '%fileindex + filename)
             print('%d out of %d objects in cat2 are in the overlapping region'%(np.sum(mask), len(mask)))
         
         cat1 = fitsio.read(cat1_path, ext=1)
@@ -247,7 +247,7 @@ for cat2_index in range(len(cat2_filenames)):
             
             if not os.path.exists(plot_path):
                 os.makedirs(plot_path)
-            plt.savefig(os.path.join(plot_path, '%d_%d.png'%(cat2_index, fileindex)))
+            plt.savefig(os.path.join(plot_path, '{}_{}.png'.format(cat2_index, brick)))
             plt.close()
 
     # -----------------------------------------------------------------------------------------
@@ -269,7 +269,7 @@ for cat2_index in range(len(cat2_filenames)):
         print('%d total overlapping duplicates'%total_duplicates)
 
         if save_q:
-            fits.writeto(output_path, cat_stack, clobber=False)
+            fitsio.write(output_path, cat_stack, clobber=False)
 
 end = time.clock()
 print('%f seconds'%(end-start))
