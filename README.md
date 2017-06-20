@@ -22,7 +22,6 @@ Create catalogs that only contain matched objects:
 __Catalogs currently included:__ 
 
      AGES
-     SDSS+BOSS DR13
      DEEP2
      COSMOS Photo-z
      COSMOS HST/ACS
@@ -30,7 +29,6 @@ __Catalogs currently included:__
      VIPERS
      SpIES
      Stripe 82 Stars
-     Stripe 82 Spectroscopy
      VVDS
      SHELA
 
