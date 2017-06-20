@@ -1,11 +1,4 @@
----------------------------------------------------------------------------
-##Reduction
-
-SDSS DR13 move duplicates:
-    sdss_remove_duplicates.py
-
-Keep only columns that are relevant in the SDSS DR13 catalog:
-    sdss_trim.py
+## Reduction
 
 AGES reduction and remove duplicates:
     ages_reduction.py
@@ -14,7 +7,6 @@ AGES reduction and remove duplicates:
 Convert VVDS data to fits format:
     vvds_fits.py
 
----------------------------------------------------------------------------
 ## Matching
 
 Match DECaLS to other catalogs:
@@ -38,8 +30,8 @@ VVDS
 SHELA
 
 ---------------------------------------------------------------------------
-Thing to modify for a new DECaLS DR:
-    decals_matching.py: data_dir, output_dir, sweep_dir
-    catalog_info.py: dr, filelist_path
-    trim_matched_catalogs: dr, parent_dir
+Thing to modify for a new DECaLS DR:  
+    decals_matching.py: data_dir, output_dir, sweep_dir  
+    catalog_info.py: dr, filelist_path  
+    trim_matched_catalogs: dr, parent_dir  
 
