@@ -1,0 +1,4 @@
+deep2-field1.fits.gz
+deep2-field2.fits.gz
+deep2-field3.fits.gz
+deep2-field4.fits.gz
