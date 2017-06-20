@@ -1,0 +1,341 @@
+------------------------------------------------------
+
+ages_reduced.fits
+32 - sweep-210p035-220p040
+11183 out of 40622 objects in cat2 are in the overlapping region
+Matching...                                                     
+Number of initial matches = 10728                               
+RA  offset = 0.253691 arcsec                                    
+Dec offset = 0.132240 arcsec                                    
+Number of matches after offset correction = 10753               
+Number of doubly matched objects = 19                           
+Number of final matches = 10734                                 
+57 - sweep-210p030-220p035                                      
+29514 out of 40622 objects in cat2 are in the overlapping region
+Matching...                                                     
+Number of initial matches = 27900                               
+RA  offset = 0.381452 arcsec                                    
+Dec offset = 0.185773 arcsec                                    
+Number of matches after offset correction = 27965               
+Number of doubly matched objects = 63                           
+Number of final matches = 27902                                 
+38636 total matches                                             
+0 total overlapping duplicates                                  
+15.050000 seconds                                               
+
+------------------------------------------------------
+
+COSMOS2015_Laigle+_v1.1.fits
+No match with entire DECaLS!
+6.170000 seconds            
+
+------------------------------------------------------
+
+cosmos-acs.fits.gz
+No match with entire DECaLS!
+10.470000 seconds           
+
+------------------------------------------------------
+
+spies.fits.gz
+No match with entire DECaLS!
+8.000000 seconds            
+
+------------------------------------------------------
+
+stripe82-dr12-stars.fits.gz
+No match with entire DECaLS!
+5.050000 seconds            
+
+------------------------------------------------------
+
+deep2-field1.fits.gz
+142 - sweep-210p050-220p055
+17441 out of 17441 objects in cat2 are in the overlapping region
+Matching...                                                     
+Number of initial matches = 13084                               
+RA  offset = -0.042034 arcsec                                   
+Dec offset = 0.026883 arcsec                                    
+Number of matches after offset correction = 13086               
+Number of doubly matched objects = 52                           
+Number of final matches = 13034                                 
+13034 total matches                                             
+0 total overlapping duplicates                                  
+
+deep2-field2.fits.gz
+16 - sweep-250p035-260p040
+3704 out of 9602 objects in cat2 are in the overlapping region
+Matching...                                                   
+Number of initial matches = 3020                              
+RA  offset = -0.015818 arcsec                                 
+Dec offset = -0.042274 arcsec                                 
+Number of matches after offset correction = 3019              
+Number of doubly matched objects = 2                          
+Number of final matches = 3017                                
+188 - sweep-250p030-260p035                                   
+6017 out of 9602 objects in cat2 are in the overlapping region
+Matching...                                                   
+Number of initial matches = 4714                              
+RA  offset = -0.029512 arcsec                                 
+Dec offset = -0.037348 arcsec                                 
+Number of matches after offset correction = 4716              
+Number of doubly matched objects = 6                          
+Number of final matches = 4710                                
+7727 total matches                                            
+0 total overlapping duplicates                                
+
+deep2-field3.fits.gz
+No match with entire DECaLS!
+
+deep2-field4.fits.gz
+No match with entire DECaLS!
+22.680000 seconds           
+
+------------------------------------------------------
+
+VIPERS_W1_SPECTRO_PDR2.fits
+No match with entire DECaLS!
+
+VIPERS_W4_SPECTRO_PDR2.fits
+No match with entire DECaLS!
+0.220000 seconds            
+
+------------------------------------------------------
+
+cfhtls-d2-i.fits.gz
+No match with entire DECaLS!
+
+cfhtls-d2-r.fits.gz
+No match with entire DECaLS!
+
+cfhtls-d3-i.fits.gz
+142 - sweep-210p050-220p055
+420973 out of 420973 objects in cat2 are in the overlapping region
+Matching...                                                       
+Number of initial matches = 50274                                 
+RA  offset = 0.005392 arcsec                                      
+Dec offset = 0.039544 arcsec                                      
+Number of matches after offset correction = 50268                 
+Number of doubly matched objects = 239                            
+Number of final matches = 50029                                   
+50029 total matches                                               
+0 total overlapping duplicates                                    
+
+cfhtls-d3-r.fits.gz
+142 - sweep-210p050-220p055
+442647 out of 442647 objects in cat2 are in the overlapping region
+Matching...                                                       
+Number of initial matches = 49965                                 
+RA  offset = 0.010302 arcsec                                      
+Dec offset = 0.039113 arcsec                                      
+Number of matches after offset correction = 49964                 
+Number of doubly matched objects = 243                            
+Number of final matches = 49721                                   
+49721 total matches                                               
+0 total overlapping duplicates                                    
+57.800000 seconds                                                 
+
+------------------------------------------------------
+
+cesam_vvds_spCDFS_DEEP_Full.fits
+No match with entire DECaLS!    
+
+cesam_vvds_spF02_DEEP_Full.fits
+No match with entire DECaLS!   
+
+cesam_vvds_spF02_UDEEP_Full.fits
+No match with entire DECaLS!    
+
+cesam_vvds_spF10_WIDE_Full.fits
+No match with entire DECaLS!   
+
+cesam_vvds_spF14_WIDE_Full.fits
+No match with entire DECaLS!   
+
+cesam_vvds_spF22_WIDE_Full.fits
+No match with entire DECaLS!   
+0.470000 seconds               
+
+------------------------------------------------------
+
+shela_irac_v1.3_flux_cat.fits
+No match with entire DECaLS! 
+8.650000 seconds             
+
+------------------------------------------------------
+Do you really want to exit ([y]/n)? y
+ipythonrongpu@edison12:desi-truth-table> ipython
+Python 2.7.12 |Anaconda custom (64-bit)| (default, Jul  2 2016, 17:42:40) 
+Type "copyright", "credits" or "license" for more information.            
+
+IPython 4.2.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.                                
+help      -> Python's own help system.                       
+object?   -> Details about 'object', use 'object??' for extra details.
+
+------------------------------------------------------
+
+ages_reduced.fits
+32 - sweep-210p035-220p040
+11183 out of 40622 objects in cat2 are in the overlapping region
+Matching...                                                     
+Number of initial matches = 10728                               
+RA  offset = 0.253691 arcsec                                    
+Dec offset = 0.132240 arcsec                                    
+Number of matches after offset correction = 10753               
+Number of doubly matched objects = 19                           
+Number of final matches = 10734                                 
+57 - sweep-210p030-220p035                                      
+29514 out of 40622 objects in cat2 are in the overlapping region
+Matching...                                                     
+Number of initial matches = 27900                               
+RA  offset = 0.381452 arcsec                                    
+Dec offset = 0.185773 arcsec                                    
+Number of matches after offset correction = 27965               
+Number of doubly matched objects = 63                           
+Number of final matches = 27902                                 
+38636 total matches                                             
+0 total overlapping duplicates                                  
+18.850000 seconds                                               
+
+------------------------------------------------------
+
+COSMOS2015_Laigle+_v1.1.fits
+No match with entire DECaLS!
+7.110000 seconds            
+
+------------------------------------------------------
+
+cosmos-acs.fits.gz
+No match with entire DECaLS!
+10.920000 seconds           
+
+------------------------------------------------------
+
+spies.fits.gz
+No match with entire DECaLS!
+11.060000 seconds           
+
+------------------------------------------------------
+
+stripe82-dr12-stars.fits.gz
+No match with entire DECaLS!
+5.310000 seconds            
+
+------------------------------------------------------
+
+deep2-field1.fits.gz
+142 - sweep-210p050-220p055
+17441 out of 17441 objects in cat2 are in the overlapping region
+Matching...                                                     
+Number of initial matches = 13084                               
+RA  offset = -0.042034 arcsec                                   
+Dec offset = 0.026883 arcsec                                    
+Number of matches after offset correction = 13086               
+Number of doubly matched objects = 52                           
+Number of final matches = 13034                                 
+13034 total matches                                             
+0 total overlapping duplicates                                  
+
+deep2-field2.fits.gz
+16 - sweep-250p035-260p040
+3704 out of 9602 objects in cat2 are in the overlapping region
+Matching...                                                   
+Number of initial matches = 3020                              
+RA  offset = -0.015818 arcsec                                 
+Dec offset = -0.042274 arcsec                                 
+Number of matches after offset correction = 3019              
+Number of doubly matched objects = 2                          
+Number of final matches = 3017                                
+188 - sweep-250p030-260p035                                   
+6017 out of 9602 objects in cat2 are in the overlapping region
+Matching...                                                   
+Number of initial matches = 4714                              
+RA  offset = -0.029512 arcsec                                 
+Dec offset = -0.037348 arcsec                                 
+Number of matches after offset correction = 4716              
+Number of doubly matched objects = 6                          
+Number of final matches = 4710                                
+7727 total matches                                            
+0 total overlapping duplicates                                
+
+deep2-field3.fits.gz
+No match with entire DECaLS!
+
+deep2-field4.fits.gz
+No match with entire DECaLS!
+32.760000 seconds           
+
+------------------------------------------------------
+
+VIPERS_W1_SPECTRO_PDR2.fits
+No match with entire DECaLS!
+
+VIPERS_W4_SPECTRO_PDR2.fits
+No match with entire DECaLS!
+0.300000 seconds            
+
+------------------------------------------------------
+
+cfhtls-d2-i.fits.gz
+No match with entire DECaLS!
+
+cfhtls-d2-r.fits.gz
+No match with entire DECaLS!
+
+cfhtls-d3-i.fits.gz
+142 - sweep-210p050-220p055
+420973 out of 420973 objects in cat2 are in the overlapping region
+Matching...                                                       
+Number of initial matches = 50274                                 
+RA  offset = 0.005392 arcsec                                      
+Dec offset = 0.039544 arcsec                                      
+Number of matches after offset correction = 50268                 
+Number of doubly matched objects = 239                            
+Number of final matches = 50029                                   
+50029 total matches                                               
+0 total overlapping duplicates                                    
+
+cfhtls-d3-r.fits.gz
+142 - sweep-210p050-220p055
+442647 out of 442647 objects in cat2 are in the overlapping region
+Matching...                                                       
+Number of initial matches = 49965                                 
+RA  offset = 0.010302 arcsec                                      
+Dec offset = 0.039113 arcsec                                      
+Number of matches after offset correction = 49964                 
+Number of doubly matched objects = 243
+Number of final matches = 49721
+49721 total matches
+0 total overlapping duplicates
+80.890000 seconds
+
+------------------------------------------------------
+
+cesam_vvds_spCDFS_DEEP_Full.fits
+No match with entire DECaLS!
+
+cesam_vvds_spF02_DEEP_Full.fits
+No match with entire DECaLS!
+
+cesam_vvds_spF02_UDEEP_Full.fits
+No match with entire DECaLS!
+
+cesam_vvds_spF10_WIDE_Full.fits
+No match with entire DECaLS!
+
+cesam_vvds_spF14_WIDE_Full.fits
+No match with entire DECaLS!
+
+cesam_vvds_spF22_WIDE_Full.fits
+No match with entire DECaLS!
+0.520000 seconds
+
+------------------------------------------------------
+
+shela_irac_v1.3_flux_cat.fits
+No match with entire DECaLS!
+6.570000 seconds
+
+------------------------------------------------------

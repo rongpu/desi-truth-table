@@ -1,0 +1,50 @@
+decals-dr4.0-ages.fits
+fraction of matched objects: 38636/40622 = 0.951110235833
+decals-dr4.0-cosmos-zphot.fits                           
+No match                                                 
+decals-dr4.0-deep2-field1.fits                           
+fraction of matched objects: 13034/17441 = 0.74731953443 
+decals-dr4.0-deep2-field2.fits                           
+fraction of matched objects: 7727/9602 = 0.804728181629  
+decals-dr4.0-deep2-field3.fits                           
+No match                                                 
+decals-dr4.0-deep2-field4.fits                           
+No match                                                 
+decals-dr4.0-VIPERS_W1_SPECTRO_PDR2.fits                 
+No match                                                 
+decals-dr4.0-VIPERS_W4_SPECTRO_PDR2.fits                 
+No match                                                 
+decals-dr4.0-stripe82-specz.fits                         
+No match                                                 
+decals-dr4.0-stripe82-stars.fits
+No match
+decals-dr4.0-spies.fits
+No match
+decals-dr4.0-cfhtls-d2-i.fits
+No match
+decals-dr4.0-cfhtls-d2-r.fits
+No match
+decals-dr4.0-cfhtls-d3-i.fits
+fraction of matched objects: 50029/420973 = 0.11884135087
+decals-dr4.0-cfhtls-d3-r.fits
+fraction of matched objects: 49721/442647 = 0.112326526555
+decals-dr4.0-cosmos-acs.fits
+No match
+decals-dr4.0-AllQSO.DECaLS.dr2.fits
+No match
+decals-dr4.0-Stars-str82-355-4.DECaLS.dr2.fits
+No match
+decals-dr4.0-cesam_vvds_spCDFS_DEEP_Full.fits
+No match
+decals-dr4.0-cesam_vvds_spF02_DEEP_Full.fits
+No match
+decals-dr4.0-cesam_vvds_spF02_UDEEP_Full.fits
+No match
+decals-dr4.0-cesam_vvds_spF10_WIDE_Full.fits
+No match
+decals-dr4.0-cesam_vvds_spF14_WIDE_Full.fits
+No match
+decals-dr4.0-cesam_vvds_spF22_WIDE_Full.fits
+No match
+decals-dr4.0-shela-irac-v1.3-flux-cat.fits
+No match
