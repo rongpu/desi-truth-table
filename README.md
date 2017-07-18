@@ -23,6 +23,7 @@ __Catalogs currently included:__
 
      AGES
      DEEP2
+     DEEP3
      COSMOS Photo-z
      COSMOS HST/ACS
      CFHTLS

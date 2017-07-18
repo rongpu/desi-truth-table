@@ -151,6 +151,15 @@ def catalog_info(catalog):
         cat2_filenames = ['shela_irac_v1.3_flux_cat.fits']
         output_filenames = ['decals-dr'+dr+'-shela-irac-v1.3-flux-cat.fits']
         plot_path = '/project/projectdirs/desi/target/analysis/truth/qaplots/dr'+dr+'/decals_match_shela/'
+    elif catalog.lower()=='deep3':
+        # RA and Dec columns in cat2
+        ra_col = 'RA'
+        dec_col = 'DEC'
+        # Search radius in arcsec
+        search_radius = 1.
+        cat2_filenames = ['alldeep.egs.uniq.2012jun13.fits.gz']
+        output_filenames = ['decals-dr'+dr+'-alldeep.egs.uniq.2012jun13.fits']
+        plot_path = '/project/projectdirs/desi/target/analysis/truth/qaplots/dr'+dr+'/decals_match_deep3/'
     else:
         raise ValueError('ERROR: '+catalog+' not found!')
 

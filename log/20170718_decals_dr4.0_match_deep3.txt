@@ -1,0 +1,13 @@
+alldeep.egs.uniq.2012jun13.fits.gz
+142 - sweep-210p050-220p055
+23822 out of 23822 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 16208
+RA  offset = -0.019128 arcsec
+Dec offset = 0.039885 arcsec
+Number of matches after offset correction = 16212
+Number of doubly matched objects = 69
+Number of final matches = 16143
+16143 total matches
+0 total overlapping duplicates
+4.971216 seconds

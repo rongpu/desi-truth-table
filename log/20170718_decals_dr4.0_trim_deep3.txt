@@ -1,0 +1,2 @@
+decals-dr4.0-alldeep.egs.uniq.2012jun13.fits
+fraction of matched objects: 16143/23822 = 0.6776509109226765

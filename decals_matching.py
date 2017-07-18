@@ -195,7 +195,7 @@ for cat2_index in range(len(cat2_filenames)):
         idx = idx[sort_index]
         d2d = d2d[sort_index]
 
-        #--------------------------- create line-matched cat1 catalog -----------------------------
+        #--------------------------- create line-matched catalog -----------------------------
         # See Evernote for explanation
 
         mask2 = idx>=0
@@ -270,6 +270,8 @@ for cat2_index in range(len(cat2_filenames)):
 
         if save_q:
             fitsio.write(output_path, cat_stack, clobber=False)
+
+    print('\n------------------------------------------------------\n')
 
 end = time.clock()
 print('%f seconds'%(end-start))

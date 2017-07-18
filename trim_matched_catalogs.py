@@ -36,6 +36,7 @@ filelist = [
      ['decals-dr'+dr+'-cesam_vvds_spF14_WIDE_Full.fits', 'cesam_vvds_spF14_WIDE_Full.fits'],
      ['decals-dr'+dr+'-cesam_vvds_spF22_WIDE_Full.fits', 'cesam_vvds_spF22_WIDE_Full.fits'],
      ['decals-dr'+dr+'-shela-irac-v1.3-flux-cat.fits', 'shela_irac_v1.3_flux_cat.fits'],
+     ['decals-dr'+dr+'-alldeep.egs.uniq.2012jun13.fits', 'alldeep.egs.uniq.2012jun13.fits.gz'],
 ]
 
 for index in range(len(filelist)):
