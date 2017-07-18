@@ -36,13 +36,11 @@ from catalog_matching_scatter_plot import scatter_plot
 
 start = time.clock()
 
-parser = argparse.ArgumentParser()
-parser.add_argument('catalog')
-parser.add_argument("--test", action="store_true")
-args = parser.parse_args()
-
-cat_info = catalog_info(args.catalog)
-ra_col, dec_col, search_radius, cat2_filenames, output_filenames, plot_path = cat_info
+##########
+dr = '4.0'
+sweep_dir = '/global/project/projectdirs/cosmo/data/legacysurvey/dr4/sweep/4.0/'
+top_dir = '/project/projectdirs/desi/target/analysis/truth'
+##########
 
 # Only 1/10 of the cat2 ojects are used if testing is enabled
 testing_q = args.test
@@ -52,9 +50,17 @@ region_q = True # match only overlapping regions to reduce computation time
 correct_offset_q = True
 plot_q = True
 
-parent_dir = '/project/projectdirs/desi/target/analysis/truth/parent/'
-output_dir = "/project/projectdirs/desi/target/analysis/truth/dr4.0/allmatches/"
-sweep_dir = "/global/project/projectdirs/cosmo/data/legacysurvey/dr4/sweep/4.0/"
+parser = argparse.ArgumentParser()
+parser.add_argument('catalog')
+parser.add_argument("--test", action="store_true")
+args = parser.parse_args()
+
+cat_info = catalog_info(args.catalog)
+ra_col, dec_col, search_radius, cat2_filenames, output_filenames, plot_path = cat_info
+plot_path = os.path.join(top_dir, plot_path)
+
+parent_dir = os.path.join(top_dir, 'parent/')
+output_dir = os.path.join(top_dir, 'dr'+dr+'/allmatches/')
 
 cat1_paths = glob.glob(os.path.join(sweep_dir, '*.fits'))
 

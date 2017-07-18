@@ -4,11 +4,11 @@ from astropy.io import fits
 import os
 
 dr='4.0'
+top_dir = '/project/projectdirs/desi/target/analysis/truth'
 
-parent_dir = '/project/projectdirs/desi/target/analysis/truth/parent/'
-input_dir = '/project/projectdirs/desi/target/analysis/truth/dr'+dr+'/allmatches/'
-output_dir = '/project/projectdirs/desi/target/analysis/truth/dr'+dr+'/trimmed/'
-
+parent_dir = os.path.join(top_dir, 'parent/')
+input_dir = os.path.join(top_dir, 'dr'+dr+'/allmatches/')
+output_dir = os.path.join(top_dir, 'dr'+dr+'/trimmed/')
 
 filelist = [
      ['decals-dr'+dr+'-ages.fits', 'ages_reduced.fits'],
