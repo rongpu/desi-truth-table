@@ -1,1 +1,1 @@
-3dhst.v4.1.5.master.aegis.fits3dhst.v4.1.5.master.cosmos.fits3dhst.v4.1.5.master.goodsn.fits3dhst.v4.1.5.master.goodss.fits3dhst.v4.1.5.master.uds.fits
+3dhst.v4.1.5.master.aegis.reduced.fits3dhst.v4.1.5.master.cosmos.reduced.fits3dhst.v4.1.5.master.goodsn.reduced.fits3dhst.v4.1.5.master.goodss.reduced.fits3dhst.v4.1.5.master.uds.reduced.fits
