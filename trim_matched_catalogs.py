@@ -10,34 +10,48 @@ parent_dir = os.path.join(top_dir, 'parent/')
 input_dir = os.path.join(top_dir, 'dr'+dr+'/allmatches/')
 output_dir = os.path.join(top_dir, 'dr'+dr+'/trimmed/')
 
+def decals_filename(filename):
+    if filename[-3:]=='.gz':
+        filename = filename[:-3]
+    return 'decals-dr'+dr+'-'+filename
+
+
 filelist = [
-     ['decals-dr'+dr+'-ages.fits', 'ages_reduced.fits'],
-     ['decals-dr'+dr+'-cosmos-zphot.fits', 'COSMOS2015_Laigle+_v1.1.fits'],
-     ['decals-dr'+dr+'-deep2-field1.fits', 'deep2-field1.fits.gz'],
-     ['decals-dr'+dr+'-deep2-field2.fits', 'deep2-field2.fits.gz'],
-     ['decals-dr'+dr+'-deep2-field3.fits', 'deep2-field3.fits.gz'],
-     ['decals-dr'+dr+'-deep2-field4.fits', 'deep2-field4.fits.gz'],
-     ['decals-dr'+dr+'-VIPERS_W1_SPECTRO_PDR2.fits', 'VIPERS_W1_SPECTRO_PDR2.fits'],
-     ['decals-dr'+dr+'-VIPERS_W4_SPECTRO_PDR2.fits', 'VIPERS_W4_SPECTRO_PDR2.fits'],
-     ['decals-dr'+dr+'-stripe82-specz.fits', 'stripe82-dr12-specz.fits.gz'],
-     ['decals-dr'+dr+'-stripe82-stars.fits', 'stripe82-dr12-stars.fits.gz'],
-     ['decals-dr'+dr+'-spies.fits', 'spies.fits.gz'],
-     ['decals-dr'+dr+'-cfhtls-d2-i.fits', 'cfhtls-d2-i.fits.gz'],
-     ['decals-dr'+dr+'-cfhtls-d2-r.fits', 'cfhtls-d2-r.fits.gz'],
-     ['decals-dr'+dr+'-cfhtls-d3-i.fits', 'cfhtls-d3-i.fits.gz'],
-     ['decals-dr'+dr+'-cfhtls-d3-r.fits', 'cfhtls-d3-r.fits.gz'],
-     ['decals-dr'+dr+'-cosmos-acs.fits', 'cosmos-acs.fits.gz'],
-     ['decals-dr'+dr+'-AllQSO.DECaLS.dr2.fits', 'AllQSO.DECaLS.dr2.fits'],
-     ['decals-dr'+dr+'-Stars-str82-355-4.DECaLS.dr2.fits', 'Stars_str82_355_4.DECaLS.dr2.fits'],
-     ['decals-dr'+dr+'-cesam_vvds_spCDFS_DEEP_Full.fits', 'cesam_vvds_spCDFS_DEEP_Full.fits'],
-     ['decals-dr'+dr+'-cesam_vvds_spF02_DEEP_Full.fits', 'cesam_vvds_spF02_DEEP_Full.fits'],
-     ['decals-dr'+dr+'-cesam_vvds_spF02_UDEEP_Full.fits', 'cesam_vvds_spF02_UDEEP_Full.fits'],
-     ['decals-dr'+dr+'-cesam_vvds_spF10_WIDE_Full.fits', 'cesam_vvds_spF10_WIDE_Full.fits'],
-     ['decals-dr'+dr+'-cesam_vvds_spF14_WIDE_Full.fits', 'cesam_vvds_spF14_WIDE_Full.fits'],
-     ['decals-dr'+dr+'-cesam_vvds_spF22_WIDE_Full.fits', 'cesam_vvds_spF22_WIDE_Full.fits'],
-     ['decals-dr'+dr+'-shela-irac-v1.3-flux-cat.fits', 'shela_irac_v1.3_flux_cat.fits'],
-     ['decals-dr'+dr+'-alldeep.egs.uniq.2012jun13.fits', 'alldeep.egs.uniq.2012jun13.fits.gz'],
+     ['ages_reduced.fits'],
+     ['COSMOS2015_Laigle+_v1.1.fits'],
+     ['deep2-field1.fits.gz'],
+     ['deep2-field2.fits.gz'],
+     ['deep2-field3.fits.gz'],
+     ['deep2-field4.fits.gz'],
+     ['VIPERS_W1_SPECTRO_PDR2.fits'],
+     ['VIPERS_W4_SPECTRO_PDR2.fits'],
+     ['stripe82-dr12-specz.fits.gz'],
+     ['stripe82-dr12-stars.fits.gz'],
+     ['spies.fits.gz'],
+     ['cfhtls-d2-i.fits.gz'],
+     ['cfhtls-d2-r.fits.gz'],
+     ['cfhtls-d3-i.fits.gz'],
+     ['cfhtls-d3-r.fits.gz'],
+     ['cosmos-acs.fits.gz'],
+     ['AllQSO.DECaLS.dr2.fits'],
+     ['Stars_str82_355_4.DECaLS.dr2.fits'],
+     ['cesam_vvds_spCDFS_DEEP_Full.fits'],
+     ['cesam_vvds_spF02_DEEP_Full.fits'],
+     ['cesam_vvds_spF02_UDEEP_Full.fits'],
+     ['cesam_vvds_spF10_WIDE_Full.fits'],
+     ['cesam_vvds_spF14_WIDE_Full.fits'],
+     ['cesam_vvds_spF22_WIDE_Full.fits'],
+     ['shela_irac_v1.3_flux_cat.fits'],
+     ['alldeep.egs.uniq.2012jun13.fits.gz'],
+     ['3dhst.v4.1.5.master.aegis.fits'],
+     ['3dhst.v4.1.5.master.cosmos.fits'],
+     ['3dhst.v4.1.5.master.goodsn.fits'],
+     ['3dhst.v4.1.5.master.goodss.fits'],
+     ['3dhst.v4.1.5.master.uds.fits'],
+     ['FMOS_COSMOS_v1.0.fits']
+     ['mosdef_zcat.16aug2016.fits']
 ]
+
 
 for index in range(len(filelist)):
 
