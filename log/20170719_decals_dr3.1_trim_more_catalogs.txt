@@ -1,0 +1,14 @@
+3dhst.v4.1.5.master.aegis.fits
+No match
+3dhst.v4.1.5.master.cosmos.fits
+fraction of matched objects: 4514/33879 = 0.1332388795418991
+3dhst.v4.1.5.master.goodsn.fits
+No match
+3dhst.v4.1.5.master.goodss.fits
+No match
+3dhst.v4.1.5.master.uds.fits
+fraction of matched objects: 4091/44102 = 0.09276223300530588
+FMOS_COSMOS_v1.0.fits
+fraction of matched objects: 787/1153 = 0.6825672159583694
+mosdef_zcat.16aug2016.fits
+fraction of matched objects: 106/1002 = 0.10578842315369262

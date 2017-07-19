@@ -1,0 +1,64 @@
+3dhst.v4.1.5.master.aegis.fits
+142 - sweep-210p050-220p055
+41200 out of 41200 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 2277
+RA  offset = 0.024974 arcsec
+Dec offset = 0.161445 arcsec
+Number of matches after offset correction = 2383
+Number of doubly matched objects = 5
+Number of final matches = 2378
+2378 total matches
+0 total overlapping duplicates
+
+------------------------------------------------------
+
+3dhst.v4.1.5.master.cosmos.fits
+No match with entire DECaLS!
+
+------------------------------------------------------
+
+3dhst.v4.1.5.master.goodsn.fits
+41 - sweep-180p060-190p065
+38279 out of 38279 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+No match with entire DECaLS!
+
+------------------------------------------------------
+
+3dhst.v4.1.5.master.goodss.fits
+No match with entire DECaLS!
+
+------------------------------------------------------
+
+3dhst.v4.1.5.master.uds.fits
+No match with entire DECaLS!
+
+------------------------------------------------------
+
+rongpu@cori06:desi-truth-table> python decals_matching.py fmost-cosmos
+FMOS_COSMOS_v1.0.fits
+No match with entire DECaLS!
+
+------------------------------------------------------
+
+rongpu@cori06:desi-truth-table> python decals_matching.py mosdef
+mosdef_zcat.16aug2016.fits
+41 - sweep-180p060-190p065
+217 out of 1002 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+142 - sweep-210p050-220p055
+371 out of 1002 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 67
+RA  offset = -0.037797 arcsec
+Dec offset = 0.174095 arcsec
+Number of matches after offset correction = 67
+Number of doubly matched objects = 2
+Number of final matches = 65
+65 total matches
+0 total overlapping duplicates
+
+------------------------------------------------------
