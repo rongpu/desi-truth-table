@@ -167,7 +167,7 @@ def catalog_info(catalog):
         ra_col = 'ra'
         dec_col = 'dec'
         # Search radius in arcsec
-        search_radius = 1.
+        search_radius = 0.3
         filelist_path = '/global/homes/r/rongpu/git/desi-truth-table/misc/3d-hst_filelist.txt'
         cat2_filenames, output_filenames = get_filenames(filelist_path, dr)
         plot_path = 'qaplots/dr'+dr+'/decals_match_3d-hst/'
