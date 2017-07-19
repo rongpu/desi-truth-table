@@ -15,7 +15,6 @@ def decals_filename(filename):
         filename = filename[:-3]
     return 'decals-dr'+dr+'-'+filename
 
-
 filelist = [
      ['ages_reduced.fits'],
      ['COSMOS2015_Laigle+_v1.1.fits'],
