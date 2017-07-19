@@ -40,10 +40,8 @@ start = time.clock()
 dr = '4.0'
 sweep_dir = '/global/project/projectdirs/cosmo/data/legacysurvey/dr4/sweep/4.0/'
 top_dir = '/project/projectdirs/desi/target/analysis/truth'
+# top_dir = '/global/project/projectdirs/desi/users/rongpu/truth'
 ##########
-
-# Only 1/10 of the cat2 ojects are used if testing is enabled
-testing_q = args.test
 
 save_q = True # save catalog
 region_q = True # match only overlapping regions to reduce computation time
@@ -54,6 +52,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument('catalog')
 parser.add_argument("--test", action="store_true")
 args = parser.parse_args()
+# Only 1/10 of the cat2 ojects are used if testing is enabled
+testing_q = args.test
 
 cat_info = catalog_info(args.catalog)
 ra_col, dec_col, search_radius, cat2_filenames, output_filenames, plot_path = cat_info
@@ -70,7 +70,7 @@ for cat2_index in range(len(cat2_filenames)):
     output_filename = output_filenames[cat2_index]
     cat2_path = os.path.join(parent_dir, cat2_filename)
     output_path = os.path.join(output_dir, output_filename)
-    print('\n'+cat2_filename)
+    print(cat2_filename)
 
     # -----------------------------------------------------------------------------------------
 
@@ -275,9 +275,13 @@ for cat2_index in range(len(cat2_filenames)):
         print('%d total overlapping duplicates'%total_duplicates)
 
         if save_q:
+            if not os.path.exists(output_dir):
+                os.makedirs(output_dir)
             fitsio.write(output_path, cat_stack, clobber=False)
 
-    print('\n------------------------------------------------------\n')
+        end = time.clock()
+        if match_count==0:
+            print('%f seconds'%(end-start))
+        start = end-start
 
-end = time.clock()
-print('%f seconds'%(end-start))
+    print('\n------------------------------------------------------\n')

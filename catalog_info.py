@@ -1,8 +1,11 @@
 from __future__ import division, print_function
 
+# DECaLS version
+dr='4.0'
+
 def get_filenames(cat2_filelist, dr):
     with open(cat2_filelist, 'r') as f:
-        cat2_filenames = map(str.rstrip, f.readlines())
+        cat2_filenames = list(map(str.rstrip, f.readlines()))
     output_filenames = []
     for filename in cat2_filenames:
         if filename[-3:]=='.gz':
@@ -14,9 +17,6 @@ def catalog_info(catalog):
     '''
     Return the catalog information necessary for reading the catalog.
     '''
-
-    # DECaLS version
-    dr='4.0'
 
     if catalog.lower()=='ages':
         # RA and Dec columns in cat2
