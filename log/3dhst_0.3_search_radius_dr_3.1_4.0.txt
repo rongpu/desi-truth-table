@@ -1,5 +1,15 @@
 3dhst.v4.1.5.master.aegis.fits
-No match with entire DECaLS!
+142 - sweep-210p050-220p055
+41200 out of 41200 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 1912
+RA  offset = 0.020905 arcsec
+Dec offset = 0.149534 arcsec
+Number of matches after offset correction = 2182
+Number of doubly matched objects = 0
+Number of final matches = 2182
+2182 total matches
+0 total overlapping duplicates
 
 ------------------------------------------------------
 

@@ -1,0 +1,54 @@
+3dhst.v4.1.5.master.aegis.fits
+142 - sweep-210p050-220p055
+41200 out of 41200 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 2802
+RA  offset = 0.008289 arcsec
+Dec offset = 0.158463 arcsec
+Number of matches after offset correction = 2786
+Number of doubly matched objects = 209
+Number of final matches = 2577
+2577 total matches
+0 total overlapping duplicates
+
+------------------------------------------------------
+
+3dhst.v4.1.5.master.cosmos.fits
+117 - sweep-150p000-160p005
+33879 out of 33879 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 5071
+RA  offset = 0.011221 arcsec
+Dec offset = 0.031590 arcsec
+Number of matches after offset correction = 5082
+Number of doubly matched objects = 382
+Number of final matches = 4700
+4700 total matches
+0 total overlapping duplicates
+
+------------------------------------------------------
+
+3dhst.v4.1.5.master.goodsn.fits
+No match with entire DECaLS!
+
+------------------------------------------------------
+
+3dhst.v4.1.5.master.goodss.fits
+No match with entire DECaLS!
+
+------------------------------------------------------
+
+3dhst.v4.1.5.master.uds.fits
+37 - sweep-030m010-040m005
+44102 out of 44102 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 4756
+RA  offset = 0.044484 arcsec
+Dec offset = 0.007238 arcsec
+Number of matches after offset correction = 4765
+Number of doubly matched objects = 467
+Number of final matches = 4298
+4298 total matches
+0 total overlapping duplicates
+
+------------------------------------------------------
