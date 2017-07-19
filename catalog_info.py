@@ -96,7 +96,7 @@ def catalog_info(catalog):
         dec_col = 'DEC'
         # Search radius in arcsec
         search_radius = 1.
-        filelist_path = '/global/homes/r/rongpu/git/desi-target-selection/catalog_matching/misc/deep2_filelist.txt'
+        filelist_path = '/global/homes/r/rongpu/git/desi-truth-table/misc/deep2_filelist.txt'
         cat2_filenames, output_filenames = get_filenames(filelist_path, dr)
         plot_path = 'qaplots/dr'+dr+'/decals_match_deep2/'
     elif catalog.lower()=='vipers':
@@ -105,7 +105,7 @@ def catalog_info(catalog):
         dec_col = 'delta'
         # Search radius in arcsec
         search_radius = 1.
-        filelist_path = '/global/homes/r/rongpu/git/desi-target-selection/catalog_matching/misc/vipers_filelist.txt'
+        filelist_path = '/global/homes/r/rongpu/git/desi-truth-table/misc/vipers_filelist.txt'
         cat2_filenames, output_filenames = get_filenames(filelist_path, dr)
         plot_path = 'qaplots/dr'+dr+'/decals_match_vipers/'
     elif catalog.lower()=='cfhtls':
@@ -114,7 +114,7 @@ def catalog_info(catalog):
         dec_col = 'DEC'
         # Search radius in arcsec
         search_radius = 1.
-        filelist_path = '/global/homes/r/rongpu/git/desi-target-selection/catalog_matching/misc/cfhtls_filelist.txt'
+        filelist_path = '/global/homes/r/rongpu/git/desi-truth-table/misc/cfhtls_filelist.txt'
         cat2_filenames, output_filenames = get_filenames(filelist_path, dr)
         plot_path = 'qaplots/dr'+dr+'/decals_match_cfhtls/'
     elif catalog.lower()=='allqso':
@@ -141,7 +141,7 @@ def catalog_info(catalog):
         dec_col = 'DELTA'
         # Search radius in arcsec
         search_radius = 1.
-        filelist_path = '/global/homes/r/rongpu/git/desi-target-selection/catalog_matching/misc/vvds_filelist.txt'
+        filelist_path = '/global/homes/r/rongpu/git/desi-truth-table/misc/vvds_filelist.txt'
         cat2_filenames, output_filenames = get_filenames(filelist_path, dr)
         plot_path = 'qaplots/dr'+dr+'/decals_match_vvds/'
     elif catalog.lower()=='shela':
@@ -168,7 +168,7 @@ def catalog_info(catalog):
         dec_col = 'dec'
         # Search radius in arcsec
         search_radius = 1.
-        filelist_path = '/global/homes/r/rongpu/git/desi-target-selection/catalog_matching/misc/3d-hst_filelist.txt'
+        filelist_path = '/global/homes/r/rongpu/git/desi-truth-table/misc/3d-hst_filelist.txt'
         cat2_filenames, output_filenames = get_filenames(filelist_path, dr)
         plot_path = 'qaplots/dr'+dr+'/decals_match_3d-hst/'
     elif catalog.lower()=='fmost-cosmos':
