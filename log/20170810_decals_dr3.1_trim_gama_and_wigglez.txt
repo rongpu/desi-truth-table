@@ -1,0 +1,4 @@
+GAMA-DR2-SpecObj.fits
+fraction of matched objects: 70329/72213 = 0.9739105147272652
+wigglez_dr1_unique.fits
+fraction of matched objects: 71358/81092 = 0.8799634982489025
