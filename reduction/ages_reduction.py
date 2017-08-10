@@ -1,5 +1,4 @@
-# !!!NOT APPLIED!!! 1. Remove objects with redshift z1==nan or z1<-0.01
-# 2. Remove duplicates
+# Remove duplicates
 
 from __future__ import division, print_function
 import matplotlib.pyplot as plt
@@ -21,19 +20,13 @@ cat_path = data_path+'ages_original.fits'
 ra_col = 'RAJ2000'
 dec_col = 'DEJ2000'
 z_col = 'z1'
+# Signal-to-noise
 sn = 'S_N1'
 
 cat = fits.getdata(cat_path)
 
 len0 = len(cat)
 print('%d objects in the original catalog'%(len0))
-
-# # Remove objects with redshift z1==nan or z1<-0.01
-# mask = (~np.isnan(cat['z1']))
-# cat = cat[mask]
-# mask = cat['z1']>=-0.01
-# cat = cat[mask]
-# print('Total of %d objects with invalid redshifts removed'%(len0-len(cat)))
 
 ra = np.array(cat[ra_col])
 dec = np.array(cat[dec_col])
@@ -66,10 +59,7 @@ while continue_loop:
     mask_duplicates = d2d<(search_radius*u.arcsec)
     print('%d duplicates'%np.sum(mask_duplicates))
 
-    mask_remove = mask_duplicates & ((sn>sn[idx]) | ((sn==sn[idx]) & (random>random[idx])))
-
-    # also keep objects that have Z_ERR<0 but require ZWARNING==0
-    mask_remove = mask_remove 
+    mask_remove = mask_duplicates & ((sn<sn[idx]) | ((sn==sn[idx]) & (random>random[idx])))
     mask_keep = ~mask_remove
     ra = ra[mask_keep]
     dec = dec[mask_keep]
