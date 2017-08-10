@@ -36,6 +36,7 @@ def catalog_info(catalog, dr):
         cat2_filenames = ['sdss-specObj-dr14-unique-trimmed.fits']
         output_filenames = ['decals-dr'+dr+'-sdss-dr14.fits']
         plot_path = 'qaplots/dr'+dr+'/decals_match_sdss/'
+        ext = 1
     elif catalog.lower()=='cosmos_zphot':
         # RA and Dec columns in cat2
         ra_col = 'ALPHA_J2000'
