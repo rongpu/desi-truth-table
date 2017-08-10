@@ -273,7 +273,7 @@ for cat2_index in range(len(cat2_filenames)):
             else:
                 cat_stack[colname][notmask_stack] = 0
 
-        print('%d total matches'%np.sum(mask_stack))
+        print('\n%d total matches'%np.sum(mask_stack))
         print('%d total overlapping duplicates'%total_duplicates)
 
         if save_q:
