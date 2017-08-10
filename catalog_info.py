@@ -189,6 +189,24 @@ def catalog_info(catalog):
         cat2_filenames = ['mosdef_zcat.16aug2016.fits']
         output_filenames = ['decals-dr'+dr+'-mosdef_zcat.16aug2016.fits']
         plot_path = 'qaplots/dr'+dr+'/decals_match_mosdef/'
+    elif catalog.lower()=='gama':
+        # RA and Dec columns in cat2
+        ra_col = 'RA'
+        dec_col = 'DEC'
+        # Search radius in arcsec
+        search_radius = 1.
+        cat2_filenames = ['GAMA-DR2-SpecObj.fits']
+        output_filenames = ['decals-dr'+dr+'-GAMA-DR2-SpecObj.fits']
+        plot_path = 'qaplots/dr'+dr+'/decals_match_gama/'
+    elif catalog.lower()=='wigglez':
+        # RA and Dec columns in cat2
+        ra_col = 'RA'
+        dec_col = 'DEC'
+        # Search radius in arcsec
+        search_radius = 1.
+        cat2_filenames = ['wigglez_dr1_unique.fits']
+        output_filenames = ['decals-dr'+dr+'-wigglez_dr1_unique.fits']
+        plot_path = 'qaplots/dr'+dr+'/decals_match_wigglez/'
     else:
         raise ValueError('ERROR: '+catalog+' not found!')
 

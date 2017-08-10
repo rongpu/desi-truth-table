@@ -50,6 +50,8 @@ filelist = [
     '3dhst.v4.1.5.master.uds.fits',
     'FMOS_COSMOS_v1.0.fits',
     'mosdef_zcat.16aug2016.fits',
+    'GAMA-DR2-SpecObj.fits', 
+    'wigglez_dr1_unique.fits', 
 ]
 
 
