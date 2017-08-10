@@ -1,0 +1,1396 @@
+In [1]: %run decals_matching.py sdss
+sdss-specObj-dr14-unique-trimmed.fits
+0 - sweep-140p025-150p030
+14956 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 102
+RA  offset = -0.014807 arcsec
+Dec offset = 0.077934 arcsec
+Number of matches after offset correction = 102
+Number of doubly matched objects = 0
+Number of final matches = 102
+1 - sweep-220p030-230p035
+15484 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 4224
+RA  offset = 0.007100 arcsec
+Dec offset = 0.005973 arcsec
+Number of matches after offset correction = 4224
+Number of doubly matched objects = 0
+Number of final matches = 4224
+2 - sweep-210p045-220p050
+17717 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 15926
+RA  offset = -0.000109 arcsec
+Dec offset = 0.027013 arcsec
+Number of matches after offset correction = 15924
+Number of doubly matched objects = 0
+Number of final matches = 15924
+3 - sweep-190p035-200p040
+17581 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 15608
+RA  offset = -0.000275 arcsec
+Dec offset = 0.007901 arcsec
+Number of matches after offset correction = 15606
+Number of doubly matched objects = 0
+Number of final matches = 15606
+4 - sweep-160p040-170p045
+20036 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 17587
+RA  offset = -0.005926 arcsec
+Dec offset = 0.018732 arcsec
+Number of matches after offset correction = 17586
+Number of doubly matched objects = 0
+Number of final matches = 17586
+5 - sweep-170p045-180p050
+21415 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 19287
+RA  offset = -0.001345 arcsec
+Dec offset = 0.059882 arcsec
+Number of matches after offset correction = 19294
+Number of doubly matched objects = 0
+Number of final matches = 19294
+6 - sweep-180p045-190p050
+20479 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 18383
+RA  offset = -0.004024 arcsec
+Dec offset = 0.065452 arcsec
+Number of matches after offset correction = 18383
+Number of doubly matched objects = 0
+Number of final matches = 18383
+7 - sweep-260p030-270p035
+4685 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 1501
+RA  offset = 0.023203 arcsec
+Dec offset = 0.052826 arcsec
+Number of matches after offset correction = 1502
+Number of doubly matched objects = 0
+Number of final matches = 1502
+8 - sweep-160p060-170p065
+7705 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 4374
+RA  offset = -0.095983 arcsec
+Dec offset = 0.234996 arcsec
+Number of matches after offset correction = 4383
+Number of doubly matched objects = 0
+Number of final matches = 4383
+10 - sweep-280p065-290p070
+20 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 8
+RA  offset = 0.116614 arcsec
+Dec offset = 0.067454 arcsec
+Number of matches after offset correction = 8
+Number of doubly matched objects = 0
+Number of final matches = 8
+11 - sweep-220p060-230p065
+4527 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 2037
+RA  offset = 0.018915 arcsec
+Dec offset = 0.161799 arcsec
+Number of matches after offset correction = 2041
+Number of doubly matched objects = 0
+Number of final matches = 2041
+12 - sweep-150p065-160p070
+1189 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 817
+RA  offset = -0.001403 arcsec
+Dec offset = 0.139762 arcsec
+Number of matches after offset correction = 818
+Number of doubly matched objects = 0
+Number of final matches = 818
+13 - sweep-100p040-110p045
+1152 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 633
+RA  offset = -0.026757 arcsec
+Dec offset = 0.032897 arcsec
+Number of matches after offset correction = 634
+Number of doubly matched objects = 0
+Number of final matches = 634
+14 - sweep-100p080-110p085
+134 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+15 - sweep-270p035-280p040
+5 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 4
+RA  offset = 0.161596 arcsec
+Dec offset = 0.113275 arcsec
+Number of matches after offset correction = 4
+Number of doubly matched objects = 0
+Number of final matches = 4
+16 - sweep-250p035-260p040
+15019 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 13410
+RA  offset = 0.029138 arcsec
+Dec offset = 0.006625 arcsec
+Number of matches after offset correction = 13413
+Number of doubly matched objects = 0
+Number of final matches = 13413
+17 - sweep-190p030-200p035
+14244 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 7137
+RA  offset = 0.021124 arcsec
+Dec offset = 0.005628 arcsec
+Number of matches after offset correction = 7137
+Number of doubly matched objects = 0
+Number of final matches = 7137
+18 - sweep-120p035-130p040
+19156 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 16970
+RA  offset = -0.038738 arcsec
+Dec offset = 0.027932 arcsec
+Number of matches after offset correction = 16973
+Number of doubly matched objects = 0
+Number of final matches = 16973
+20 - sweep-110p080-120p085
+204 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+21 - sweep-090p035-100p040
+240 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 166
+RA  offset = -0.074812 arcsec
+Dec offset = 0.046940 arcsec
+Number of matches after offset correction = 166
+Number of doubly matched objects = 0
+Number of final matches = 166
+22 - sweep-130p050-140p055
+20350 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 13198
+RA  offset = -0.061373 arcsec
+Dec offset = 0.126112 arcsec
+Number of matches after offset correction = 13220
+Number of doubly matched objects = 0
+Number of final matches = 13220
+23 - sweep-140p055-150p060
+13494 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 4497
+RA  offset = -0.119677 arcsec
+Dec offset = 0.159247 arcsec
+Number of matches after offset correction = 4509
+Number of doubly matched objects = 0
+Number of final matches = 4509
+24 - sweep-230p040-240p045
+12121 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 10707
+RA  offset = 0.013469 arcsec
+Dec offset = 0.017342 arcsec
+Number of matches after offset correction = 10705
+Number of doubly matched objects = 0
+Number of final matches = 10705
+25 - sweep-160p045-170p050
+20790 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 18528
+RA  offset = 0.003604 arcsec
+Dec offset = 0.042004 arcsec
+Number of matches after offset correction = 18530
+Number of doubly matched objects = 0
+Number of final matches = 18530
+27 - sweep-120p055-130p060
+12406 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 2147
+RA  offset = -0.126539 arcsec
+Dec offset = 0.124674 arcsec
+Number of matches after offset correction = 2150
+Number of doubly matched objects = 0
+Number of final matches = 2150
+28 - sweep-140p050-150p055
+18822 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 13625
+RA  offset = -0.055366 arcsec
+Dec offset = 0.152243 arcsec
+Number of matches after offset correction = 13637
+Number of doubly matched objects = 0
+Number of final matches = 13637
+29 - sweep-260p045-270p050
+169 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 157
+RA  offset = 0.029197 arcsec
+Dec offset = 0.053443 arcsec
+Number of matches after offset correction = 157
+Number of doubly matched objects = 0
+Number of final matches = 157
+30 - sweep-120p050-130p055
+21274 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 11807
+RA  offset = -0.054906 arcsec
+Dec offset = 0.153292 arcsec
+Number of matches after offset correction = 11828
+Number of doubly matched objects = 0
+Number of final matches = 11828
+31 - sweep-270p040-280p045
+860 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 777
+RA  offset = 0.055120 arcsec
+Dec offset = 0.048356 arcsec
+Number of matches after offset correction = 778
+Number of doubly matched objects = 0
+Number of final matches = 778
+32 - sweep-210p035-220p040
+14516 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 12856
+RA  offset = 0.008597 arcsec
+Dec offset = 0.006692 arcsec
+Number of matches after offset correction = 12859
+Number of doubly matched objects = 0
+Number of final matches = 12859
+33 - sweep-250p060-260p065
+2358 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 231
+RA  offset = 0.130423 arcsec
+Dec offset = 0.035316 arcsec
+Number of matches after offset correction = 231
+Number of doubly matched objects = 0
+Number of final matches = 231
+34 - sweep-290p060-300p065
+1038 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 809
+RA  offset = -0.006357 arcsec
+Dec offset = 0.056984 arcsec
+Number of matches after offset correction = 810
+Number of doubly matched objects = 0
+Number of final matches = 810
+35 - sweep-100p060-110p065
+114 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 52
+RA  offset = 0.001309 arcsec
+Dec offset = 0.086938 arcsec
+Number of matches after offset correction = 52
+Number of doubly matched objects = 0
+Number of final matches = 52
+36 - sweep-260p025-270p030
+4902 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+38 - sweep-170p025-180p030
+16667 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 178
+RA  offset = 0.035185 arcsec
+Dec offset = -0.004913 arcsec
+Number of matches after offset correction = 178
+Number of doubly matched objects = 0
+Number of final matches = 178
+39 - sweep-140p035-150p040
+17264 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 15358
+RA  offset = -0.005418 arcsec
+Dec offset = 0.016963 arcsec
+Number of matches after offset correction = 15360
+Number of doubly matched objects = 0
+Number of final matches = 15360
+40 - sweep-170p040-180p045
+17519 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 15785
+RA  offset = -0.002322 arcsec
+Dec offset = 0.011311 arcsec
+Number of matches after offset correction = 15784
+Number of doubly matched objects = 0
+Number of final matches = 15784
+41 - sweep-180p060-190p065
+8211 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 2726
+RA  offset = -0.060188 arcsec
+Dec offset = 0.211173 arcsec
+Number of matches after offset correction = 2727
+Number of doubly matched objects = 0
+Number of final matches = 2727
+42 - sweep-260p035-270p040
+1971 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 1732
+RA  offset = 0.024935 arcsec
+Dec offset = 0.009870 arcsec
+Number of matches after offset correction = 1732
+Number of doubly matched objects = 0
+Number of final matches = 1732
+43 - sweep-220p055-230p060
+9031 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 7297
+RA  offset = 0.023969 arcsec
+Dec offset = 0.176844 arcsec
+Number of matches after offset correction = 7299
+Number of doubly matched objects = 0
+Number of final matches = 7299
+44 - sweep-160p065-170p070
+3593 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 2653
+RA  offset = 0.009228 arcsec
+Dec offset = 0.188115 arcsec
+Number of matches after offset correction = 2661
+Number of doubly matched objects = 0
+Number of final matches = 2661
+45 - sweep-140p045-150p050
+18491 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 16059
+RA  offset = -0.011607 arcsec
+Dec offset = 0.092398 arcsec
+Number of matches after offset correction = 16071
+Number of doubly matched objects = 0
+Number of final matches = 16071
+47 - sweep-090p040-100p045
+592 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+48 - sweep-250p045-260p050
+5739 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 5138
+RA  offset = 0.009165 arcsec
+Dec offset = 0.163047 arcsec
+Number of matches after offset correction = 5138
+Number of doubly matched objects = 0
+Number of final matches = 5138
+50 - sweep-210p060-220p065
+7569 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 3457
+RA  offset = 0.067893 arcsec
+Dec offset = 0.116452 arcsec
+Number of matches after offset correction = 3458
+Number of doubly matched objects = 0
+Number of final matches = 3458
+51 - sweep-220p035-230p040
+13658 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 12244
+RA  offset = 0.008225 arcsec
+Dec offset = 0.008415 arcsec
+Number of matches after offset correction = 12244
+Number of doubly matched objects = 0
+Number of final matches = 12244
+53 - sweep-210p055-220p060
+12192 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 10088
+RA  offset = 0.064645 arcsec
+Dec offset = 0.133255 arcsec
+Number of matches after offset correction = 10101
+Number of doubly matched objects = 0
+Number of final matches = 10101
+54 - sweep-110p035-120p040
+15411 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 13778
+RA  offset = -0.032191 arcsec
+Dec offset = 0.039727 arcsec
+Number of matches after offset correction = 13780
+Number of doubly matched objects = 0
+Number of final matches = 13780
+55 - sweep-140p060-150p065
+7901 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 2240
+RA  offset = -0.156937 arcsec
+Dec offset = 0.208888 arcsec
+Number of matches after offset correction = 2245
+Number of doubly matched objects = 0
+Number of final matches = 2245
+56 - sweep-280p045-290p050
+510 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 433
+RA  offset = -0.079067 arcsec
+Dec offset = -0.155954 arcsec
+Number of matches after offset correction = 444
+Number of doubly matched objects = 0
+Number of final matches = 444
+57 - sweep-210p030-220p035
+14711 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 5388
+RA  offset = 0.013519 arcsec
+Dec offset = 0.016326 arcsec
+Number of matches after offset correction = 5387
+Number of doubly matched objects = 0
+Number of final matches = 5387
+58 - sweep-180p055-190p060
+10413 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 9260
+RA  offset = -0.010875 arcsec
+Dec offset = 0.157373 arcsec
+Number of matches after offset correction = 9264
+Number of doubly matched objects = 0
+Number of final matches = 9264
+59 - sweep-120p040-130p045
+23305 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 20121
+RA  offset = -0.017815 arcsec
+Dec offset = 0.023827 arcsec
+Number of matches after offset correction = 20125
+Number of doubly matched objects = 0
+Number of final matches = 20125
+60 - sweep-160p055-170p060
+15235 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 8380
+RA  offset = -0.018635 arcsec
+Dec offset = 0.139685 arcsec
+Number of matches after offset correction = 8385
+Number of doubly matched objects = 0
+Number of final matches = 8385
+61 - sweep-270p060-280p065
+402 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 261
+RA  offset = 0.058159 arcsec
+Dec offset = 0.058147 arcsec
+Number of matches after offset correction = 261
+Number of doubly matched objects = 0
+Number of final matches = 261
+62 - sweep-230p035-240p040
+13457 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 11971
+RA  offset = 0.019586 arcsec
+Dec offset = 0.015238 arcsec
+Number of matches after offset correction = 11970
+Number of doubly matched objects = 0
+Number of final matches = 11970
+64 - sweep-180p050-190p055
+16160 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 14401
+RA  offset = -0.002011 arcsec
+Dec offset = 0.124644 arcsec
+Number of matches after offset correction = 14403
+Number of doubly matched objects = 0
+Number of final matches = 14403
+65 - sweep-300p060-310p065
+695 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+66 - sweep-260p050-270p055
+1052 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 904
+RA  offset = 0.023978 arcsec
+Dec offset = 0.022126 arcsec
+Number of matches after offset correction = 904
+Number of doubly matched objects = 0
+Number of final matches = 904
+67 - sweep-190p050-200p055
+15014 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 13461
+RA  offset = 0.036750 arcsec
+Dec offset = 0.133477 arcsec
+Number of matches after offset correction = 13457
+Number of doubly matched objects = 0
+Number of final matches = 13457
+68 - sweep-130p030-140p035
+15423 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 11019
+RA  offset = 0.022727 arcsec
+Dec offset = 0.011069 arcsec
+Number of matches after offset correction = 11018
+Number of doubly matched objects = 0
+Number of final matches = 11018
+69 - sweep-120p030-130p035
+16868 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 12105
+RA  offset = 0.002498 arcsec
+Dec offset = 0.026307 arcsec
+Number of matches after offset correction = 12104
+Number of doubly matched objects = 0
+Number of final matches = 12104
+70 - sweep-230p030-240p035
+14620 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 4108
+RA  offset = -0.001071 arcsec
+Dec offset = 0.028793 arcsec
+Number of matches after offset correction = 4107
+Number of doubly matched objects = 0
+Number of final matches = 4107
+71 - sweep-240p030-250p035
+14723 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 4255
+RA  offset = 0.024192 arcsec
+Dec offset = 0.021351 arcsec
+Number of matches after offset correction = 4254
+Number of doubly matched objects = 0
+Number of final matches = 4254
+72 - sweep-150p030-160p035
+15953 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 11940
+RA  offset = 0.003134 arcsec
+Dec offset = 0.026852 arcsec
+Number of matches after offset correction = 11942
+Number of doubly matched objects = 0
+Number of final matches = 11942
+75 - sweep-180p035-190p040
+20526 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 18223
+RA  offset = -0.020403 arcsec
+Dec offset = 0.015148 arcsec
+Number of matches after offset correction = 18224
+Number of doubly matched objects = 0
+Number of final matches = 18224
+77 - sweep-150p040-160p045
+18016 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 16038
+RA  offset = -0.005985 arcsec
+Dec offset = 0.030112 arcsec
+Number of matches after offset correction = 16043
+Number of doubly matched objects = 0
+Number of final matches = 16043
+78 - sweep-240p035-250p040
+14812 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 13265
+RA  offset = 0.020279 arcsec
+Dec offset = 0.012105 arcsec
+Number of matches after offset correction = 13263
+Number of doubly matched objects = 0
+Number of final matches = 13263
+79 - sweep-260p055-270p060
+1869 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 1605
+RA  offset = 0.040943 arcsec
+Dec offset = 0.038456 arcsec
+Number of matches after offset correction = 1605
+Number of doubly matched objects = 0
+Number of final matches = 1605
+80 - sweep-200p055-210p060
+11408 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 10240
+RA  offset = 0.002736 arcsec
+Dec offset = 0.134192 arcsec
+Number of matches after offset correction = 10252
+Number of doubly matched objects = 0
+Number of final matches = 10252
+81 - sweep-200p060-210p065
+8029 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 3636
+RA  offset = -0.025794 arcsec
+Dec offset = 0.163857 arcsec
+Number of matches after offset correction = 3633
+Number of doubly matched objects = 0
+Number of final matches = 3633
+82 - sweep-240p055-250p060
+6171 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 4280
+RA  offset = 0.035550 arcsec
+Dec offset = 0.159278 arcsec
+Number of matches after offset correction = 4280
+Number of doubly matched objects = 0
+Number of final matches = 4280
+83 - sweep-090p080-100p085
+526 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+84 - sweep-280p075-290p080
+809 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 149
+RA  offset = 0.136793 arcsec
+Dec offset = 0.092389 arcsec
+Number of matches after offset correction = 148
+Number of doubly matched objects = 0
+Number of final matches = 148
+85 - sweep-180p040-190p045
+17102 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 15252
+RA  offset = -0.002902 arcsec
+Dec offset = 0.020246 arcsec
+Number of matches after offset correction = 15252
+Number of doubly matched objects = 0
+Number of final matches = 15252
+86 - sweep-130p025-140p030
+14950 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 46
+RA  offset = 0.021982 arcsec
+Dec offset = 0.023588 arcsec
+Number of matches after offset correction = 46
+Number of doubly matched objects = 0
+Number of final matches = 46
+87 - sweep-080p060-090p065
+1270 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+88 - sweep-180p030-190p035
+14288 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 9781
+RA  offset = 0.014576 arcsec
+Dec offset = 0.028277 arcsec
+Number of matches after offset correction = 9780
+Number of doubly matched objects = 0
+Number of final matches = 9780
+90 - sweep-170p065-180p070
+4763 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 755
+RA  offset = -0.014073 arcsec
+Dec offset = 0.167449 arcsec
+Number of matches after offset correction = 755
+Number of doubly matched objects = 0
+Number of final matches = 755
+91 - sweep-100p035-110p040
+2587 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 2271
+RA  offset = -0.048922 arcsec
+Dec offset = 0.053438 arcsec
+Number of matches after offset correction = 2272
+Number of doubly matched objects = 0
+Number of final matches = 2272
+92 - sweep-230p060-240p065
+2104 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 976
+RA  offset = -0.025002 arcsec
+Dec offset = 0.222564 arcsec
+Number of matches after offset correction = 975
+Number of doubly matched objects = 0
+Number of final matches = 975
+94 - sweep-220p050-230p055
+11922 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 10786
+RA  offset = 0.025695 arcsec
+Dec offset = 0.118339 arcsec
+Number of matches after offset correction = 10790
+Number of doubly matched objects = 0
+Number of final matches = 10790
+96 - sweep-240p040-250p045
+12580 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 11339
+RA  offset = 0.007222 arcsec
+Dec offset = 0.025120 arcsec
+Number of matches after offset correction = 11341
+Number of doubly matched objects = 0
+Number of final matches = 11341
+97 - sweep-240p045-250p050
+11540 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 10366
+RA  offset = 0.027031 arcsec
+Dec offset = 0.085826 arcsec
+Number of matches after offset correction = 10366
+Number of doubly matched objects = 0
+Number of final matches = 10366
+98 - sweep-100p065-110p070
+528 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 332
+RA  offset = -0.027000 arcsec
+Dec offset = 0.063967 arcsec
+Number of matches after offset correction = 332
+Number of doubly matched objects = 0
+Number of final matches = 332
+99 - sweep-140p040-150p045
+19619 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 17636
+RA  offset = -0.005972 arcsec
+Dec offset = 0.032585 arcsec
+Number of matches after offset correction = 17638
+Number of doubly matched objects = 0
+Number of final matches = 17638
+101 - sweep-200p045-210p050
+19927 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 17493
+RA  offset = -0.011422 arcsec
+Dec offset = 0.035017 arcsec
+Number of matches after offset correction = 17488
+Number of doubly matched objects = 0
+Number of final matches = 17488
+103 - sweep-160p025-170p030
+16771 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 116
+RA  offset = 0.034191 arcsec
+Dec offset = 0.003274 arcsec
+Number of matches after offset correction = 116
+Number of doubly matched objects = 0
+Number of final matches = 116
+105 - sweep-150p025-160p030
+18005 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 146
+RA  offset = -0.013376 arcsec
+Dec offset = 0.042093 arcsec
+Number of matches after offset correction = 146
+Number of doubly matched objects = 0
+Number of final matches = 146
+106 - sweep-280p050-290p055
+131 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 115
+RA  offset = -0.051200 arcsec
+Dec offset = -0.081940 arcsec
+Number of matches after offset correction = 116
+Number of doubly matched objects = 0
+Number of final matches = 116
+108 - sweep-110p045-120p050
+13868 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 11615
+RA  offset = -0.051566 arcsec
+Dec offset = 0.114104 arcsec
+Number of matches after offset correction = 11622
+Number of doubly matched objects = 0
+Number of final matches = 11622
+111 - sweep-130p060-140p065
+6904 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 2618
+RA  offset = -0.061252 arcsec
+Dec offset = 0.180389 arcsec
+Number of matches after offset correction = 2617
+Number of doubly matched objects = 0
+Number of final matches = 2617
+112 - sweep-280p060-290p065
+357 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 259
+RA  offset = 0.031709 arcsec
+Dec offset = 0.050056 arcsec
+Number of matches after offset correction = 259
+Number of doubly matched objects = 0
+Number of final matches = 259
+113 - sweep-230p050-240p055
+12264 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 10992
+RA  offset = 0.030491 arcsec
+Dec offset = 0.150069 arcsec
+Number of matches after offset correction = 10996
+Number of doubly matched objects = 0
+Number of final matches = 10996
+114 - sweep-110p030-120p035
+12817 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 9606
+RA  offset = -0.010567 arcsec
+Dec offset = 0.029080 arcsec
+Number of matches after offset correction = 9607
+Number of doubly matched objects = 0
+Number of final matches = 9607
+115 - sweep-210p040-220p045
+16350 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 14673
+RA  offset = 0.010440 arcsec
+Dec offset = 0.025714 arcsec
+Number of matches after offset correction = 14677
+Number of doubly matched objects = 0
+Number of final matches = 14677
+116 - sweep-140p070-150p075
+13 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 10
+RA  offset = -0.119999 arcsec
+Dec offset = 0.045697 arcsec
+Number of matches after offset correction = 10
+Number of doubly matched objects = 0
+Number of final matches = 10
+117 - sweep-150p035-160p040
+19472 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 17362
+RA  offset = 0.007118 arcsec
+Dec offset = 0.018195 arcsec
+Number of matches after offset correction = 17364
+Number of doubly matched objects = 0
+Number of final matches = 17364
+118 - sweep-280p035-290p040
+1493 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 2
+RA  offset = 0.003075 arcsec
+Dec offset = 0.055128 arcsec
+Number of matches after offset correction = 2
+Number of doubly matched objects = 0
+Number of final matches = 2
+119 - sweep-100p030-110p035
+1120 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 640
+RA  offset = -0.002143 arcsec
+Dec offset = 0.061540 arcsec
+Number of matches after offset correction = 640
+Number of doubly matched objects = 0
+Number of final matches = 640
+120 - sweep-150p045-160p050
+20487 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 18319
+RA  offset = -0.016771 arcsec
+Dec offset = 0.044387 arcsec
+Number of matches after offset correction = 18319
+Number of doubly matched objects = 0
+Number of final matches = 18319
+122 - sweep-170p035-180p040
+19741 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 17698
+RA  offset = -0.007184 arcsec
+Dec offset = 0.013753 arcsec
+Number of matches after offset correction = 17698
+Number of doubly matched objects = 0
+Number of final matches = 17698
+123 - sweep-110p025-120p030
+12703 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 152
+RA  offset = 0.022475 arcsec
+Dec offset = 0.093878 arcsec
+Number of matches after offset correction = 152
+Number of doubly matched objects = 0
+Number of final matches = 152
+124 - sweep-120p025-130p030
+15866 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 210
+RA  offset = 0.000639 arcsec
+Dec offset = 0.032545 arcsec
+Number of matches after offset correction = 210
+Number of doubly matched objects = 0
+Number of final matches = 210
+125 - sweep-250p055-260p060
+1221 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 1027
+RA  offset = 0.037345 arcsec
+Dec offset = 0.030158 arcsec
+Number of matches after offset correction = 1026
+Number of doubly matched objects = 0
+Number of final matches = 1026
+126 - sweep-200p040-210p045
+16639 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 14779
+RA  offset = -0.005999 arcsec
+Dec offset = 0.021986 arcsec
+Number of matches after offset correction = 14778
+Number of doubly matched objects = 0
+Number of final matches = 14778
+127 - sweep-190p060-200p065
+8628 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 3639
+RA  offset = -0.029069 arcsec
+Dec offset = 0.182420 arcsec
+Number of matches after offset correction = 3645
+Number of doubly matched objects = 0
+Number of final matches = 3645
+128 - sweep-250p050-260p055
+3302 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 2923
+RA  offset = 0.037095 arcsec
+Dec offset = 0.132061 arcsec
+Number of matches after offset correction = 2924
+Number of doubly matched objects = 0
+Number of final matches = 2924
+129 - sweep-230p055-240p060
+7585 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 6051
+RA  offset = -0.011869 arcsec
+Dec offset = 0.154868 arcsec
+Number of matches after offset correction = 6052
+Number of doubly matched objects = 0
+Number of final matches = 6052
+131 - sweep-180p025-190p030
+16869 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 29
+RA  offset = -0.004706 arcsec
+Dec offset = 0.025006 arcsec
+Number of matches after offset correction = 29
+Number of doubly matched objects = 0
+Number of final matches = 29
+133 - sweep-220p040-230p045
+14370 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 12897
+RA  offset = 0.021868 arcsec
+Dec offset = 0.029069 arcsec
+Number of matches after offset correction = 12899
+Number of doubly matched objects = 0
+Number of final matches = 12899
+134 - sweep-270p025-280p030
+4 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+135 - sweep-130p055-140p060
+15018 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 4448
+RA  offset = -0.062257 arcsec
+Dec offset = 0.146540 arcsec
+Number of matches after offset correction = 4457
+Number of doubly matched objects = 0
+Number of final matches = 4457
+136 - sweep-250p040-260p045
+11545 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 10343
+RA  offset = 0.001972 arcsec
+Dec offset = 0.054782 arcsec
+Number of matches after offset correction = 10348
+Number of doubly matched objects = 0
+Number of final matches = 10348
+137 - sweep-230p045-240p050
+12748 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 11511
+RA  offset = 0.026910 arcsec
+Dec offset = 0.056562 arcsec
+Number of matches after offset correction = 11513
+Number of doubly matched objects = 0
+Number of final matches = 11513
+138 - sweep-170p030-180p035
+14042 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 8453
+RA  offset = 0.004393 arcsec
+Dec offset = 0.025983 arcsec
+Number of matches after offset correction = 8456
+Number of doubly matched objects = 0
+Number of final matches = 8456
+139 - sweep-090p060-100p065
+991 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 76
+RA  offset = -0.088825 arcsec
+Dec offset = 0.036333 arcsec
+Number of matches after offset correction = 76
+Number of doubly matched objects = 0
+Number of final matches = 76
+140 - sweep-240p050-250p055
+14362 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 12377
+RA  offset = 0.049574 arcsec
+Dec offset = 0.118462 arcsec
+Number of matches after offset correction = 12385
+Number of doubly matched objects = 0
+Number of final matches = 12385
+141 - sweep-190p040-200p045
+16833 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 15044
+RA  offset = -0.010960 arcsec
+Dec offset = 0.009489 arcsec
+Number of matches after offset correction = 15045
+Number of doubly matched objects = 0
+Number of final matches = 15045
+142 - sweep-210p050-220p055
+21725 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 19268
+RA  offset = 0.015865 arcsec
+Dec offset = 0.137596 arcsec
+Number of matches after offset correction = 19266
+Number of doubly matched objects = 0
+Number of final matches = 19266
+143 - sweep-100p025-110p030
+2157 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 53
+RA  offset = -0.026414 arcsec
+Dec offset = 0.026429 arcsec
+Number of matches after offset correction = 53
+Number of doubly matched objects = 0
+Number of final matches = 53
+144 - sweep-130p040-140p045
+21864 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 19382
+RA  offset = -0.005886 arcsec
+Dec offset = 0.019897 arcsec
+Number of matches after offset correction = 19381
+Number of doubly matched objects = 0
+Number of final matches = 19381
+145 - sweep-110p065-120p070
+1320 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 612
+RA  offset = -0.078316 arcsec
+Dec offset = 0.104268 arcsec
+Number of matches after offset correction = 613
+Number of doubly matched objects = 0
+Number of final matches = 613
+146 - sweep-200p035-210p040
+15080 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 13490
+RA  offset = -0.013768 arcsec
+Dec offset = 0.005909 arcsec
+Number of matches after offset correction = 13491
+Number of doubly matched objects = 0
+Number of final matches = 13491
+147 - sweep-170p055-180p060
+15524 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 13301
+RA  offset = -0.051407 arcsec
+Dec offset = 0.132502 arcsec
+Number of matches after offset correction = 13307
+Number of doubly matched objects = 0
+Number of final matches = 13307
+148 - sweep-150p060-160p065
+7838 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 3900
+RA  offset = -0.092401 arcsec
+Dec offset = 0.179813 arcsec
+Number of matches after offset correction = 3908
+Number of doubly matched objects = 0
+Number of final matches = 3908
+150 - sweep-110p040-120p045
+23816 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 20700
+RA  offset = -0.016032 arcsec
+Dec offset = 0.035103 arcsec
+Number of matches after offset correction = 20702
+Number of doubly matched objects = 0
+Number of final matches = 20702
+151 - sweep-280p040-290p045
+518 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 340
+RA  offset = 0.034216 arcsec
+Dec offset = 0.047828 arcsec
+Number of matches after offset correction = 340
+Number of doubly matched objects = 0
+Number of final matches = 340
+152 - sweep-160p030-170p035
+13885 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 8321
+RA  offset = 0.008547 arcsec
+Dec offset = 0.012635 arcsec
+Number of matches after offset correction = 8321
+Number of doubly matched objects = 0
+Number of final matches = 8321
+154 - sweep-130p035-140p040
+20379 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 18058
+RA  offset = -0.021082 arcsec
+Dec offset = 0.024294 arcsec
+Number of matches after offset correction = 18057
+Number of doubly matched objects = 0
+Number of final matches = 18057
+155 - sweep-130p065-140p070
+450 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 163
+RA  offset = -0.055742 arcsec
+Dec offset = 0.051247 arcsec
+Number of matches after offset correction = 163
+Number of doubly matched objects = 0
+Number of final matches = 163
+156 - sweep-150p055-160p060
+13155 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 2512
+RA  offset = -0.047843 arcsec
+Dec offset = 0.138733 arcsec
+Number of matches after offset correction = 2514
+Number of doubly matched objects = 0
+Number of final matches = 2514
+157 - sweep-130p045-140p050
+21991 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 18078
+RA  offset = 0.003459 arcsec
+Dec offset = 0.086427 arcsec
+Number of matches after offset correction = 18090
+Number of doubly matched objects = 0
+Number of final matches = 18090
+159 - sweep-170p060-180p065
+8444 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 5478
+RA  offset = -0.093755 arcsec
+Dec offset = 0.188029 arcsec
+Number of matches after offset correction = 5485
+Number of doubly matched objects = 0
+Number of final matches = 5485
+161 - sweep-190p055-200p060
+10090 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 9133
+RA  offset = 0.018608 arcsec
+Dec offset = 0.163758 arcsec
+Number of matches after offset correction = 9139
+Number of doubly matched objects = 0
+Number of final matches = 9139
+164 - sweep-120p080-130p085
+589 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+166 - sweep-270p065-280p070
+70 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 27
+RA  offset = 0.055949 arcsec
+Dec offset = 0.117291 arcsec
+Number of matches after offset correction = 27
+Number of doubly matched objects = 0
+Number of final matches = 27
+167 - sweep-260p060-270p065
+1629 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 83
+RA  offset = 0.058015 arcsec
+Dec offset = 0.061317 arcsec
+Number of matches after offset correction = 83
+Number of doubly matched objects = 0
+Number of final matches = 83
+170 - sweep-140p030-150p035
+15595 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 11952
+RA  offset = 0.010974 arcsec
+Dec offset = 0.038815 arcsec
+Number of matches after offset correction = 11957
+Number of doubly matched objects = 0
+Number of final matches = 11957
+171 - sweep-220p045-230p050
+15123 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 13611
+RA  offset = -0.008158 arcsec
+Dec offset = 0.023426 arcsec
+Number of matches after offset correction = 13612
+Number of doubly matched objects = 0
+Number of final matches = 13612
+172 - sweep-150p050-160p055
+16781 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 13349
+RA  offset = -0.017376 arcsec
+Dec offset = 0.154052 arcsec
+Number of matches after offset correction = 13368
+Number of doubly matched objects = 0
+Number of final matches = 13368
+173 - sweep-120p065-130p070
+796 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 440
+RA  offset = -0.175853 arcsec
+Dec offset = 0.366367 arcsec
+Number of matches after offset correction = 446
+Number of doubly matched objects = 0
+Number of final matches = 446
+174 - sweep-200p050-210p055
+16194 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 14233
+RA  offset = 0.003892 arcsec
+Dec offset = 0.129106 arcsec
+Number of matches after offset correction = 14237
+Number of doubly matched objects = 0
+Number of final matches = 14237
+175 - sweep-190p025-200p030
+15795 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 67
+RA  offset = 0.084372 arcsec
+Dec offset = 0.034659 arcsec
+Number of matches after offset correction = 68
+Number of doubly matched objects = 0
+Number of final matches = 68
+176 - sweep-160p035-170p040
+17798 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 15681
+RA  offset = -0.001347 arcsec
+Dec offset = 0.014666 arcsec
+Number of matches after offset correction = 15685
+Number of doubly matched objects = 0
+Number of final matches = 15685
+177 - sweep-150p070-160p075
+9 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+178 - sweep-090p065-100p070
+166 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 43
+RA  offset = -0.056015 arcsec
+Dec offset = 0.068051 arcsec
+Number of matches after offset correction = 42
+Number of doubly matched objects = 0
+Number of final matches = 42
+179 - sweep-240p060-250p065
+1875 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 470
+RA  offset = 0.023586 arcsec
+Dec offset = 0.126532 arcsec
+Number of matches after offset correction = 467
+Number of doubly matched objects = 0
+Number of final matches = 467
+180 - sweep-110p050-120p055
+3805 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 2724
+RA  offset = -0.108832 arcsec
+Dec offset = 0.158783 arcsec
+Number of matches after offset correction = 2725
+Number of doubly matched objects = 0
+Number of final matches = 2725
+182 - sweep-260p040-270p045
+1139 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 1033
+RA  offset = 0.076580 arcsec
+Dec offset = 0.052457 arcsec
+Number of matches after offset correction = 1034
+Number of doubly matched objects = 0
+Number of final matches = 1034
+183 - sweep-110p055-120p060
+23 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+184 - sweep-140p065-150p070
+1624 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 907
+RA  offset = 0.050166 arcsec
+Dec offset = 0.044405 arcsec
+Number of matches after offset correction = 907
+Number of doubly matched objects = 0
+Number of final matches = 907
+185 - sweep-120p045-130p050
+27353 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 23423
+RA  offset = -0.027750 arcsec
+Dec offset = 0.107322 arcsec
+Number of matches after offset correction = 23448
+Number of doubly matched objects = 0
+Number of final matches = 23448
+186 - sweep-190p045-200p050
+22492 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 20260
+RA  offset = 0.001563 arcsec
+Dec offset = 0.044911 arcsec
+Number of matches after offset correction = 20261
+Number of doubly matched objects = 0
+Number of final matches = 20261
+187 - sweep-080p065-090p070
+3 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+188 - sweep-250p030-260p035
+15958 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 4894
+RA  offset = 0.005700 arcsec
+Dec offset = 0.001521 arcsec
+Number of matches after offset correction = 4894
+Number of doubly matched objects = 0
+Number of final matches = 4894
+189 - sweep-170p050-180p055
+16318 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 14394
+RA  offset = -0.015320 arcsec
+Dec offset = 0.132851 arcsec
+Number of matches after offset correction = 14403
+Number of doubly matched objects = 0
+Number of final matches = 14403
+190 - sweep-200p030-210p035
+13859 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 3991
+RA  offset = -0.008679 arcsec
+Dec offset = 0.017809 arcsec
+Number of matches after offset correction = 3992
+Number of doubly matched objects = 0
+Number of final matches = 3992
+191 - sweep-160p050-170p055
+16324 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 13962
+RA  offset = 0.013374 arcsec
+Dec offset = 0.129156 arcsec
+Number of matches after offset correction = 13963
+Number of doubly matched objects = 0
+Number of final matches = 13963
+192 - sweep-110p060-120p065
+67 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 23
+RA  offset = -0.125407 arcsec
+Dec offset = 0.167203 arcsec
+Number of matches after offset correction = 23
+Number of doubly matched objects = 0
+Number of final matches = 23
+194 - sweep-120p060-130p065
+1665 out of 4311571 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 525
+RA  offset = -0.162885 arcsec
+Dec offset = 0.191746 arcsec
+Number of matches after offset correction = 527
+Number of doubly matched objects = 0
+Number of final matches = 527
+
+1146133 total matches
+0 total overlapping duplicates
+
+------------------------------------------------------

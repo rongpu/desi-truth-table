@@ -25,7 +25,7 @@ def catalog_info(catalog, dr):
         # Search radius in arcsec
         search_radius = 1.
         cat2_filenames = ['ages_reduced.fits']
-        output_filenames = ['decals-dr'+dr+'-ages.fits']
+        output_filenames = ['decals-dr'+dr+'-ages_reduced.fits']
         plot_path = 'qaplots/dr'+dr+'/decals_match_ages/'
     elif catalog.lower()=='sdss':
         # RA and Dec columns in cat2
@@ -34,8 +34,8 @@ def catalog_info(catalog, dr):
         # Search radius in arcsec
         search_radius = 1.
         cat2_filenames = ['sdss-specObj-dr14-unique-trimmed.fits']
-        output_filenames = ['decals-dr'+dr+'-sdss-dr14.fits']
-        plot_path = 'qaplots/dr'+dr+'/decals_match_sdss/'
+        output_filenames = ['decals-dr'+dr+'-sdss-specObj-dr14-unique-trimmed.fits']
+        plot_path = 'qaplots/dr'+dr+'/decals_match_sdss_dr14/'
         ext = 1
     elif catalog.lower()=='cosmos_zphot':
         # RA and Dec columns in cat2
