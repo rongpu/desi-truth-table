@@ -27,23 +27,14 @@ def catalog_info(catalog, dr):
         cat2_filenames = ['ages_reduced.fits']
         output_filenames = ['decals-dr'+dr+'-ages.fits']
         plot_path = 'qaplots/dr'+dr+'/decals_match_ages/'
-    elif catalog.lower()=='eboss':
-        # RA and Dec columns in cat2
-        ra_col = 'RA'
-        dec_col = 'DEC'
-        # Search radius in arcsec
-        search_radius = 1.
-        cat2_filenames = ['redmonsterAll-v5_10_0_radec_added.fits']
-        output_filenames = ['decals-dr'+dr+'-eboss.fits']
-        plot_path = 'qaplots/dr'+dr+'/decals_match_eboss/'
     elif catalog.lower()=='sdss':
         # RA and Dec columns in cat2
         ra_col = 'PLUG_RA'
         dec_col = 'PLUG_DEC'
         # Search radius in arcsec
         search_radius = 1.
-        cat2_filenames = ['specObj-dr13-unique-trimmed.fits']
-        output_filenames = ['decals-dr'+dr+'-sdss.fits']
+        cat2_filenames = ['sdss-specObj-dr14-unique-trimmed.fits']
+        output_filenames = ['decals-dr'+dr+'-sdss-dr14.fits']
         plot_path = 'qaplots/dr'+dr+'/decals_match_sdss/'
     elif catalog.lower()=='cosmos_zphot':
         # RA and Dec columns in cat2
@@ -72,24 +63,6 @@ def catalog_info(catalog, dr):
         cat2_filenames = ['spies.fits.gz']
         output_filenames = ['decals-dr'+dr+'-spies.fits']
         plot_path = 'qaplots/dr'+dr+'/decals_match_spies/'
-    elif catalog.lower()=='stripe82_stars':
-        # RA and Dec columns in cat2
-        ra_col = 'ra'
-        dec_col = 'dec'
-        # Search radius in arcsec
-        search_radius = 1.
-        cat2_filenames = ['stripe82-dr12-stars.fits.gz']
-        output_filenames = ['decals-dr'+dr+'-stripe82-stars.fits']
-        plot_path = 'qaplots/dr'+dr+'/decals_match_stripe82_stars/'
-    elif catalog.lower()=='stripe82_specz':
-        # RA and Dec columns in cat2
-        ra_col = 'PLUG_RA'
-        dec_col = 'PLUG_DEC'
-        # Search radius in arcsec
-        search_radius = 1.
-        cat2_filenames = ['stripe82-dr12-specz.fits.gz']
-        output_filenames = ['decals-dr'+dr+'-stripe82-specz.fits']
-        plot_path = 'qaplots/dr'+dr+'/decals_match_stripe82_specz/'
     elif catalog.lower()=='deep2':
         # RA and Dec columns in cat2
         ra_col = 'RA'

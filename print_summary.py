@@ -59,6 +59,7 @@ filelist = [
     'mosdef_zcat.16aug2016.fits',
     'GAMA-DR2-SpecObj.fits', 
     'wigglez_dr1_unique.fits', 
+    'sdss-specObj-dr14-unique-trimmed.fits'
 ]
 
 
