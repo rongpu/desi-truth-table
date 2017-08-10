@@ -37,6 +37,5 @@ __Catalogs currently included:__
 Thing to modify for a new DECaLS DR: 
 
     decals_matching.py: dr, top_dir, sweep_dir 
-    catalog_info.py: dr, filelist_path 
     trim_matched_catalogs: dr, top_dir 
 

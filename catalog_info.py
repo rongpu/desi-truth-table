@@ -1,8 +1,5 @@
 from __future__ import division, print_function
 
-# DECaLS version
-dr='4.0'
-
 def get_filenames(cat2_filelist, dr):
     with open(cat2_filelist, 'r') as f:
         cat2_filenames = list(map(str.rstrip, f.readlines()))
@@ -13,10 +10,13 @@ def get_filenames(cat2_filelist, dr):
         output_filenames.append('decals-dr'+dr+'-'+filename)
     return cat2_filenames, output_filenames
 
-def catalog_info(catalog):
+def catalog_info(catalog, dr):
     '''
     Return the catalog information necessary for reading the catalog.
     '''
+
+    # Read from the first HDU by default
+    ext = 0
 
     if catalog.lower()=='ages':
         # RA and Dec columns in cat2
@@ -117,24 +117,6 @@ def catalog_info(catalog):
         filelist_path = '/global/homes/r/rongpu/git/desi-truth-table/misc/cfhtls_filelist.txt'
         cat2_filenames, output_filenames = get_filenames(filelist_path, dr)
         plot_path = 'qaplots/dr'+dr+'/decals_match_cfhtls/'
-    elif catalog.lower()=='allqso':
-        # RA and Dec columns in cat2
-        ra_col = 'ra_2'
-        dec_col = 'dec_2'
-        # Search radius in arcsec
-        search_radius = 1.
-        cat2_filenames = ['AllQSO.DECaLS.dr2.fits']
-        output_filenames = ['decals-dr'+dr+'-AllQSO.DECaLS.dr2.fits']
-        plot_path = 'qaplots/dr'+dr+'/decals_match_allqso/'
-    elif catalog.lower()=='stars_str82_355_4':
-        # RA and Dec columns in cat2
-        ra_col = 'ra_2'
-        dec_col = 'dec_2'
-        # Search radius in arcsec
-        search_radius = 1.
-        cat2_filenames = ['Stars_str82_355_4.DECaLS.dr2.fits']
-        output_filenames = ['decals-dr'+dr+'-Stars-str82-355-4.DECaLS.dr2.fits']
-        plot_path = 'qaplots/dr'+dr+'/decals_match_stars_str82_355_4/'
     elif catalog.lower()=='vvds':
         # RA and Dec columns in cat2
         ra_col = 'ALPHA'
@@ -198,6 +180,7 @@ def catalog_info(catalog):
         cat2_filenames = ['GAMA-DR2-SpecObj.fits']
         output_filenames = ['decals-dr'+dr+'-GAMA-DR2-SpecObj.fits']
         plot_path = 'qaplots/dr'+dr+'/decals_match_gama/'
+        ext = 1
     elif catalog.lower()=='wigglez':
         # RA and Dec columns in cat2
         ra_col = 'RA'
@@ -207,7 +190,8 @@ def catalog_info(catalog):
         cat2_filenames = ['wigglez_dr1_unique.fits']
         output_filenames = ['decals-dr'+dr+'-wigglez_dr1_unique.fits']
         plot_path = 'qaplots/dr'+dr+'/decals_match_wigglez/'
+        ext = 1
     else:
         raise ValueError('ERROR: '+catalog+' not found!')
 
-    return ra_col, dec_col, search_radius, cat2_filenames, output_filenames, plot_path
+    return ra_col, dec_col, search_radius, cat2_filenames, output_filenames, plot_path, ext

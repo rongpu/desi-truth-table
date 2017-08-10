@@ -40,6 +40,11 @@ start = time.clock()
 dr = '4.0'
 sweep_dir = '/global/project/projectdirs/cosmo/data/legacysurvey/dr4/sweep/4.0/'
 top_dir = '/project/projectdirs/desi/target/analysis/truth'
+
+# dr = '3.1'
+# sweep_dir = '/global/project/projectdirs/cosmo/data/legacysurvey/dr3.1/sweep/3.1/'
+# top_dir = '/project/projectdirs/desi/target/analysis/truth'
+
 # top_dir = '/global/project/projectdirs/desi/users/rongpu/truth'
 ##########
 
@@ -55,8 +60,8 @@ args = parser.parse_args()
 # Only 1/10 of the cat2 ojects are used if testing is enabled
 testing_q = args.test
 
-cat_info = catalog_info(args.catalog)
-ra_col, dec_col, search_radius, cat2_filenames, output_filenames, plot_path = cat_info
+cat_info = catalog_info(args.catalog, dr)
+ra_col, dec_col, search_radius, cat2_filenames, output_filenames, plot_path, ext = cat_info
 plot_path = os.path.join(top_dir, plot_path)
 
 parent_dir = os.path.join(top_dir, 'parent/')
@@ -74,10 +79,7 @@ for cat2_index in range(len(cat2_filenames)):
 
     # -----------------------------------------------------------------------------------------
 
-    if args.catalog!='allqso' and args.catalog!='stars_str82_355_4':
-        cat2 = fitsio.read(cat2_path, columns=[ra_col, dec_col])
-    else:
-        cat2 = fitsio.read(cat2_path, columns=[ra_col, dec_col], ext=1)
+    cat2 = fitsio.read(cat2_path, columns=[ra_col, dec_col], ext=ext)
 
     if testing_q:
         cat2 = cat2[::10]
