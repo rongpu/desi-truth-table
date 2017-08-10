@@ -1,12 +1,16 @@
 # Print the number of matched objects in truth catalogs
 
 from __future__ import division, print_function
+import argparse
 import numpy as np
 from astropy.io import fits
 import os
 
-# dr = '3.1'
-dr = '4.0'
+parser = argparse.ArgumentParser()
+parser.add_argument('dr')
+args = parser.parse_args()
+dr = args.dr
+
 top_dir = '/project/projectdirs/desi/target/analysis/truth'
 # top_dir = '/global/project/projectdirs/desi/users/rongpu/truth'
 
