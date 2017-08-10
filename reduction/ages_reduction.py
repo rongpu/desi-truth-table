@@ -74,4 +74,4 @@ while continue_loop:
 print('Total of %d duplicates removed'%(len(cat)-len(cat_index)))
 print('%d objects remaining'%len(cat))
 cat = cat[cat_index]
-fits.writeto(data_path+'ages_reduced.fits', cat, clobber=False)
+fits.writeto(data_path+'ages_unique.fits', cat, clobber=False)
