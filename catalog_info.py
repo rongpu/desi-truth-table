@@ -37,6 +37,15 @@ def catalog_info(catalog, dr):
         output_filenames = ['decals-dr'+dr+'-sdss-specObj-dr14-unique-trimmed.fits']
         plot_path = 'qaplots/dr'+dr+'/decals_match_sdss_dr14/'
         ext = 1
+    elif catalog.lower()=='eboss':
+        # RA and Dec columns in cat2
+        ra_col = 'RA'
+        dec_col = 'DEC'
+        # Search radius in arcsec
+        search_radius = 1.
+        cat2_filenames = ['eBOSS-DR14-redmonsterAll-v5_10_0-radec-added.fits']
+        output_filenames = ['decals-dr'+dr+'-eBOSS-DR14-redmonsterAll-v5_10_0-radec-added.fits']
+        plot_path = 'qaplots/dr'+dr+'/decals_match_eboss_dr14/'
     elif catalog.lower()=='cosmos_zphot':
         # RA and Dec columns in cat2
         ra_col = 'ALPHA_J2000'
