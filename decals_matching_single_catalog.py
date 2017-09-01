@@ -1,26 +1,3 @@
-########################################################################
-# The code uses the filenames of sweep files as input for RA and Dec   #
-# range. Thus changes of the filenames would render the code unusable. #
-########################################################################
-
-# Matching between two catalogs
-# Use cat1 data to create a catalog that is line-matched to cat2
-
-# Creating line-matched catalogs (all objects in cat2 are kept):
-# 1. Find matched objects
-# 2. Flag duplicates (objects in cat1 that have more than one match to cat2)
-# 3. Rearrange cat1 so that it is line-matched to cat2 and there's no duplicate
-# 4. Save the new cat1
-# Note:
-# - 1 arcsec search radius
-# - Objects with no match are assigned '' for string and 0 for numbers
-
-# cat1 - multiple catalog files - DECaLS
-# cat2 - single or multiple catalog files - some other catalog
-
-# astropy.fits cannot be used because it does not allow this:
-# cat_stack[mask2full] = cat1[mask2full]
-
 from __future__ import division, print_function
 import matplotlib
 matplotlib.use( "Agg" )
@@ -36,35 +13,31 @@ from catalog_matching_scatter_plot import scatter_plot
 
 start = time.clock()
 
-##########
-dr = '4.0'
-sweep_dir = '/global/project/projectdirs/cosmo/data/legacysurvey/dr4/sweep/4.0/'
+#################################################################################
+# dr = '4.0'
+# sweep_dir = '/global/project/projectdirs/cosmo/data/legacysurvey/dr4/sweep/4.0/'
 
-# dr = '3.1'
-# sweep_dir = '/global/project/projectdirs/cosmo/data/legacysurvey/dr3.1/sweep/3.1/'
+dr = '3.1'
+sweep_dir = '/global/project/projectdirs/cosmo/data/legacysurvey/dr3.1/sweep/3.1/'
 
-top_dir = '/project/projectdirs/desi/target/analysis/truth'
-# top_dir = '/global/project/projectdirs/desi/users/rongpu/truth'
-##########
+parent_dir = '/global/project/projectdirs/desi/users/rongpu/truth/parent/'
+output_dir = '/global/project/projectdirs/desi/users/rongpu/truth/dr3.1/mystuff/'
+plot_path = '/global/project/projectdirs/desi/users/rongpu/truth/qaplots/dr3.1/decals_match_saga/'
+
+ra_col = 'RA'
+dec_col = 'DEC'
+search_radius = 1.
+cat2_filenames = ['saga_spectra_june2017.fits']
+output_filenames = ['decals-dr'+dr+'-saga_spectra_june2017.fits']
+ext = None
+
+#################################################################################
 
 save_q = True # save catalog
 region_q = True # match only overlapping regions to reduce computation time
 correct_offset_q = True
 plot_q = True
 
-parser = argparse.ArgumentParser()
-parser.add_argument('catalog')
-parser.add_argument("--test", action="store_true")
-args = parser.parse_args()
-# Only 1/10 of the cat2 ojects are used if testing is enabled
-testing_q = args.test
-
-cat_info = catalog_info(args.catalog, dr)
-ra_col, dec_col, search_radius, cat2_filenames, output_filenames, plot_path, ext = cat_info
-plot_path = os.path.join(top_dir, plot_path)
-
-parent_dir = os.path.join(top_dir, 'parent/')
-output_dir = os.path.join(top_dir, 'dr'+dr+'/allmatches/')
 
 cat1_paths = glob.glob(os.path.join(sweep_dir, '*.fits'))
 
@@ -80,14 +53,10 @@ for cat2_index in range(len(cat2_filenames)):
 
     cat2 = fitsio.read(cat2_path, columns=[ra_col, dec_col], ext=ext)
 
-    if testing_q:
-        cat2 = cat2[::10]
-
     # Case sensitive if fitsio is used
     ra2full = np.array(cat2[ra_col])
     dec2full = np.array(cat2[dec_col])
 
-        
     file_count = 0
     total_duplicates = 0
     match_count = 0
@@ -126,9 +95,6 @@ for cat2_index in range(len(cat2_filenames)):
             print('%d out of %d objects in cat2 are in the overlapping region'%(np.sum(mask), len(mask)))
         
         cat1 = fitsio.read(cat1_path, ext=1)
-
-        if testing_q:
-            cat1 = cat1[::10]
 
         ra1 = np.array(cat1['RA'])
         dec1 = np.array(cat1['DEC'])

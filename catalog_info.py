@@ -15,8 +15,8 @@ def catalog_info(catalog, dr):
     Return the catalog information necessary for reading the catalog.
     '''
 
-    # Read from the first HDU by default
-    ext = 0
+    # by default use the default fitsio setting
+    ext = None
 
     if catalog.lower()=='ages':
         # RA and Dec columns in cat2
@@ -36,7 +36,6 @@ def catalog_info(catalog, dr):
         cat2_filenames = ['sdss-specObj-dr14-unique-trimmed.fits']
         output_filenames = ['decals-dr'+dr+'-sdss-specObj-dr14-unique-trimmed.fits']
         plot_path = 'qaplots/dr'+dr+'/decals_match_sdss_dr14/'
-        ext = 1
     elif catalog.lower()=='eboss':
         # RA and Dec columns in cat2
         ra_col = 'RA'
@@ -163,7 +162,6 @@ def catalog_info(catalog, dr):
         cat2_filenames = ['GAMA-DR2-SpecObj.fits']
         output_filenames = ['decals-dr'+dr+'-GAMA-DR2-SpecObj.fits']
         plot_path = 'qaplots/dr'+dr+'/decals_match_gama/'
-        ext = 1
     elif catalog.lower()=='wigglez':
         # RA and Dec columns in cat2
         ra_col = 'RA'
@@ -173,7 +171,6 @@ def catalog_info(catalog, dr):
         cat2_filenames = ['wigglez_dr1_unique.fits']
         output_filenames = ['decals-dr'+dr+'-wigglez_dr1_unique.fits']
         plot_path = 'qaplots/dr'+dr+'/decals_match_wigglez/'
-        ext = 1
     else:
         raise ValueError('ERROR: '+catalog+' not found!')
 
