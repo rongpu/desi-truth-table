@@ -37,11 +37,8 @@ from catalog_matching_scatter_plot import scatter_plot
 start = time.clock()
 
 ##########
-dr = '4.0'
-sweep_dir = '/global/project/projectdirs/cosmo/data/legacysurvey/dr4/sweep/4.0/'
-
-# dr = '3.1'
-# sweep_dir = '/global/project/projectdirs/cosmo/data/legacysurvey/dr3.1/sweep/3.1/'
+dr = '5.0'
+sweep_dir = '/global/project/projectdirs/cosmo/data/legacysurvey/dr5/sweep/5.0/'
 
 top_dir = '/project/projectdirs/desi/target/analysis/truth'
 # top_dir = '/global/project/projectdirs/desi/users/rongpu/truth'

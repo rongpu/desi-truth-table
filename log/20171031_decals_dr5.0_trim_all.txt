@@ -1,0 +1,92 @@
+ages_reduced.fits
+fraction of matched objects: 28526/40622 = 0.7022303185466003
+
+COSMOS2015_Laigle+_v1.1.fits
+fraction of matched objects: 271463/1182108 = 0.22964314597312596
+
+deep2-field1.fits.gz
+No match
+
+deep2-field2.fits.gz
+fraction of matched objects: 6683/9602 = 0.6960008331597584
+
+deep2-field3.fits.gz
+fraction of matched objects: 11289/11986 = 0.9418488236275655
+
+deep2-field4.fits.gz
+fraction of matched objects: 10328/11290 = 0.9147918511957485
+
+VIPERS_W1_SPECTRO_PDR2.fits
+fraction of matched objects: 59189/60528 = 0.9778780068728522
+
+VIPERS_W4_SPECTRO_PDR2.fits
+fraction of matched objects: 29344/30979 = 0.9472223118886988
+
+spies.fits.gz
+fraction of matched objects: 1590276/1680661 = 0.9462205644088844
+
+cfhtls-d2-i.fits.gz
+fraction of matched objects: 111658/376060 = 0.2969153858426847
+
+cfhtls-d2-r.fits.gz
+fraction of matched objects: 110648/385367 = 0.28712370285987127
+
+cfhtls-d3-i.fits.gz
+No match
+
+cfhtls-d3-r.fits.gz
+No match
+
+cosmos-acs.fits.gz
+fraction of matched objects: 188632/1177274 = 0.16022778044873157
+
+cesam_vvds_spCDFS_DEEP_Full.fits
+No match
+
+cesam_vvds_spF02_DEEP_Full.fits
+fraction of matched objects: 10394/11356 = 0.9152870729129975
+
+cesam_vvds_spF02_UDEEP_Full.fits
+fraction of matched objects: 932/1125 = 0.8284444444444444
+
+cesam_vvds_spF10_WIDE_Full.fits
+fraction of matched objects: 5856/6229 = 0.940118799165195
+
+cesam_vvds_spF14_WIDE_Full.fits
+fraction of matched objects: 7071/7358 = 0.9609948355531395
+
+cesam_vvds_spF22_WIDE_Full.fits
+fraction of matched objects: 12884/13291 = 0.9693777744338274
+
+shela_irac_v1.3_flux_cat.fits
+fraction of matched objects: 1761834/2294786 = 0.7677552503806455
+
+alldeep.egs.uniq.2012jun13.fits.gz
+No match
+
+3dhst.v4.1.5.master.aegis.fits
+No match
+
+3dhst.v4.1.5.master.cosmos.fits
+fraction of matched objects: 6588/33879 = 0.1944567431152041
+
+3dhst.v4.1.5.master.goodsn.fits
+No match
+
+3dhst.v4.1.5.master.goodss.fits
+No match
+
+3dhst.v4.1.5.master.uds.fits
+fraction of matched objects: 6483/44102 = 0.14700013604825177
+
+FMOS_COSMOS_v1.0.fits
+fraction of matched objects: 885/1153 = 0.7675628794449263
+
+mosdef_zcat.16aug2016.fits
+fraction of matched objects: 190/1002 = 0.18962075848303392
+
+GAMA-DR2-SpecObj.fits
+fraction of matched objects: 70956/72213 = 0.9825931618960575
+
+wigglez_dr1_unique.fits
+fraction of matched objects: 75522/81092 = 0.9313125832387905

@@ -29,13 +29,20 @@ __Catalogs currently included:__
      CFHTLS
      VIPERS
      SpIES
-     Stripe 82 Stars
      VVDS
      SHELA
+     SDSS
+     eBOSS
+     SPIES
+     3D-HST
+     FMOST-COSMOS
+     MOSDEF
+     GAMA
+     WiggleZ
 
 ---------------------------------------------------------------------------
 Thing to modify for a new DECaLS DR: 
 
     decals_matching.py: dr, top_dir, sweep_dir 
     trim_matched_catalogs: dr, top_dir 
-
+    __column names__
