@@ -20,7 +20,6 @@ def get_decals_filename(filename):
 catalog_list = [
     'ages', 
     'sdss', 
-    'eboss', 
     'cosmos_zphot', 
     'cosmos_acs', 
     'spies', 
@@ -56,9 +55,9 @@ for catalog in catalog_list:
         spec_output_path = os.path.join(output_dir, spec_output_filename)
 
         if not os.path.exists(decals_path):
-            print('No match')
+            print('No match\n')
         elif os.path.isfile(spec_output_path):
-            print('Trimmed files already exist')
+            print('Trimmed files already exist\n')
         else:
             cat1 = fits.getdata(decals_path)
             cat2 = fits.getdata(spec_path, ext=ext)
