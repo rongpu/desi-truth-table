@@ -5,7 +5,7 @@ import numpy as np
 from astropy.io import fits
 import os
 
-dr='3.1'
+dr='5.0'
 # top_dir = '/project/projectdirs/desi/target/analysis/truth'
 top_dir = '/global/project/projectdirs/desi/users/rongpu/truth'
 
@@ -20,8 +20,7 @@ def get_decals_filename(filename):
     return 'decals-dr'+dr+'-'+filename
 
 filelist = [
-    'hsc_deep_r_24.5.fits',
-    'hsc_udeep_r_24.5.fits',
+    'saga_spectra_june2017.fits'
 ]
 
 
