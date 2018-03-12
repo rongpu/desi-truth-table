@@ -1,0 +1,89 @@
+ages_reduced.fits
+fraction of matched objects: 38300/40622 = 0.9428388557924278
+
+sdss-specObj-dr14-unique-trimmed.fits
+fraction of matched objects: 1455017/4311571 = 0.3374679438190859
+
+eBOSS-DR14-redmonsterAll-v5_10_0-radec-added.fits
+No match
+COSMOS2015_Laigle+_v1.1.fits
+fraction of matched objects: 16543/1182108 = 0.013994491197081823
+
+cosmos-acs.fits.gz
+fraction of matched objects: 9926/1177274 = 0.008431342236386771
+
+spies.fits.gz
+fraction of matched objects: 655133/1680661 = 0.38980674865424975
+
+deep2-field1.fits.gz
+fraction of matched objects: 13842/17441 = 0.7936471532595608
+
+deep2-field2.fits.gz
+fraction of matched objects: 7722/9602 = 0.8042074567798375
+
+deep2-field3.fits.gz
+fraction of matched objects: 2107/11986 = 0.17578841982312698
+
+deep2-field4.fits.gz
+fraction of matched objects: 5021/11290 = 0.44472984942426924
+
+VIPERS_W1_SPECTRO_PDR2.fits
+No match
+VIPERS_W4_SPECTRO_PDR2.fits
+fraction of matched objects: 25621/30979 = 0.8270441266664514
+
+cfhtls-d2-i.fits.gz
+fraction of matched objects: 5344/376060 = 0.014210498324735414
+
+cfhtls-d2-r.fits.gz
+fraction of matched objects: 5264/385367 = 0.013659706202139778
+
+cfhtls-d3-i.fits.gz
+fraction of matched objects: 84422/420973 = 0.20054017716100558
+
+cfhtls-d3-r.fits.gz
+fraction of matched objects: 84043/442647 = 0.18986460994878537
+
+cesam_vvds_spCDFS_DEEP_Full.fits
+No match
+cesam_vvds_spF02_DEEP_Full.fits
+No match
+cesam_vvds_spF02_UDEEP_Full.fits
+No match
+cesam_vvds_spF10_WIDE_Full.fits
+fraction of matched objects: 73/6229 = 0.011719377107079787
+
+cesam_vvds_spF14_WIDE_Full.fits
+No match
+cesam_vvds_spF22_WIDE_Full.fits
+fraction of matched objects: 4366/13291 = 0.32849296516439697
+
+shela_irac_v1.3_flux_cat.fits
+fraction of matched objects: 11149/2294786 = 0.004858405097468784
+
+alldeep.egs.uniq.2012jun13.fits.gz
+fraction of matched objects: 18195/23822 = 0.763789774158341
+
+3dhst.v4.1.5.master.aegis.fits
+fraction of matched objects: 4652/41200 = 0.1129126213592233
+
+3dhst.v4.1.5.master.cosmos.fits
+No match
+3dhst.v4.1.5.master.goodsn.fits
+fraction of matched objects: 2406/38279 = 0.0628543065388333
+
+3dhst.v4.1.5.master.goodss.fits
+No match
+3dhst.v4.1.5.master.uds.fits
+No match
+FMOS_COSMOS_v1.0.fits
+fraction of matched objects: 2/1153 = 0.0017346053772766695
+
+mosdef_zcat.16aug2016.fits
+fraction of matched objects: 211/1002 = 0.21057884231536927
+
+GAMA-DR2-SpecObj.fits
+No match
+wigglez_dr1_unique.fits
+fraction of matched objects: 8455/81092 = 0.10426429240862231
+
