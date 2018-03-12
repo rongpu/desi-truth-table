@@ -4,7 +4,7 @@ from astropy.io import fits
 import os
 from catalog_info import catalog_info
 
-dr='5.0'
+dr = '6.0'
 top_dir = '/project/projectdirs/desi/target/analysis/truth'
 # top_dir = '/global/project/projectdirs/desi/users/rongpu/truth'
 

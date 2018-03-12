@@ -14,15 +14,18 @@ from catalog_matching_scatter_plot import scatter_plot
 start = time.clock()
 
 #################################################################################
+dr = '5.0'
+sweep_dir = '/global/project/projectdirs/cosmo/data/legacysurvey/dr5/sweep/5.0/'
+
 # dr = '4.0'
 # sweep_dir = '/global/project/projectdirs/cosmo/data/legacysurvey/dr4/sweep/4.0/'
 
-dr = '3.1'
-sweep_dir = '/global/project/projectdirs/cosmo/data/legacysurvey/dr3.1/sweep/3.1/'
+# dr = '3.1'
+# sweep_dir = '/global/project/projectdirs/cosmo/data/legacysurvey/dr3.1/sweep/3.1/'
 
 parent_dir = '/global/project/projectdirs/desi/users/rongpu/truth/parent/'
-output_dir = '/global/project/projectdirs/desi/users/rongpu/truth/dr3.1/mystuff/'
-plot_path = '/global/project/projectdirs/desi/users/rongpu/truth/qaplots/dr3.1/decals_match_saga/'
+output_dir = '/global/project/projectdirs/desi/users/rongpu/truth/dr5.0/mystuff/'
+plot_path = '/global/project/projectdirs/desi/users/rongpu/truth/qaplots/dr5.0/decals_match_saga/'
 
 ra_col = 'RA'
 dec_col = 'DEC'
@@ -39,7 +42,7 @@ correct_offset_q = True
 plot_q = True
 
 
-cat1_paths = glob.glob(os.path.join(sweep_dir, '*.fits'))
+cat1_paths = sorted(glob.glob(os.path.join(sweep_dir, '*.fits')))
 
 for cat2_index in range(len(cat2_filenames)):
 

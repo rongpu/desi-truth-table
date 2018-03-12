@@ -37,8 +37,8 @@ from catalog_matching_scatter_plot import scatter_plot
 start = time.clock()
 
 ##########
-dr = '5.0'
-sweep_dir = '/global/project/projectdirs/cosmo/data/legacysurvey/dr5/sweep/5.0/'
+dr = '6.0'
+sweep_dir = '/global/project/projectdirs/cosmo/data/legacysurvey/dr6/sweep/6.0/'
 
 top_dir = '/project/projectdirs/desi/target/analysis/truth'
 # top_dir = '/global/project/projectdirs/desi/users/rongpu/truth'
@@ -63,7 +63,7 @@ plot_path = os.path.join(top_dir, plot_path)
 parent_dir = os.path.join(top_dir, 'parent/')
 output_dir = os.path.join(top_dir, 'dr'+dr+'/allmatches/')
 
-cat1_paths = glob.glob(os.path.join(sweep_dir, '*.fits'))
+cat1_paths = sorted(glob.glob(os.path.join(sweep_dir, '*.fits')))
 
 for cat2_index in range(len(cat2_filenames)):
 
