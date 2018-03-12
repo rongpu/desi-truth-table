@@ -1,6 +1,9 @@
 ages_reduced.fits
 fraction of matched objects: 28526/40622 = 0.7022303185466003
 
+sdss-specObj-dr14-unique-trimmed.fits
+fraction of matched objects: 2444841/4311571 = 0.5670418044837949
+
 COSMOS2015_Laigle+_v1.1.fits
 fraction of matched objects: 271463/1182108 = 0.22964314597312596
 
