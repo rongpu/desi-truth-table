@@ -177,6 +177,15 @@ def catalog_info(catalog, dr):
         cat2_filenames = ['wigglez_dr1_unique.fits']
         output_filenames = [get_decals_filename(cat2_filenames[0], dr)]
         plot_path = 'qaplots/dr'+dr+'/decals_match_wigglez/'
+    elif catalog.lower()=='spies_dr1':
+        # RA and Dec columns in cat2
+        ra_col = 'ra'
+        dec_col = 'dec'
+        # Search radius in arcsec
+        search_radius = 1.
+        filelist_path = '/global/homes/r/rongpu/git/desi-truth-table/misc/spies_dr1_filelist.txt'
+        cat2_filenames, output_filenames = get_filenames(filelist_path, dr)
+        plot_path = 'qaplots/dr'+dr+'/decals_match_spies_dr1/'
     else:
         raise ValueError('ERROR: '+catalog+' not found!')
 
