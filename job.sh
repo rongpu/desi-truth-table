@@ -1,16 +1,22 @@
-python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" ages
-python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" sdss
-python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" cosmos_zphot
-python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" cosmos_acs
-python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" spies
-python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" deep2
-python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" vipers
-python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" cfhtls
-python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" vvds
-python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" shela
-python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" deep3
-python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 3d-hst
-python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" fmost-cosmos
-python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" mosdef
-python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" gama
-python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" wigglez
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 deep2
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 deep3
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 3d-hst-v4.1.5
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 ages
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 mosdef-16aug2016
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 vipers-pdr2
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 gama-dr2
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 sdss-dr14
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 eboss-dr14
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 cosmos2015-v1.1
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 cosmos-acs
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 spies-stripe82
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 fmost-cosmos-v1.0
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 cfhtls
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 vvds
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 spies-dr1
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 shela
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 wigglez-dr1
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 6dfgs
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 2dfgrs
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 2mrs
+python "/global/u2/r/rongpu/git/desi-truth-table/decals_matching.py" 5.0 gama-dr3
