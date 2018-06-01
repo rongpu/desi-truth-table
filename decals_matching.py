@@ -167,6 +167,7 @@ for cat2_index in range(len(cat2_fns)):
         print('Number of initial matches = %d'%count1)
 
         # Correct for systematic offsets
+        ra_offset, dec_offset = 0., 0.
         # Require at least 100 matches for computing the offsets
         if (correct_offset_q) and (np.sum(mask2)>100):
             d_ra = ra2[mask2] - ra1[idx[mask2]]
@@ -182,7 +183,7 @@ for cat2_index in range(len(cat2_fns)):
             dec_offset = np.mean(d_dec)
             ra1 = ra1 + ra_offset
             dec1 = dec1 + dec_offset
-            
+
             print('RA  offset = %f arcsec'%(ra_offset*3600))
             print('Dec offset = %f arcsec'%(dec_offset*3600))
             skycat1 = SkyCoord(ra1*u.degree,dec1*u.degree, frame='icrs')
@@ -288,7 +289,7 @@ for cat2_index in range(len(cat2_fns)):
 
             markersize = np.max([0.005, np.min([10, 0.2*100000/np.sum(mask2full)])])
             ax = scatter_plot(d_ra, d_dec, markersize=markersize, alpha=0.4)
-            if correct_offset_q:
+            if correct_offset_q and (ra_offset!=0) and (dec_offset!=0):
                 ax.plot(ra_offset*3600, dec_offset*3600, 'r.', markersize=9)
             
             if not os.path.exists(plot_path):
