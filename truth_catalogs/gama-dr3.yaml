@@ -3,3 +3,4 @@ dec_col: "DEC"
 search_radius: 1. # arcsec
 filenames:
   - "GAMA-DR3-SpecObj.fits"
+ext: 1
