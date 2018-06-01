@@ -15,7 +15,7 @@
 # - Objects with no match are assigned '' for string and 0 for numbers
 
 # cat1 - multiple catalog files - DECaLS
-# cat2 - single or multiple catalog files - some other catalog
+# cat2 - single or multiple catalog files - the "truth" catalog
 
 # astropy.fits cannot be used because it does not allow this:
 # cat_stack[mask2full] = cat1[mask2full]
@@ -61,7 +61,7 @@ sweep_dir = os.path.join('/global/project/projectdirs/cosmo/data/legacysurvey/',
 testing_q = args.test
 
 cat_info = catalog_info(args.catalog, args.ls_dr)
-ra_col, dec_col, search_radius, cat2_fns, cat1_output_fns, plot_path, ext = cat_info
+ra_col, dec_col, search_radius, cat2_fns, cat1_output_fns, plot_path, ext, unique_q = cat_info
 plot_path = os.path.join(top_dir, plot_path)
 
 parent_dir = os.path.join(top_dir, 'parent/')
@@ -195,41 +195,42 @@ for cat2_index in range(len(cat2_fns)):
         notmask2 = ~mask2
         idx[notmask2] = -99
 
-        #------------------------------removing doubly matched objects------------------------------
+        #---- Only remove doubly matched objects if cat2 is unique (no duplicates) ------------
+        if unique_q:
 
-        # foo keeps track of cat2 (reduced) index for idx and d2d
-        foo = np.arange(len(cat2))
-        # Sort by idx to find doubly matched objects
-        sort_index = idx.argsort()
-        idx.sort()
-        d2d = d2d[sort_index]
-        foo = foo[sort_index]
+            # foo keeps track of cat2 (reduced) index for idx and d2d
+            foo = np.arange(len(cat2))
+            # Sort by idx to find doubly matched objects
+            sort_index = idx.argsort()
+            idx.sort()
+            d2d = d2d[sort_index]
+            foo = foo[sort_index]
 
-        # Find the first non-zero idx
-        i = np.argmax(idx>=0)
-        # Find doubly matched objects, keep only the nearest match
-        while i<=len(idx)-2:
-            if idx[i]>=0 and idx[i]==idx[i+1]:
-                end = i+1
-                while end+1<=len(idx)-1 and idx[i]==idx[end+1]:
-                    end = end+1
-                findmin = np.argmin(d2d[i:end+1])
-                for j in range(i,end+1):
-                    if j!=i+findmin:
-                        idx[j]=-99
-                i = end+1
-            else:
-                i = i+1
-        count2 = np.sum(idx>=0)
+            # Find the first non-zero idx
+            i = np.argmax(idx>=0)
+            # Find doubly matched objects, keep only the nearest match
+            while i<=len(idx)-2:
+                if idx[i]>=0 and idx[i]==idx[i+1]:
+                    end = i+1
+                    while end+1<=len(idx)-1 and idx[i]==idx[end+1]:
+                        end = end+1
+                    findmin = np.argmin(d2d[i:end+1])
+                    for j in range(i,end+1):
+                        if j!=i+findmin:
+                            idx[j]=-99
+                    i = end+1
+                else:
+                    i = i+1
+            count2 = np.sum(idx>=0)
 
-        print('Number of doubly matched objects = %d'%(count1 - count2))
-        print('Number of final matches = %d'%count2)
+            print('Number of doubly matched objects = %d'%(count1 - count2))
+            print('Number of final matches = %d'%count2)
 
-        # Restore idx and d2d to original order
-        sort_index = foo.argsort()
-        foo.sort()
-        idx = idx[sort_index]
-        d2d = d2d[sort_index]
+            # Restore idx and d2d to original order
+            sort_index = foo.argsort()
+            foo.sort()
+            idx = idx[sort_index]
+            d2d = d2d[sort_index]
 
         #--------------------------- create line-matched catalog -----------------------------
         # See Evernote for explanation

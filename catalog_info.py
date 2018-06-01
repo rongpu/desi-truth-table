@@ -18,6 +18,9 @@ def catalog_info(catalog, dr):
     # by default use the default fitsio setting
     ext = None
 
+    # by default the catalogs are unique
+    unique_q = True
+
     catalog_yaml_fn = os.path.join('truth_catalogs', catalog+'.yaml')
     try:
         with open(catalog_yaml_fn) as f:
@@ -33,5 +36,7 @@ def catalog_info(catalog, dr):
     plot_path = 'qaplots/dr'+dr+'/decals_match_'+catalog+'/'
     if 'ext' in cat2_dict:
         ext = cat2_dict['ext']
+    if 'unique_q' in cat2_dict:
+        unique_q = cat2_dict['unique_q']
 
-    return ra_col, dec_col, search_radius, cat2_filenames, output_filenames, plot_path, ext
+    return ra_col, dec_col, search_radius, cat2_filenames, output_filenames, plot_path, ext, unique_q
