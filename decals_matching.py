@@ -38,8 +38,8 @@ from catalog_matching_scatter_plot import scatter_plot
 
 time_start = time.clock()
 
-top_dir = '/project/projectdirs/desi/target/analysis/truth'
-# top_dir = '/global/project/projectdirs/desi/users/rongpu/truth'
+# top_dir = '/project/projectdirs/desi/target/analysis/truth'
+top_dir = '/global/project/projectdirs/desi/users/rongpu/truth'
 
 save_q = True # save catalog
 region_q = True # match only overlapping regions to reduce computation time
@@ -195,11 +195,12 @@ for cat2_index in range(len(cat2_fns)):
         notmask2 = ~mask2
         idx[notmask2] = -99
 
+        # foo keeps track of cat2 (reduced) index for idx and d2d
+        foo = np.arange(len(idx))
+
         #---- Only remove doubly matched objects if cat2 is unique (no duplicates) ------------
         if unique_q:
-
-            # foo keeps track of cat2 (reduced) index for idx and d2d
-            foo = np.arange(len(cat2))
+            
             # Sort by idx to find doubly matched objects
             sort_index = idx.argsort()
             idx.sort()
@@ -247,7 +248,7 @@ for cat2_index in range(len(cat2_fns)):
         # cat1_matchid is the cat2 (original) index for cat1 objects
         cat1_matchid = -99.*np.ones(len(cat1))
         if region_q:
-            cat1_matchid[idx[mask2]] = bar[foo[mask2]]
+            cat1_matchid[idx[mask2]] = bar[mask2]
         else:
             cat1_matchid[idx[mask2]] = foo[mask2]
         mask1 = cat1_matchid>=0
