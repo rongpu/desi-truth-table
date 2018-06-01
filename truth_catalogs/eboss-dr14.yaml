@@ -1,0 +1,5 @@
+ra_col: "RA"
+dec_col: "DEC"
+search_radius: 1. # arcsec
+filenames:
+  - "eBOSS-DR14-redmonsterAll-v5_10_0-radec-added.fits"

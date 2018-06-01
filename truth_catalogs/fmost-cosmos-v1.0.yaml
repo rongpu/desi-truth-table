@@ -1,0 +1,6 @@
+ra_col: "RA"
+dec_col: "DEC"
+search_radius: 1. # arcsec
+filenames:
+  - "FMOS_COSMOS_v1.0.fits"
+ 

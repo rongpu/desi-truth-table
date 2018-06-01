@@ -1,2 +1,0 @@
-SpIES_ch1_only.fits
-SpIES_ch1andch2.fits

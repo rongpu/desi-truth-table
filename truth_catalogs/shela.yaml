@@ -1,0 +1,5 @@
+ra_col: "RA"
+dec_col: "DEC"
+search_radius: 3. # arcsec
+cat2_filenames:
+  - "shela_irac_v1.3_flux_cat.fits"

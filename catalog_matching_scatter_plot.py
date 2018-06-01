@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.ticker import NullFormatter
 
-def scatter_plot(d_ra, d_dec, title='', x_label='$\\mathbf{RA_{cat2} - RA_{cat1}(arcsec)}$', y_label='$\\mathbf{dec_{cat2} - dec_{cat1}(arcsec)}$'):
+def scatter_plot(d_ra, d_dec, markersize=1, alpha=1):
     '''
     INPUTS:
 
@@ -30,17 +30,10 @@ def scatter_plot(d_ra, d_dec, title='', x_label='$\\mathbf{RA_{cat2} - RA_{cat1}
     axHistx = plt.axes(rect_histx)
     axHisty = plt.axes(rect_histy)
 
-    # # no labels
-    # axHistx.xaxis.set_major_formatter(nullfmt)
-    # axHisty.yaxis.set_major_formatter(nullfmt)
+    axScatter.plot(d_ra, d_dec, 'k.', markersize=markersize, alpha=alpha)
 
-    # the scatter plot
-    # mask = np.logical_and(np.abs(d_ra)<1.66, np.abs(d_dec)<1.)
-    # axScatter.plot(d_ra[mask], d_dec[mask], 'k.', markersize=1)
-    axScatter.plot(d_ra, d_dec, 'k.', markersize=1)
-
-    axHistx.hist(d_ra, bins=100, histtype='step', color='k', linewidth=2)
-    axHisty.hist(d_dec, bins=100, histtype='step', color='k', linewidth=2, orientation='horizontal')
+    axHistx.hist(d_ra, bins=100, histtype='step', color='r', linewidth=2)
+    axHisty.hist(d_dec, bins=100, histtype='step', color='r', linewidth=2, orientation='horizontal')
 
     axHistx.set_xlim(axScatter.get_xlim())
     axHisty.set_ylim(axScatter.get_ylim())
@@ -48,24 +41,9 @@ def scatter_plot(d_ra, d_dec, title='', x_label='$\\mathbf{RA_{cat2} - RA_{cat1}
     axHistx.axis('off')
     axHisty.axis('off')
 
-    axScatter.axhline(0, color='k', linestyle='--', linewidth=1.2)
-    axScatter.axvline(0, color='k', linestyle='--', linewidth=1.2)
-    axScatter.set_xlabel(('$\\mathbf{RA_{cat2} - RA_{cat1}(arcsec)}$'))
-    axScatter.set_ylabel(('$\\mathbf{dec_{cat2} - dec_{cat1}(arcsec)}$'))
+    axScatter.axhline(0, color='r', linestyle='--', linewidth=1.2)
+    axScatter.axvline(0, color='r', linestyle='--', linewidth=1.2)
+    axScatter.set_xlabel('RA2 - RA1 (arcsec)}')
+    axScatter.set_ylabel('DEC2 - DEC1 (arcsec)}')
 
     return(axScatter)
-    # #--------------- ra dec histogram ---------------------
-
-    # plt.figure()
-    # plt.hist(d_ra,bins=50)
-    # plt.title('RA difference between cat2/3 and Terapix catalog')
-    # plt.xlabel('RA_cat2 - RA_cat1 (arcsec)')
-    # plt.grid()
-
-    # plt.figure()
-    # plt.hist(d_dec,50)
-    # plt.title('Dec difference between cat2/3 and Terapix catalog')
-    # plt.xlabel('Dec_cat2 - Dec_cat1 (arcsec)')
-    # plt.grid()
-
-    # plt.show()

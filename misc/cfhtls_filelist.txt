@@ -1,4 +1,0 @@
-cfhtls-d2-i.fits.gz
-cfhtls-d2-r.fits.gz
-cfhtls-d3-i.fits.gz
-cfhtls-d3-r.fits.gz

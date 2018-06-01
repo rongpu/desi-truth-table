@@ -1,0 +1,5 @@
+ra_col: "ALPHA_J2000"
+dec_col: "DELTA_J2000"
+search_radius: 1. # arcsec
+filenames:
+  - "COSMOS2015_Laigle+_v1.1.fits"

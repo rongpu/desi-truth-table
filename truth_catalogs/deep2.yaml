@@ -1,0 +1,8 @@
+ra_col: "RA"
+dec_col: "DEC"
+search_radius: 1. # arcsec
+filenames:
+  - "deep2-field1.fits.gz"
+  - "deep2-field2.fits.gz"
+  - "deep2-field3.fits.gz"
+  - "deep2-field4.fits.gz"

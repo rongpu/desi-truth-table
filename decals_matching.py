@@ -12,7 +12,6 @@
 # 3. Rearrange cat1 so that it is line-matched to cat2 and there's no duplicate
 # 4. Save the new cat1
 # Note:
-# - 1 arcsec search radius
 # - Objects with no match are assigned '' for string and 0 for numbers
 
 # cat1 - multiple catalog files - DECaLS
@@ -20,6 +19,9 @@
 
 # astropy.fits cannot be used because it does not allow this:
 # cat_stack[mask2full] = cat1[mask2full]
+
+# To run this script, e.g. match Legacy Survey DR6 to DEEP2:
+# python decals_matching 6.0 deep2
 
 from __future__ import division, print_function
 import matplotlib
@@ -34,15 +36,10 @@ import fitsio
 from catalog_info import catalog_info
 from catalog_matching_scatter_plot import scatter_plot
 
-start = time.clock()
-
-##########
-dr = '6.0'
-sweep_dir = '/global/project/projectdirs/cosmo/data/legacysurvey/dr6/sweep/6.0/'
+time_start = time.clock()
 
 top_dir = '/project/projectdirs/desi/target/analysis/truth'
 # top_dir = '/global/project/projectdirs/desi/users/rongpu/truth'
-##########
 
 save_q = True # save catalog
 region_q = True # match only overlapping regions to reduce computation time
@@ -50,32 +47,45 @@ correct_offset_q = True
 plot_q = True
 
 parser = argparse.ArgumentParser()
+parser.add_argument('ls_dr')
 parser.add_argument('catalog')
 parser.add_argument("--test", action="store_true")
 args = parser.parse_args()
+if len(args.ls_dr)!=3:
+    raise ValueError('ls_dr not in the correct format!')
+
+sweep_dir = os.path.join('/global/project/projectdirs/cosmo/data/legacysurvey/', 
+    'dr'+args.ls_dr[0], 'sweep', args.ls_dr)
+
 # Only 1/10 of the cat2 ojects are used if testing is enabled
 testing_q = args.test
 
-cat_info = catalog_info(args.catalog, dr)
-ra_col, dec_col, search_radius, cat2_filenames, output_filenames, plot_path, ext = cat_info
+cat_info = catalog_info(args.catalog, args.ls_dr)
+ra_col, dec_col, search_radius, cat2_fns, cat1_output_fns, plot_path, ext = cat_info
 plot_path = os.path.join(top_dir, plot_path)
 
 parent_dir = os.path.join(top_dir, 'parent/')
-output_dir = os.path.join(top_dir, 'dr'+dr+'/allmatches/')
+output_dir_allmatches = os.path.join(top_dir, 'dr'+args.ls_dr+'/allmatches/')
+output_dir_trimmed = os.path.join(top_dir, 'dr'+args.ls_dr+'/trimmed/')
 
 cat1_paths = sorted(glob.glob(os.path.join(sweep_dir, '*.fits')))
 
-for cat2_index in range(len(cat2_filenames)):
+for cat2_index in range(len(cat2_fns)):
 
-    cat2_filename = cat2_filenames[cat2_index]
-    output_filename = output_filenames[cat2_index]
-    cat2_path = os.path.join(parent_dir, cat2_filename)
-    output_path = os.path.join(output_dir, output_filename)
-    print(cat2_filename)
+    cat2_fn = cat2_fns[cat2_index]
+    print(cat2_fn)
+
+    cat2_path = os.path.join(parent_dir, cat2_fn)
+    cat1_output_fn = cat1_output_fns[cat2_index]
+    cat1_output_path_allmatches = os.path.join(output_dir_allmatches, cat1_output_fn)
+
+    cat1_output_path_trim = os.path.join(output_dir_trimmed, cat1_output_fn[:-5]+'-trim.fits')
+    cat2_output_fn = cat2_fn[:cat2_fn.find('.fits')]+'-trim.fits'
+    cat2_output_path_trim = os.path.join(output_dir_trimmed, cat2_output_fn)
 
     # -----------------------------------------------------------------------------------------
 
-    cat2 = fitsio.read(cat2_path, columns=[ra_col, dec_col], ext=ext)
+    cat2 = fitsio.read(cat2_path, ext=ext)
 
     if testing_q:
         cat2 = cat2[::10]
@@ -243,10 +253,20 @@ for cat2_index in range(len(cat2_filenames)):
 
         if plot_q & (np.sum(mask2full)>1):
 
-            d_ra_hist=(cat2[ra_col][mask2full]-cat_stack['RA'][mask2full])*3600    # in arcsec
-            d_dec_hist=(cat2[dec_col][mask2full]-cat_stack['DEC'][mask2full])*3600 # in arcsec
+            d_ra = (cat2[ra_col][mask2full]-cat_stack['RA'][mask2full])*3600    # in arcsec
+            d_dec = (cat2[dec_col][mask2full]-cat_stack['DEC'][mask2full])*3600 # in arcsec
+            
+            # Deal with pairs that cross RA=0
+            mask = d_ra > 180*3600
+            d_ra[mask] = d_ra[mask] - 360.*3600
+            mask = d_ra < -180*3600
+            d_ra[mask] = d_ra[mask] + 360.*3600
 
-            ax = scatter_plot(d_ra_hist, d_dec_hist)
+            # Convert to actual degrees:
+            d_ra = d_ra * np.cos(cat_stack['DEC'][mask2full]/180*np.pi)
+
+            markersize = np.max([0.005, np.min([10, 0.2*100000/np.sum(mask2full)])])
+            ax = scatter_plot(d_ra, d_dec, markersize=markersize, alpha=0.4)
             ax.plot(ra_offset*3600, dec_offset*3600, 'r.', markersize=9)
             
             if not os.path.exists(plot_path):
@@ -274,13 +294,26 @@ for cat2_index in range(len(cat2_filenames)):
             print('%d total overlapping duplicates'%total_duplicates)
 
         if save_q:
-            if not os.path.exists(output_dir):
-                os.makedirs(output_dir)
-            fitsio.write(output_path, cat_stack, clobber=False)
 
-        end = time.clock()
-        if match_count==0:
-            print('%f seconds'%(end-start))
-        start = end-start
+            # save the full line-matched catalog
+            if not os.path.exists(output_dir_allmatches):
+                os.makedirs(output_dir_allmatches)
+            fitsio.write(cat1_output_path_allmatches, cat_stack, clobber=False)
+
+            # save trimmed catalog: only keeping matched objects
+            mask = ~((cat_stack['RA']==0) & (cat_stack['DEC']==0))
+            print('fraction of matched objects: {}/{} = {}'
+                .format(np.sum(mask), len(cat_stack), np.sum(mask)/len(cat_stack)))
+            print()
+            cat1_trim = cat_stack[mask]
+            cat2_trim = cat2[mask]
+            if not os.path.exists(output_dir_trimmed):
+                os.makedirs(output_dir_trimmed)
+            fitsio.write(cat1_output_path_trim, cat1_trim)
+            fitsio.write(cat2_output_path_trim, cat2_trim)
+
+        time_end = time.clock()
+        print('%f seconds'%(time_end-time_start))
+        time_start = time_end-time_start
 
     print('\n------------------------------------------------------\n')

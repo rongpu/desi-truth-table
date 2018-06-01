@@ -1,0 +1,6 @@
+ra_col: "alpha"
+dec_col: "delta"
+search_radius: 1. # arcsec
+filenames:
+  - "VIPERS_W1_SPECTRO_PDR2.fits"
+  - "VIPERS_W4_SPECTRO_PDR2.fits"

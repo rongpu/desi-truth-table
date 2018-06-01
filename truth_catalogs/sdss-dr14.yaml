@@ -1,0 +1,5 @@
+ra_col: "PLUG_RA"
+dec_col: "PLUG_DEC"
+search_radius: 1. # arcsec
+filenames:
+  - "sdss-specObj-dr14-unique-trimmed.fits"

@@ -1,0 +1,5 @@
+ra_col: "RA"
+dec_col: "DEC"
+search_radius: 1. # arcsec
+cat2_filenames:
+  - "wigglez_dr1_unique.fits"
