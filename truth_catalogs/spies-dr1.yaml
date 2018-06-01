@@ -1,6 +1,6 @@
 ra_col: "ra"
 dec_col: "dec"
 search_radius: 3. # arcsec
-filelist_path:
+filenames:
   - "SpIES_ch1_only.fits"
   - "SpIES_ch1andch2.fits"
