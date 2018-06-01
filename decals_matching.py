@@ -38,8 +38,8 @@ from catalog_matching_scatter_plot import scatter_plot
 
 time_start = time.clock()
 
-# top_dir = '/project/projectdirs/desi/target/analysis/truth'
-top_dir = '/global/project/projectdirs/desi/users/rongpu/truth'
+top_dir = '/project/projectdirs/desi/target/analysis/truth'
+# top_dir = '/global/project/projectdirs/desi/users/rongpu/truth'
 
 save_q = True # save catalog
 region_q = True # match only overlapping regions to reduce computation time
