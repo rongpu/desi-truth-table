@@ -167,7 +167,8 @@ for cat2_index in range(len(cat2_fns)):
         print('Number of initial matches = %d'%count1)
 
         # Correct for systematic offsets
-        if correct_offset_q:
+        # Require at least 100 matches for computing the offsets
+        if (correct_offset_q) and (np.sum(mask2)>100):
             ra_offset = np.mean(ra2[mask2] - ra1[idx[mask2]])
             dec_offset = np.mean(dec2[mask2] - dec1[idx[mask2]])
             ra1 = ra1 + ra_offset
@@ -277,7 +278,8 @@ for cat2_index in range(len(cat2_fns)):
 
             markersize = np.max([0.005, np.min([10, 0.2*100000/np.sum(mask2full)])])
             ax = scatter_plot(d_ra, d_dec, markersize=markersize, alpha=0.4)
-            ax.plot(ra_offset*3600, dec_offset*3600, 'r.', markersize=9)
+            if correct_offset_q:
+                ax.plot(ra_offset*3600, dec_offset*3600, 'r.', markersize=9)
             
             if not os.path.exists(plot_path):
                 os.makedirs(plot_path)
