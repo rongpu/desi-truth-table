@@ -169,10 +169,20 @@ for cat2_index in range(len(cat2_fns)):
         # Correct for systematic offsets
         # Require at least 100 matches for computing the offsets
         if (correct_offset_q) and (np.sum(mask2)>100):
-            ra_offset = np.mean(ra2[mask2] - ra1[idx[mask2]])
-            dec_offset = np.mean(dec2[mask2] - dec1[idx[mask2]])
+            d_ra = ra2[mask2] - ra1[idx[mask2]]
+            d_dec = dec2[mask2] - dec1[idx[mask2]]
+
+            # Deal with pairs that cross RA=0
+            mask = d_ra > 180
+            d_ra[mask] = d_ra[mask] - 360.
+            mask = d_ra < -180
+            d_ra[mask] = d_ra[mask] + 360.
+
+            ra_offset = np.mean(d_ra)
+            dec_offset = np.mean(d_dec)
             ra1 = ra1 + ra_offset
             dec1 = dec1 + dec_offset
+            
             print('RA  offset = %f arcsec'%(ra_offset*3600))
             print('Dec offset = %f arcsec'%(dec_offset*3600))
             skycat1 = SkyCoord(ra1*u.degree,dec1*u.degree, frame='icrs')
