@@ -83,6 +83,16 @@ for cat2_index in range(len(cat2_fns)):
     cat2_output_fn = cat2_fn[:cat2_fn.find('.fits')]+'-trim.fits'
     cat2_output_path_trim = os.path.join(output_dir_trimmed, cat2_output_fn)
 
+    if os.path.isfile(cat1_output_path_allmatches):
+        print(cat1_output_path_allmatches+' already exist!!!!!!!!!!!!!!')
+        exit()
+    if os.path.isfile(cat1_output_path_trim):
+        print(cat1_output_path_trim+' already exist!!!!!!!!!!!!!!')
+        exit()
+    if os.path.isfile(cat2_output_path_trim):
+        print(cat2_output_path_trim+' already exist!!!!!!!!!!!!!!')
+        exit()
+
     # -----------------------------------------------------------------------------------------
 
     cat2 = fitsio.read(cat2_path, ext=ext)
@@ -298,7 +308,8 @@ for cat2_index in range(len(cat2_fns)):
             # save the full line-matched catalog
             if not os.path.exists(output_dir_allmatches):
                 os.makedirs(output_dir_allmatches)
-            fitsio.write(cat1_output_path_allmatches, cat_stack, clobber=False)
+
+            fitsio.write(cat1_output_path_allmatches, cat_stack, clobber=True)
 
             # save trimmed catalog: only keeping matched objects
             mask = ~((cat_stack['RA']==0) & (cat_stack['DEC']==0))
@@ -309,8 +320,8 @@ for cat2_index in range(len(cat2_fns)):
             cat2_trim = cat2[mask]
             if not os.path.exists(output_dir_trimmed):
                 os.makedirs(output_dir_trimmed)
-            fitsio.write(cat1_output_path_trim, cat1_trim)
-            fitsio.write(cat2_output_path_trim, cat2_trim)
+            fitsio.write(cat1_output_path_trim, cat1_trim, clobber=True)
+            fitsio.write(cat2_output_path_trim, cat2_trim, clobber=True)
 
         time_end = time.clock()
         print('%f seconds'%(time_end-time_start))
