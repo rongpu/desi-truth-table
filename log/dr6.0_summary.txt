@@ -1,0 +1,133 @@
+rongpu@cori11:desi-truth-table> python print_summary.py 6.0
+2dfgrs
+2dFGRS.fits 117
+
+------------------------------------------------------
+
+2mrs
+2mrs_1175_done.fits 6114
+
+------------------------------------------------------
+
+3d-hst-v4.1.5
+3dhst.v4.1.5.master.aegis.fits 4652
+3dhst.v4.1.5.master.cosmos.fits No match
+3dhst.v4.1.5.master.goodsn.fits 2406
+3dhst.v4.1.5.master.goodss.fits No match
+3dhst.v4.1.5.master.uds.fits No match
+
+------------------------------------------------------
+
+6dfgs
+6dFGS.fits 536
+
+------------------------------------------------------
+
+ages
+ages_reduced.fits 38300
+
+------------------------------------------------------
+
+cfhtls
+cfhtls-d2-i.fits.gz 5344
+cfhtls-d2-r.fits.gz 5264
+cfhtls-d3-i.fits.gz 84422
+cfhtls-d3-r.fits.gz 84043
+
+------------------------------------------------------
+
+cosmos-acs
+cosmos-acs.fits.gz 9926
+
+------------------------------------------------------
+
+cosmos2015-v1.1
+COSMOS2015_Laigle+_v1.1.fits 16543
+
+------------------------------------------------------
+
+deep2
+deep2-field1.fits.gz 13842
+deep2-field2.fits.gz 7722
+deep2-field3.fits.gz 2107
+deep2-field4.fits.gz 5021
+
+------------------------------------------------------
+
+deep3
+alldeep.egs.uniq.2012jun13.fits.gz 18195
+
+------------------------------------------------------
+
+eboss-dr14
+eBOSS-DR14-redmonsterAll-v5_10_0-radec-added.fits No match
+
+------------------------------------------------------
+
+fmos-cosmos-v1.0
+FMOS_COSMOS_v1.0.fits 2
+
+------------------------------------------------------
+
+gama-dr2
+GAMA-DR2-SpecObj.fits No match
+
+------------------------------------------------------
+
+gama-dr3
+GAMA-DR3-SpecObj.fits 385
+
+------------------------------------------------------
+
+mosdef-16aug2016
+mosdef_zcat.16aug2016.fits 211
+
+------------------------------------------------------
+
+mosdef-final
+mosdef_zcat.final.reduced.fits 244
+
+------------------------------------------------------
+
+sdss-dr14
+sdss-specObj-dr14-unique-trimmed.fits 1455017
+
+------------------------------------------------------
+
+shela
+shela_irac_v1.3_flux_cat.fits 11149
+
+------------------------------------------------------
+
+spies-dr1
+SpIES_ch1_only.fits 175274
+SpIES_ch1andch2.fits 831626
+
+------------------------------------------------------
+
+spies-stripe82
+spies.fits.gz 655133
+
+------------------------------------------------------
+
+vipers-pdr2
+VIPERS_W1_SPECTRO_PDR2.fits No match
+VIPERS_W4_SPECTRO_PDR2.fits 25621
+
+------------------------------------------------------
+
+vvds
+cesam_vvds_spCDFS_DEEP_Full.fits No match
+cesam_vvds_spF02_DEEP_Full.fits No match
+cesam_vvds_spF02_UDEEP_Full.fits No match
+cesam_vvds_spF10_WIDE_Full.fits 73
+cesam_vvds_spF14_WIDE_Full.fits No match
+cesam_vvds_spF22_WIDE_Full.fits 4366
+
+------------------------------------------------------
+
+wigglez-dr1
+wigglez_dr1_unique.fits 8455
+
+------------------------------------------------------
+

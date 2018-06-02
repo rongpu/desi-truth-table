@@ -1,75 +1,41 @@
 # Print the number of matched objects in truth catalogs
 
 from __future__ import division, print_function
-import argparse
+import sys, os, time, argparse, glob
 import numpy as np
+import fitsio
 from astropy.io import fits
-import os
+
+from catalog_info import catalog_info
 
 parser = argparse.ArgumentParser()
-parser.add_argument('dr')
+parser.add_argument('ls_dr')
 args = parser.parse_args()
-dr = args.dr
 
 top_dir = '/project/projectdirs/desi/target/analysis/truth'
 # top_dir = '/global/project/projectdirs/desi/users/rongpu/truth'
 
-input_dir = os.path.join(top_dir, 'dr'+dr+'/trimmed/')
+output_dir_trimmed = os.path.join(top_dir, 'dr'+args.ls_dr+'/trimmed/')
 
-def get_trim_filename(filename):
-    if filename[-3:]=='.gz':
-        filename = filename[:-8]
-    else:
-        filename = filename[:-5]
-    return filename+'-trim.fits'
+catalogs = sorted(glob.glob('truth_catalogs/*.yaml'))
+catalogs = [string[15:-5] for string in catalogs]
 
-filelist = [
-    'ages_reduced.fits',
-    'COSMOS2015_Laigle+_v1.1.fits',
-    'deep2-field1.fits.gz',
-    'deep2-field2.fits.gz',
-    'deep2-field3.fits.gz',
-    'deep2-field4.fits.gz',
-    'VIPERS_W1_SPECTRO_PDR2.fits',
-    'VIPERS_W4_SPECTRO_PDR2.fits',
-    'stripe82-dr12-specz.fits.gz',
-    'stripe82-dr12-stars.fits.gz',
-    'spies.fits.gz',
-    'cfhtls-d2-i.fits.gz',
-    'cfhtls-d2-r.fits.gz',
-    'cfhtls-d3-i.fits.gz',
-    'cfhtls-d3-r.fits.gz',
-    'cosmos-acs.fits.gz',
-    'AllQSO.DECaLS.dr2.fits',
-    'Stars_str82_355_4.DECaLS.dr2.fits',
-    'cesam_vvds_spCDFS_DEEP_Full.fits',
-    'cesam_vvds_spF02_DEEP_Full.fits',
-    'cesam_vvds_spF02_UDEEP_Full.fits',
-    'cesam_vvds_spF10_WIDE_Full.fits',
-    'cesam_vvds_spF14_WIDE_Full.fits',
-    'cesam_vvds_spF22_WIDE_Full.fits',
-    'shela_irac_v1.3_flux_cat.fits',
-    'alldeep.egs.uniq.2012jun13.fits.gz',
-    '3dhst.v4.1.5.master.aegis.fits',
-    '3dhst.v4.1.5.master.cosmos.fits',
-    '3dhst.v4.1.5.master.goodsn.fits',
-    '3dhst.v4.1.5.master.goodss.fits',
-    '3dhst.v4.1.5.master.uds.fits',
-    'FMOS_COSMOS_v1.0.fits',
-    'mosdef_zcat.16aug2016.fits',
-    'GAMA-DR2-SpecObj.fits', 
-    'wigglez_dr1_unique.fits', 
-    'sdss-specObj-dr14-unique-trimmed.fits', 
-    'eBOSS-DR14-redmonsterAll-v5_10_0-radec-added.fits'
-]
+for index in range(len(catalogs)):
 
+    print(catalogs[index])
+    
+    cat_info = catalog_info(catalogs[index], args.ls_dr)
+    _, _, _, cat2_fns, cat1_output_fns, _, _ = cat_info
 
-for index in range(len(filelist)):
+    for cat2_index in range(len(cat2_fns)):
+        
+        cat2_fn = cat2_fns[cat2_index]
 
-    file_path = os.path.join(input_dir, get_trim_filename(filelist[index]))
+        cat1_output_path_trim = os.path.join(output_dir_trimmed, cat1_output_fns[cat2_index][:-5]+'-trim.fits')
 
-    if os.path.exists(file_path):
-        t = fits.getdata(file_path)
-        print(filelist[index])
-        print(len(t))
-        print()
+        if os.path.isfile(cat1_output_path_trim):
+            t = fits.getdata(cat1_output_path_trim)
+            print(cat2_fn, len(t))
+        else:
+            print(cat2_fn, 'No match')
+    print('\n------------------------------------------------------\n')
