@@ -1,0 +1,55 @@
+rongpu@cori11:desi-truth-table> python decals_matching.py 5.0 mosdef-final
+mosdef_zcat.final.reduced.fits
+37 - sweep-030m010-040m005
+30 out of 1114 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 26
+Number of doubly matched objects = 0
+Number of final matches = 26
+123 - sweep-150p000-160p005
+359 out of 1114 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 194
+RA  offset = 0.115582 arcsec
+Dec offset = 0.058383 arcsec
+Number of matches after offset correction = 191
+Number of doubly matched objects = 8
+Number of final matches = 183
+
+209 total matches
+fraction of matched objects: 209/1114 = 0.18761220825852784
+
+18.678403 seconds
+
+------------------------------------------------------
+
+rongpu@cori11:desi-truth-table> python decals_matching.py 6.0 mosdef-final
+mosdef_zcat.final.reduced.fits
+8 - sweep-030m010-040m005
+30 out of 1114 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+95 - sweep-150p000-160p005
+359 out of 1114 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+139 - sweep-180p060-190p065
+286 out of 1114 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 56
+Number of doubly matched objects = 1
+Number of final matches = 55
+173 - sweep-210p050-220p055
+394 out of 1114 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 201
+RA  offset = -0.027145 arcsec
+Dec offset = 0.167995 arcsec
+Number of matches after offset correction = 201
+Number of doubly matched objects = 12
+Number of final matches = 189
+
+244 total matches
+fraction of matched objects: 244/1114 = 0.21903052064631956
+
+7.300747 seconds
