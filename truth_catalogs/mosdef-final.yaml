@@ -2,5 +2,4 @@ ra_col: 'RA'
 dec_col: 'DEC'
 search_radius: 1. # arcsec
 filenames:
-  - 'mosdef_zcat.final.fits'
-unique_q: False
+  - 'mosdef_zcat.final.reduced.fits'
