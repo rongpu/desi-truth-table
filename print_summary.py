@@ -1,4 +1,6 @@
 # Print the number of matched objects in truth catalogs
+# Example: DR5.0 truth catalogs:
+# python print_summary.py 5.0
 
 from __future__ import division, print_function
 import sys, os, time, argparse, glob
