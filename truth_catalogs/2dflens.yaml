@@ -1,0 +1,5 @@
+ra_col: "R.A."
+dec_col: "Dec."
+search_radius: 1. # arcsec
+filenames:
+  - "2dflens.fits"
