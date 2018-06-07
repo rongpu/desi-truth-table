@@ -1,6 +1,7 @@
 # Modified from decals_matching.py
 # The allmatches catalogs are not saved. Instead we only save a boolean table 
-# that indicates whether an object in HSC has a match in the Legacy Surveys
+# that indicates whether an object in the truth catalog has a match in the 
+# Legacy Surveys
 
 from __future__ import division, print_function
 import matplotlib
