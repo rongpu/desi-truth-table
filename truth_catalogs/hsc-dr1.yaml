@@ -1,0 +1,7 @@
+ra_col: "ra"
+dec_col: "dec"
+search_radius: 1. # arcsec
+filenames:
+  - "hsc_pdr1_wide.forced.reduced.fits"
+  - "hsc_pdr1_deep.forced.reduced.fits"
+  - "hsc_pdr1_udeep.forced.reduced.fits"

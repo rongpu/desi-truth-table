@@ -1,0 +1,35 @@
+SELECT
+    object_id,
+    ra,
+    dec,
+
+    ------- flux and flux errors -------
+    gflux_psf, rflux_psf, iflux_psf, zflux_psf, yflux_psf,
+    gflux_psf_err, rflux_psf_err, iflux_psf_err, zflux_psf_err, yflux_psf_err,
+    gcmodel_flux, rcmodel_flux, icmodel_flux, zcmodel_flux, ycmodel_flux,
+    gcmodel_flux_err, rcmodel_flux_err, icmodel_flux_err, zcmodel_flux_err, ycmodel_flux_err,
+
+    ------- fraction of flux in de Vaucouleur component -------
+    gcmodel_fracdev, rcmodel_fracdev, zcmodel_fracdev,
+
+    ------- shape measurements -------
+    gclassification_extendedness, rclassification_extendedness, zclassification_extendedness,
+    zshape_sdss_11, zshape_sdss_22, zshape_sdss_12,
+
+    ------- flags -------
+    gcentroid_sdss_flags, rcentroid_sdss_flags, icentroid_sdss_flags, zcentroid_sdss_flags, ycentroid_sdss_flags,
+    gflags_pixel_interpolated_center, rflags_pixel_interpolated_center, iflags_pixel_interpolated_center, zflags_pixel_interpolated_center, yflags_pixel_interpolated_center,
+    gflags_pixel_saturated_center, rflags_pixel_saturated_center, iflags_pixel_saturated_center, zflags_pixel_saturated_center, yflags_pixel_saturated_center,
+
+    ------- photo-z's -------
+    photoz_mean, photoz_mode, photoz_median, photoz_best
+
+FROM
+    -- pdr1_wide.forced LEFT JOIN pdr1_wide.photoz_mizuki USING(object_id)
+    pdr1_deep.forced LEFT JOIN pdr1_deep.photoz_mizuki USING(object_id)
+    -- pdr1_udeep.forced LEFT JOIN pdr1_udeep.photoz_mizuki USING(object_id)
+
+WHERE 
+    detect_is_primary
+    AND rcmodel_mag<25.5
+;
