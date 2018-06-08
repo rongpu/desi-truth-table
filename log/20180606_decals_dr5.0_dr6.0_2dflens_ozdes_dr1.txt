@@ -1,0 +1,307 @@
+rongpu@cori09:desi-truth-table> python decals_matching.py 5.0 2dflens
+2dflens.fits
+59 - sweep-050m010-060m005
+440 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 409
+RA  offset = -0.122303 arcsec
+Dec offset = 0.077338 arcsec
+Number of matches after offset correction = 407
+Number of doubly matched objects = 0
+Number of final matches = 407
+60 - sweep-050m015-060m010
+295 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 254
+RA  offset = -0.101698 arcsec
+Dec offset = 0.049469 arcsec
+Number of matches after offset correction = 255
+Number of doubly matched objects = 0
+Number of final matches = 255
+65 - sweep-060m010-070m005
+544 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 505
+RA  offset = -0.110526 arcsec
+Dec offset = 0.061424 arcsec
+Number of matches after offset correction = 507
+Number of doubly matched objects = 0
+Number of final matches = 507
+66 - sweep-060m015-070m010
+267 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 231
+RA  offset = -0.096921 arcsec
+Dec offset = 0.049503 arcsec
+Number of matches after offset correction = 230
+Number of doubly matched objects = 0
+Number of final matches = 230
+100 - sweep-130m005-140p000
+1703 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 1592
+RA  offset = 0.031545 arcsec
+Dec offset = 0.038631 arcsec
+Number of matches after offset correction = 1592
+Number of doubly matched objects = 1
+Number of final matches = 1591
+101 - sweep-130m010-140m005
+378 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 338
+RA  offset = 0.025824 arcsec
+Dec offset = 0.049578 arcsec
+Number of matches after offset correction = 339
+Number of doubly matched objects = 0
+Number of final matches = 339
+120 - sweep-150m005-160p000
+588 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 566
+RA  offset = 0.103501 arcsec
+Dec offset = 0.053981 arcsec
+Number of matches after offset correction = 567
+Number of doubly matched objects = 0
+Number of final matches = 567
+121 - sweep-150m010-160m005
+20 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 17
+Number of doubly matched objects = 0
+Number of final matches = 17
+130 - sweep-160m005-170p000
+1540 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 1473
+RA  offset = 0.074093 arcsec
+Dec offset = 0.087104 arcsec
+Number of matches after offset correction = 1474
+Number of doubly matched objects = 0
+Number of final matches = 1474
+131 - sweep-160m010-170m005
+3528 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 3410
+RA  offset = 0.118123 arcsec
+Dec offset = 0.069862 arcsec
+Number of matches after offset correction = 3412
+Number of doubly matched objects = 0
+Number of final matches = 3412
+132 - sweep-160m015-170m010
+197 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 178
+RA  offset = 0.127569 arcsec
+Dec offset = 0.096043 arcsec
+Number of matches after offset correction = 178
+Number of doubly matched objects = 0
+Number of final matches = 178
+140 - sweep-170m005-180p000
+1298 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 1257
+RA  offset = 0.092859 arcsec
+Dec offset = 0.074660 arcsec
+Number of matches after offset correction = 1255
+Number of doubly matched objects = 0
+Number of final matches = 1255
+141 - sweep-170m010-180m005
+822 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 739
+RA  offset = 0.093027 arcsec
+Dec offset = 0.047611 arcsec
+Number of matches after offset correction = 741
+Number of doubly matched objects = 0
+Number of final matches = 741
+142 - sweep-170m015-180m010
+40 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 7
+Number of doubly matched objects = 0
+Number of final matches = 7
+150 - sweep-180m005-190p000
+1541 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 1492
+RA  offset = 0.088802 arcsec
+Dec offset = 0.099705 arcsec
+Number of matches after offset correction = 1492
+Number of doubly matched objects = 0
+Number of final matches = 1492
+151 - sweep-180m010-190m005
+50 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 47
+Number of doubly matched objects = 0
+Number of final matches = 47
+160 - sweep-190m005-200p000
+1264 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 1204
+RA  offset = 0.097162 arcsec
+Dec offset = 0.125537 arcsec
+Number of matches after offset correction = 1203
+Number of doubly matched objects = 0
+Number of final matches = 1203
+161 - sweep-190m010-200m005
+66 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 62
+Number of doubly matched objects = 0
+Number of final matches = 62
+171 - sweep-200m005-210p000
+1472 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 1430
+RA  offset = 0.098608 arcsec
+Dec offset = 0.112701 arcsec
+Number of matches after offset correction = 1431
+Number of doubly matched objects = 0
+Number of final matches = 1431
+172 - sweep-200m010-210m005
+71 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 68
+Number of doubly matched objects = 0
+Number of final matches = 68
+182 - sweep-210m005-220p000
+1224 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 1166
+RA  offset = 0.089305 arcsec
+Dec offset = 0.081671 arcsec
+Number of matches after offset correction = 1166
+Number of doubly matched objects = 0
+Number of final matches = 1166
+183 - sweep-210m010-220m005
+59 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 54
+Number of doubly matched objects = 0
+Number of final matches = 54
+192 - sweep-220m005-230p000
+1328 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 1236
+RA  offset = 0.083538 arcsec
+Dec offset = 0.061941 arcsec
+Number of matches after offset correction = 1235
+Number of doubly matched objects = 0
+Number of final matches = 1235
+193 - sweep-220m010-230m005
+81 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 76
+Number of doubly matched objects = 0
+Number of final matches = 76
+202 - sweep-230m005-240p000
+540 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 158
+RA  offset = 0.091166 arcsec
+Dec offset = 0.075522 arcsec
+Number of matches after offset correction = 157
+Number of doubly matched objects = 0
+Number of final matches = 157
+203 - sweep-230m010-240m005
+11 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+
+17971 total matches
+fraction of matched objects: 17971/70020 = 0.25665524135961154
+
+181.728058 seconds
+
+------------------------------------------------------
+
+rongpu@cori09:desi-truth-table> python decals_matching.py 6.0 2dflens
+2dflens.fits
+15 - sweep-060m010-070m005
+544 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+No match with entire DECaLS!
+
+------------------------------------------------------
+
+rongpu@cori09:desi-truth-table> python decals_matching.py 5.0 ozdes-dr1
+OzDES-DR1.fits
+36 - sweep-030m005-040p000
+1919 out of 14693 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 1867
+RA  offset = -0.168654 arcsec
+Dec offset = 0.125028 arcsec
+Number of matches after offset correction = 1869
+Number of doubly matched objects = 0
+Number of final matches = 1869
+37 - sweep-030m010-040m005
+2047 out of 14693 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 1992
+RA  offset = -0.119725 arcsec
+Dec offset = 0.153002 arcsec
+Number of matches after offset correction = 1995
+Number of doubly matched objects = 0
+Number of final matches = 1995
+48 - sweep-040m005-050p000
+1132 out of 14693 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 1114
+RA  offset = -0.113676 arcsec
+Dec offset = 0.149362 arcsec
+Number of matches after offset correction = 1114
+Number of doubly matched objects = 0
+Number of final matches = 1114
+53 - sweep-040p000-050p005
+299 out of 14693 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 293
+RA  offset = -0.149637 arcsec
+Dec offset = 0.149069 arcsec
+Number of matches after offset correction = 293
+Number of doubly matched objects = 0
+Number of final matches = 293
+
+5271 total matches
+fraction of matched objects: 5271/14693 = 0.35874225821819916
+
+36.032812 seconds
+
+------------------------------------------------------
+
+rongpu@cori09:desi-truth-table> python decals_matching.py 6.0 ozdes-dr1
+OzDES-DR1.fits
+7 - sweep-030m005-040p000
+1919 out of 14693 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+8 - sweep-030m010-040m005
+2047 out of 14693 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+11 - sweep-040m005-050p000
+1132 out of 14693 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 834
+RA  offset = -0.116390 arcsec
+Dec offset = 0.122806 arcsec
+Number of matches after offset correction = 833
+Number of doubly matched objects = 0
+Number of final matches = 833
+12 - sweep-040p000-050p005
+299 out of 14693 objects in cat2 are in the overlapping region
+Matching...
+Number of initial matches = 21
+Number of doubly matched objects = 0
+Number of final matches = 21
+
+854 total matches
+fraction of matched objects: 854/14693 = 0.05812291567413054
+
+2.418954 seconds
+
+------------------------------------------------------
+
