@@ -16,8 +16,14 @@ args = parser.parse_args()
 
 top_dir = '/project/projectdirs/desi/target/analysis/truth'
 # top_dir = '/global/project/projectdirs/desi/users/rongpu/truth'
+parent_dir = os.path.join(top_dir, 'parent/')
 
-output_dir_trimmed = os.path.join(top_dir, 'dr'+args.ls_dr+'/trimmed/')
+if float(args.ls_dr)<7:
+    output_dir_matched = os.path.join(top_dir, 'dr'+args.ls_dr+'/trimmed/')
+    end_string = '-trim.fits'
+else:
+    output_dir_matched = os.path.join(top_dir, 'dr'+args.ls_dr+'/matched/')
+    end_string = '-match.fits'
 
 catalogs = sorted(glob.glob('truth_catalogs/*.yaml'))
 catalogs = [string[15:-5] for string in catalogs]
@@ -27,17 +33,21 @@ for index in range(len(catalogs)):
     print(catalogs[index])
     
     cat_info = catalog_info(catalogs[index], args.ls_dr)
-    _, _, _, cat2_fns, cat1_output_fns, _, _ = cat_info
+    ra_col, dec_col, search_radius, cat2_fns, cat1_output_fns, plot_path, ext = cat_info
 
     for cat2_index in range(len(cat2_fns)):
         
         cat2_fn = cat2_fns[cat2_index]
+        cat2_path = os.path.join(parent_dir, cat2_fn)
+        cat2 = fitsio.read(cat2_path, ext=ext, columns=[ra_col])
 
-        cat1_output_path_trim = os.path.join(output_dir_trimmed, cat1_output_fns[cat2_index][:-5]+'-trim.fits')
+        cat1_output_path_trim = os.path.join(output_dir_matched, cat1_output_fns[cat2_index][:-5]+end_string)
+        cat1_output_path_trim = os.path.join(output_dir_matched, cat1_output_fns[cat2_index][:-5]+end_string)
 
         if os.path.isfile(cat1_output_path_trim):
             t = fits.getdata(cat1_output_path_trim)
-            print(cat2_fn, len(t))
+            print('{}  {}  {:.2f}%'.format(cat2_fn, len(t), 100*len(t)/len(cat2)))
         else:
-            print(cat2_fn, 'No match')
+            print(cat2_fn, ' No match')
     print('\n------------------------------------------------------\n')
+

@@ -9,7 +9,7 @@ python legacy_surveys_matching.py 7.0 cosmos-acs
 python legacy_surveys_matching.py 7.0 cosmos2015-v1.1
 python legacy_surveys_matching.py 7.0 deep2
 python legacy_surveys_matching.py 7.0 deep3
-python legacy_surveys_matching.py 7.0 eboss-dr14
+# python legacy_surveys_matching.py 7.0 eboss-dr14
 python legacy_surveys_matching.py 7.0 fmos-cosmos-v1.0
 python legacy_surveys_matching.py 7.0 gama-dr3
 python legacy_surveys_matching.py 7.0 hsc-dr1
