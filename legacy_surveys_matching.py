@@ -187,6 +187,7 @@ for cat2_index in range(len(cat2_fns)):
             plt.savefig(os.path.join(plot_path, '{}_{}.png'.format(cat2_index, brick)))
             plt.close()
 
+    # manual garbage collection
     gc.collect()
 
     # -----------------------------------------------------------------------------------------
