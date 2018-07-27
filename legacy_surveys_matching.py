@@ -8,7 +8,7 @@
 # cat2 - single or multiple catalog files - the "truth" catalog
 
 # To run this script, e.g. match Legacy Survey DR6 to DEEP2:
-# python decals_matching 6.0 deep2
+# python legacy_surveys_matching 6.0 deep2
 
 from __future__ import division, print_function
 import matplotlib
@@ -149,7 +149,7 @@ for cat2_index in range(len(cat2_fns)):
 
             print('RA  offset = %.4f arcsec'%(ra_offset))
             print('Dec offset = %.4f arcsec'%(dec_offset))
-            idx1, idx2, d2d, _, _ = match_coord(ra1, dec1, ra2, dec2, search_radius=search_radius, plot_q=False)
+            idx1, idx2, d2d, d_ra, d_dec = match_coord(ra1, dec1, ra2, dec2, search_radius=search_radius, plot_q=False)
 
         if region_q:
             idx2_original = cat2_idx[idx2]
@@ -177,7 +177,7 @@ for cat2_index in range(len(cat2_fns)):
             markersize = np.max([0.01, np.min([5, 0.2*100000/len(d_ra)])])
             axis = [-search_radius*1.05+ra_offset, search_radius*1.05+ra_offset, 
                     -search_radius*1.05+dec_offset, search_radius*1.05+dec_offset]
-            ax = scatter_plot(d_ra, d_dec, markersize=markersize, alpha=0.4, axis=axis, show=False)
+            ax = scatter_plot(d_ra+ra_offset, d_dec+dec_offset, markersize=markersize, alpha=0.4, axis=axis, show=False)
             if correct_offset_q and (ra_offset!=0) and (dec_offset!=0):
                 ax.plot(ra_offset, dec_offset, 'r.', markersize=9)
             

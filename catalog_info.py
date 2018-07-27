@@ -30,7 +30,7 @@ def catalog_info(catalog, dr):
     search_radius = cat2_dict['search_radius']
     cat2_filenames = cat2_dict['filenames']
     output_filenames = get_output_filenames(cat2_filenames, dr)
-    plot_path = 'qaplots/dr'+dr+'/decals_match_'+catalog+'/'
+    plot_path = 'qaplots/dr'+dr+'/'+catalog+'/'
     if 'ext' in cat2_dict:
         ext = cat2_dict['ext']
 
