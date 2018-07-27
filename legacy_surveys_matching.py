@@ -19,6 +19,7 @@ from astropy import units as u
 from astropy.coordinates import SkyCoord
 import sys, os, time, argparse, glob
 import fitsio
+import gc
 
 from catalog_info import catalog_info
 from match_coord import match_coord, scatter_plot
@@ -185,6 +186,8 @@ for cat2_index in range(len(cat2_fns)):
                 os.makedirs(plot_path)
             plt.savefig(os.path.join(plot_path, '{}_{}.png'.format(cat2_index, brick)))
             plt.close()
+
+    gc.collect()
 
     # -----------------------------------------------------------------------------------------
 
