@@ -1,0 +1,50 @@
+rongpu@cori04:desi-truth-table> python print_summary.py 7.1
+2dfgrs
+2dFGRS.fits  81786  33.30%
+
+------------------------------------------------------
+
+2dflens
+2dflens.fits  18353  26.21%
+
+------------------------------------------------------
+
+2mrs
+2mrs_1175_done.fits  13417  30.82%
+
+------------------------------------------------------
+
+3d-hst-v4.1.5
+3dhst.v4.1.5.master.aegis.fits  No match
+3dhst.v4.1.5.master.cosmos.fits  8449  24.94%
+3dhst.v4.1.5.master.goodsn.fits  No match
+3dhst.v4.1.5.master.goodss.fits  No match
+3dhst.v4.1.5.master.uds.fits  7446  16.88%
+
+------------------------------------------------------
+
+6dfgs
+6dFGS.fits  24312  19.50%
+
+------------------------------------------------------
+
+ages
+ages_reduced.fits  31425  77.36%
+
+------------------------------------------------------
+
+cfhtls
+cfhtls-d2-i.fits.gz  144065  38.31%
+cfhtls-d2-r.fits.gz  142533  36.99%
+cfhtls-d3-i.fits.gz  No match
+cfhtls-d3-r.fits.gz  No match
+
+------------------------------------------------------
+
+cosmos-acs
+cosmos-acs.fits.gz  252756  21.47%
+
+------------------------------------------------------
+
+cosmos2015-v1.1
+
