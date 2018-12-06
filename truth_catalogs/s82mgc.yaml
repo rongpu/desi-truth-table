@@ -1,0 +1,5 @@
+ra_col: "RA"
+dec_col: "DEC"
+search_radius: 1. # arcsec
+filenames:
+  - "bundy2015_stripe82_massivegalaxy_catalog.fits"
