@@ -1,33 +1,44 @@
 SELECT
-    object_id,
-    ra,
-    dec,
+    main.object_id,
+    main.ra,
+    main.dec,
 
     ------- flux and flux errors -------
-    gflux_psf, rflux_psf, iflux_psf, zflux_psf, yflux_psf,
-    gflux_psf_err, rflux_psf_err, iflux_psf_err, zflux_psf_err, yflux_psf_err,
-    gcmodel_flux, rcmodel_flux, icmodel_flux, zcmodel_flux, ycmodel_flux,
-    gcmodel_flux_err, rcmodel_flux_err, icmodel_flux_err, zcmodel_flux_err, ycmodel_flux_err,
+    main.gflux_psf, main.rflux_psf, main.iflux_psf, main.zflux_psf, main.yflux_psf,
+    main.gflux_psf_err, main.rflux_psf_err, main.iflux_psf_err, main.zflux_psf_err, main.yflux_psf_err,
+    main.gcmodel_flux, main.rcmodel_flux, main.icmodel_flux, main.zcmodel_flux, main.ycmodel_flux,
+    main.gcmodel_flux_err, main.rcmodel_flux_err, main.icmodel_flux_err, main.zcmodel_flux_err, main.ycmodel_flux_err,
 
     ------- fraction of flux in de Vaucouleur component -------
-    gcmodel_fracdev, rcmodel_fracdev, zcmodel_fracdev,
+    main.gcmodel_fracdev, main.rcmodel_fracdev, main.zcmodel_fracdev,
 
     ------- shape measurements -------
-    gclassification_extendedness, rclassification_extendedness, zclassification_extendedness,
-    zshape_sdss_11, zshape_sdss_22, zshape_sdss_12,
+    main.gclassification_extendedness, main.rclassification_extendedness, main.iclassification_extendedness, main.zclassification_extendedness,
+    main.zshape_sdss_11, main.zshape_sdss_22, main.zshape_sdss_12,
 
     ------- flags -------
-    gcentroid_sdss_flags, rcentroid_sdss_flags, icentroid_sdss_flags, zcentroid_sdss_flags, ycentroid_sdss_flags,
-    gflags_pixel_interpolated_center, rflags_pixel_interpolated_center, iflags_pixel_interpolated_center, zflags_pixel_interpolated_center, yflags_pixel_interpolated_center,
-    gflags_pixel_saturated_center, rflags_pixel_saturated_center, iflags_pixel_saturated_center, zflags_pixel_saturated_center, yflags_pixel_saturated_center,
+    main.gcentroid_sdss_flags, main.rcentroid_sdss_flags, main.icentroid_sdss_flags, main.zcentroid_sdss_flags, main.ycentroid_sdss_flags,
+    main.gflags_pixel_interpolated_center, main.rflags_pixel_interpolated_center, main.iflags_pixel_interpolated_center, main.zflags_pixel_interpolated_center, main.yflags_pixel_interpolated_center,
+    main.gflags_pixel_saturated_center, main.rflags_pixel_saturated_center, main.iflags_pixel_saturated_center, main.zflags_pixel_saturated_center, main.yflags_pixel_saturated_center,
 
     ------- photo-z's -------
-    photoz_mean, photoz_mode, photoz_median, photoz_best
+    pz_demp.photoz_best AS demp_photoz_best, pz_demp.photoz_risk_best AS demp_photoz_risk_best, pz_demp.photoz_std_best AS demp_photoz_std_best,
+    pz_ephor.photoz_best AS ephor_photoz_best, pz_ephor.photoz_risk_best AS ephor_photoz_risk_best, pz_ephor.photoz_std_best AS ephor_photoz_std_best,
+    pz_ephor_ab.photoz_best AS ephor_ab_photoz_best, pz_ephor_ab.photoz_risk_best AS ephor_ab_photoz_risk_best, pz_ephor_ab.photoz_std_best AS ephor_ab_photoz_std_best,
+    pz_frankenz.photoz_best AS frankenz_photoz_best, pz_frankenz.photoz_risk_best AS frankenz_photoz_risk_best, pz_frankenz.photoz_std_best AS frankenz_photoz_std_best,
+    pz_mizuki.photoz_best AS mizuki_photoz_best, pz_mizuki.photoz_risk_best AS mizuki_photoz_risk_best, pz_mizuki.photoz_std_best AS mizuki_photoz_std_best,
+    pz_mlz.photoz_best AS mlz_photoz_best, pz_mlz.photoz_risk_best AS mlz_photoz_risk_best, pz_mlz.photoz_std_best AS mlz_photoz_std_best,
+    pz_nnpz.photoz_best AS nnpz_photoz_best, pz_nnpz.photoz_risk_best AS nnpz_photoz_risk_best, pz_nnpz.photoz_std_best AS nnpz_photoz_std_best
 
 FROM
-    -- pdr1_wide.forced LEFT JOIN pdr1_wide.photoz_mizuki USING(object_id)
-    pdr1_deep.forced LEFT JOIN pdr1_deep.photoz_mizuki USING(object_id)
-    -- pdr1_udeep.forced LEFT JOIN pdr1_udeep.photoz_mizuki USING(object_id)
+    pdr1_deep.forced main
+    LEFT JOIN pdr1_deep.photoz_demp pz_demp on main.object_id=pz_demp.object_id
+    LEFT JOIN pdr1_deep.photoz_ephor pz_ephor on main.object_id=pz_ephor.object_id
+    LEFT JOIN pdr1_deep.photoz_ephor_ab pz_ephor_ab on main.object_id=pz_ephor_ab.object_id
+    LEFT JOIN pdr1_deep.photoz_frankenz pz_frankenz on main.object_id=pz_frankenz.object_id
+    LEFT JOIN pdr1_deep.photoz_mizuki pz_mizuki on main.object_id=pz_mizuki.object_id
+    LEFT JOIN pdr1_deep.photoz_mlz pz_mlz on main.object_id=pz_mlz.object_id
+    LEFT JOIN pdr1_deep.photoz_nnpz pz_nnpz on main.object_id=pz_nnpz.object_id
 
 WHERE 
     detect_is_primary
