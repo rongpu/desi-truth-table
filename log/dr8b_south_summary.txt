@@ -1,0 +1,153 @@
+2dfgrs
+2dFGRS.fits  1696  0.69%
+
+------------------------------------------------------
+
+2dflens
+2dflens.fits  No match
+
+------------------------------------------------------
+
+2mrs
+2mrs_1175_done.fits  290  0.67%
+
+------------------------------------------------------
+
+3d-hst-v4.1.5
+3dhst.v4.1.5.master.aegis.fits  No match
+3dhst.v4.1.5.master.cosmos.fits  No match
+3dhst.v4.1.5.master.goodsn.fits  No match
+3dhst.v4.1.5.master.goodss.fits  No match
+3dhst.v4.1.5.master.uds.fits  6660  15.10%
+
+------------------------------------------------------
+
+6dfgs
+6dFGS.fits  1042  0.84%
+
+------------------------------------------------------
+
+ages
+ages_reduced.fits  No match
+
+------------------------------------------------------
+
+cfhtls
+cfhtls-d2-i.fits.gz  No match
+cfhtls-d2-r.fits.gz  No match
+cfhtls-d3-i.fits.gz  No match
+cfhtls-d3-r.fits.gz  No match
+
+------------------------------------------------------
+
+cosmos-acs
+cosmos-acs.fits.gz  No match
+
+------------------------------------------------------
+
+cosmos2015-v1.1
+COSMOS2015_Laigle+_v1.1.fits  No match
+
+------------------------------------------------------
+
+deep2
+deep2-field1.fits.gz  No match
+deep2-field2.fits.gz  No match
+deep2-field3.fits.gz  No match
+deep2-field4.fits.gz  10324  91.44%
+
+------------------------------------------------------
+
+deep3
+alldeep.egs.uniq.2012jun13.fits.gz  No match
+
+------------------------------------------------------
+
+eboss-dr14
+eBOSS-DR14-redmonsterAll-v5_10_0-radec-added.fits  No match
+
+------------------------------------------------------
+
+fmos-cosmos-v1.0
+FMOS_COSMOS_v1.0.fits  No match
+
+------------------------------------------------------
+
+gama-dr2
+GAMA-DR2-SpecObj.fits  No match
+
+------------------------------------------------------
+
+gama-dr3
+GAMA-DR3-SpecObj.fits  29515  18.44%
+
+------------------------------------------------------
+
+hsc-dr1
+hsc_pdr1_udeep.forced.reduced.fits  256307  30.34%
+hsc_pdr1_deep.forced.reduced.fits  618007  11.36%
+hsc_pdr1_wide.forced.reduced.fits  2794849  20.11%
+
+------------------------------------------------------
+
+mosdef-16aug2016
+mosdef_zcat.16aug2016.fits  No match
+
+------------------------------------------------------
+
+mosdef-final
+mosdef_zcat.final.reduced.fits  26  2.33%
+
+------------------------------------------------------
+
+ozdes-dr1
+OzDES-DR1.fits  3297  22.44%
+
+------------------------------------------------------
+
+sdss-dr14
+sdss-specObj-dr14-unique-trimmed.fits  178729  4.15%
+
+------------------------------------------------------
+
+shela
+shela_irac_v1.3_flux_cat.fits  1680181  73.22%
+
+------------------------------------------------------
+
+spies-dr1
+SpIES_ch1_only.fits  783869  12.78%
+SpIES_ch1andch2.fits  1781620  32.61%
+
+------------------------------------------------------
+
+spies-stripe82
+spies.fits.gz  No match
+
+------------------------------------------------------
+
+vipers-pdr2
+VIPERS_W1_SPECTRO_PDR2.fits  56641  93.58%
+VIPERS_W4_SPECTRO_PDR2.fits  No match
+
+------------------------------------------------------
+
+vvds
+cesam_vvds_spCDFS_DEEP_Full.fits  No match
+cesam_vvds_spF02_DEEP_Full.fits  8829  77.75%
+cesam_vvds_spF02_UDEEP_Full.fits  699  62.13%
+cesam_vvds_spF10_WIDE_Full.fits  No match
+cesam_vvds_spF14_WIDE_Full.fits  No match
+cesam_vvds_spF22_WIDE_Full.fits  No match
+
+------------------------------------------------------
+
+wigglez-dr1
+wigglez_dr1_unique.fits  No match
+
+------------------------------------------------------
+
+wigglez-final
+wigglez.final.fits  7039  3.12%
+
+------------------------------------------------------
