@@ -1,4 +1,5 @@
 # Convert the Stripe 82 massive galaxy catalog from Alexie Leauthaud (private communication) to FITS format
+# The resulting catalog is *not* used for the DESI truth catalogs 
 
 from __future__ import division, print_function
 import os, sys
