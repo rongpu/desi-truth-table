@@ -8,7 +8,7 @@
 # cat2 - single or multiple catalog files - the "truth" catalog
 
 # To run this script, e.g. match Legacy Survey DR6 to DEEP2:
-# python legacy_surveys_matching 6.0 deep2
+# python legacy_surveys_matching.py 7.1 deep2
 
 from __future__ import division, print_function
 import matplotlib
