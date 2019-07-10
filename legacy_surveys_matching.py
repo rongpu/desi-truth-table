@@ -10,7 +10,7 @@
 # cat2 - single or multiple catalog files - the "truth" catalog
 
 # To run this script, e.g. match Legacy Survey DR8.0 North to DEEP2:
-# python legacy_surveys_matching_dr8.py 8.0 deep2 --field north
+# python legacy_surveys_matching.py 8.0 deep2 --field north
 
 from __future__ import division, print_function
 import matplotlib
