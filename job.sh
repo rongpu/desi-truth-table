@@ -15,7 +15,7 @@ python legacy_surveys_matching.py 8.0 gama-dr3 --field north
 python legacy_surveys_matching.py 8.0 hsc-dr1 --field north
 python legacy_surveys_matching.py 8.0 mosdef-final --field north
 python legacy_surveys_matching.py 8.0 ozdes-dr1 --field north
-python legacy_surveys_matching.py 8.0 s82mgc.ymal --field north
+python legacy_surveys_matching.py 8.0 s82mgc --field north
 python legacy_surveys_matching.py 8.0 sdss-dr14 --field north
 python legacy_surveys_matching.py 8.0 shela --field north
 python legacy_surveys_matching.py 8.0 spies-dr1 --field north
@@ -42,7 +42,7 @@ python legacy_surveys_matching.py 8.0 gama-dr3 --field south
 python legacy_surveys_matching.py 8.0 hsc-dr1 --field south
 python legacy_surveys_matching.py 8.0 mosdef-final --field south
 python legacy_surveys_matching.py 8.0 ozdes-dr1 --field south
-python legacy_surveys_matching.py 8.0 s82mgc.ymal --field south
+python legacy_surveys_matching.py 8.0 s82mgc --field south
 python legacy_surveys_matching.py 8.0 sdss-dr14 --field south
 python legacy_surveys_matching.py 8.0 shela --field south
 python legacy_surveys_matching.py 8.0 spies-dr1 --field south
