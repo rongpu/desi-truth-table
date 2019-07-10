@@ -1,3 +1,5 @@
+# Draft version for DR8 public release
+
 # Match the truth catalogs to Legacy Surveys sweep catalogs;
 # Save the following results:
 # 1. Boolean arrays (.npy) with the same length as the truth catalogs indicating whether each
@@ -7,8 +9,8 @@
 # cat1 - multiple catalog files - DECaLS/BASS/MzLS
 # cat2 - single or multiple catalog files - the "truth" catalog
 
-# To run this script, e.g. match Legacy Survey DR6 to DEEP2:
-# python legacy_surveys_matching.py 7.1 deep2
+# To run this script, e.g. match Legacy Survey DR8.0 North to DEEP2:
+# python legacy_surveys_matching_dr8.py 8.0 deep2 --field north
 
 from __future__ import division, print_function
 import matplotlib
@@ -27,30 +29,45 @@ from match_coord import match_coord, scatter_plot
 time_start = time.clock()
 
 top_dir = '/project/projectdirs/desi/target/analysis/truth'
-# top_dir = '/global/cscratch1/sd/rongpu/temp'
+output_dir = '/project/projectdirs/desi/target/analysis/truth'
+# output_dir = '/global/cscratch1/sd/rongpu/truth'
 
 region_q = True # match only overlapping regions to reduce computation time
 correct_offset_q = True
 plot_q = True
 
 parser = argparse.ArgumentParser()
-parser.add_argument('ls_dr')
-parser.add_argument('catalog')
-parser.add_argument("--test", action="store_true")
+parser.add_argument('ls_dr', help='DR number of Legacy Surveys')
+parser.add_argument('catalog', help='truth catalog')
+parser.add_argument('--field', help='choose field: north or south?')
 args = parser.parse_args()
-if len(args.ls_dr)!=3:
-    raise ValueError('ls_dr not in the correct format!')
 
-sweep_dir = os.path.join('/global/project/projectdirs/cosmo/data/legacysurvey/', 
-    'dr'+args.ls_dr[0], 'sweep', args.ls_dr)
+#######################################
+# if len(args.ls_dr)!=3:
+#     raise ValueError('ls_dr not in the correct format!')
+#######################################
 
-cat_info = catalog_info(args.catalog, args.ls_dr)
+cat_info = catalog_info(args.catalog, args.ls_dr, args.field)
 ra_col, dec_col, search_radius, cat2_fns, cat1_output_fns, plot_path, ext = cat_info
-plot_path = os.path.join(top_dir, plot_path)
-
+plot_path = os.path.join(output_dir, plot_path)
 parent_dir = os.path.join(top_dir, 'parent/')
-output_dir_allobjects = os.path.join(top_dir, 'dr'+args.ls_dr+'/allobjects/')
-output_dir_matched = os.path.join(top_dir, 'dr'+args.ls_dr+'/matched/')
+
+if float(args.ls_dr)>=8:
+    if args.field=='north':
+        field_dir = 'north'
+    elif args.field=='south':
+        field_dir = 'south'
+    else:
+        raise ValueError('field can only be \"north\" or \"south\"!')
+    sweep_dir = os.path.join('/global/project/projectdirs/cosmo/work/legacysurvey/', 
+        'dr'+args.ls_dr[0], field_dir, 'sweep', args.ls_dr)
+    output_dir_allobjects = os.path.join(output_dir, 'dr'+args.ls_dr, field_dir, 'allobjects')
+    output_dir_matched = os.path.join(output_dir, 'dr'+args.ls_dr, field_dir, 'matched')
+else:
+    sweep_dir = os.path.join('/global/project/projectdirs/cosmo/data/legacysurvey/', 
+        'dr'+args.ls_dr[0], 'sweep', args.ls_dr)
+    output_dir_allobjects = os.path.join(top_dir, 'dr'+args.ls_dr+'/allobjects/')
+    output_dir_matched = os.path.join(top_dir, 'dr'+args.ls_dr+'/matched/')
 
 cat1_paths = sorted(glob.glob(os.path.join(sweep_dir, '*.fits')))
 
