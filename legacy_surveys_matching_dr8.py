@@ -49,18 +49,17 @@ args = parser.parse_args()
 
 cat_info = catalog_info(args.catalog, args.ls_dr, args.field)
 ra_col, dec_col, search_radius, cat2_fns, cat1_output_fns, plot_path, ext = cat_info
-plot_path = os.path.join(output_dir, plot_path, field_dir)
 parent_dir = os.path.join(top_dir, 'parent/')
 
 if float(args.ls_dr)>=8:
     if args.field=='north':
-        field_dir = '90prime-mosaic'
+        field_dir = 'north'
     elif args.field=='south':
-        field_dir = 'decam'
+        field_dir = 'south'
     else:
         raise ValueError('field can only be \"north\" or \"south\"!')
     sweep_dir = os.path.join('/global/project/projectdirs/cosmo/work/legacysurvey/', 
-        'dr'+args.ls_dr, field_dir, 'sweep')
+        'dr'+args.ls_dr[0], field_dir, 'sweep', args.ls_dr)
     output_dir_allobjects = os.path.join(output_dir, 'dr'+args.ls_dr, field_dir, 'allobjects')
     output_dir_matched = os.path.join(output_dir, 'dr'+args.ls_dr, field_dir, 'matched')
 else:
