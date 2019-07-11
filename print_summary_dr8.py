@@ -25,7 +25,7 @@ catalogs = [string[15:-5] for string in catalogs]
 
 for field in ['north', 'south']:
 
-    print('\n------------------------------------------------------\)
+    print('\n------------------------------------------------------)
     print('------------------------------------------------------\n')
     print('DR'+args.ls_dr+' '+field)
     output_dir_matched = os.path.join(top_dir, 'dr'+args.ls_dr, field, 'matched')
