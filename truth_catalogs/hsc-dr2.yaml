@@ -1,0 +1,16 @@
+ra_col: "ra"
+dec_col: "dec"
+search_radius: 1. # arcsec
+filenames:
+  - 'hsc-pdr2-dud-cosmos-reduced.fits'
+  - 'hsc-pdr2-dud-deep2_3-reduced.fits'
+  - 'hsc-pdr2-dud-elais_n1-reduced.fits'
+  - 'hsc-pdr2-dud-sxds-reduced.fits'
+  - 'hsc-pdr2-dud-xmm_lss-reduced.fits'
+  - 'hsc-pdr2-wide-w01-reduced.fits'
+  - 'hsc-pdr2-wide-w02-reduced.fits'
+  - 'hsc-pdr2-wide-w03-reduced.fits'
+  - 'hsc-pdr2-wide-w04-reduced.fits'
+  - 'hsc-pdr2-wide-w05-reduced.fits'
+  - 'hsc-pdr2-wide-w06-reduced.fits'
+  - 'hsc-pdr2-wide-w07-reduced.fits'

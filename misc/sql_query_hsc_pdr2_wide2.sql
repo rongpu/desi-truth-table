@@ -1,13 +1,13 @@
 SELECT
     main.object_id,
-    main.ra,
-    main.dec,
+    -- main.ra,
+    -- main.dec,
 
-    ------- flux and flux errors -------
-    main2.g_psfflux_flux, main2.r_psfflux_flux, main2.i_psfflux_flux, main2.z_psfflux_flux, main2.y_psfflux_flux,
-    main2.g_psfflux_fluxsigma, main2.r_psfflux_fluxsigma, main2.i_psfflux_fluxsigma, main2.z_psfflux_fluxsigma, main2.y_psfflux_fluxsigma,
-    main.g_cmodel_flux, main.r_cmodel_flux, main.i_cmodel_flux, main.z_cmodel_flux, main.y_cmodel_flux,
-    main.g_cmodel_fluxsigma, main.r_cmodel_fluxsigma, main.i_cmodel_fluxsigma, main.z_cmodel_fluxsigma, main.y_cmodel_fluxsigma,
+    -- ------- flux and flux errors -------
+    -- main2.g_psfflux_flux, main2.r_psfflux_flux, main2.i_psfflux_flux, main2.z_psfflux_flux, main2.y_psfflux_flux,
+    -- main2.g_psfflux_fluxsigma, main2.r_psfflux_fluxsigma, main2.i_psfflux_fluxsigma, main2.z_psfflux_fluxsigma, main2.y_psfflux_fluxsigma,
+    -- main.g_cmodel_flux, main.r_cmodel_flux, main.i_cmodel_flux, main.z_cmodel_flux, main.y_cmodel_flux,
+    -- main.g_cmodel_fluxsigma, main.r_cmodel_fluxsigma, main.i_cmodel_fluxsigma, main.z_cmodel_fluxsigma, main.y_cmodel_fluxsigma
 
     ------- fraction of flux in de Vaucouleur component -------
     main.g_cmodel_fracdev, main.r_cmodel_fracdev, main.z_cmodel_fracdev,
@@ -15,8 +15,6 @@ SELECT
     ------- shape measurements -------
     main.g_extendedness_value, main.r_extendedness_value, main.i_extendedness_value, main.z_extendedness_value,
     main.g_extendedness_flag, main.r_extendedness_flag, main.i_extendedness_flag, main.z_extendedness_flag,
-    main2.i_kronflux_radius,
-    main2.i_sdssshape_shape11, main2.i_sdssshape_shape22, main2.i_sdssshape_shape12,
 
     ------- flags -------
     main2.g_sdsscentroid_flag, main2.r_sdsscentroid_flag, main2.i_sdsscentroid_flag, main2.z_sdsscentroid_flag, main2.y_sdsscentroid_flag, 
@@ -56,6 +54,6 @@ WHERE
     -- pdr2_wide.search_w06(object_id)
     -- pdr2_wide.search_w07(object_id)
     AND isprimary
-    AND r_cmodel_mag<25.0
+    AND (r_cmodel_mag<25.0 OR g_cmodel_mag<25.0)
 
 -- LIMIT 100;
