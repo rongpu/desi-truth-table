@@ -1,5 +1,3 @@
-# Draft version for DR8 public release
-
 # Match the truth catalogs to Legacy Surveys sweep catalogs;
 # Save the following results:
 # 1. Boolean arrays (.npy) with the same length as the truth catalogs indicating whether each
@@ -28,7 +26,7 @@ from match_coord import match_coord, scatter_plot
 
 time_start = time.clock()
 
-top_dir = '/project/projectdirs/desi/target/analysis/truth'
+parent_dir = '/project/projectdirs/desi/target/analysis/truth/parent'
 output_dir = '/project/projectdirs/desi/target/analysis/truth'
 # output_dir = '/global/cscratch1/sd/rongpu/truth'
 
@@ -50,7 +48,6 @@ args = parser.parse_args()
 cat_info = catalog_info(args.catalog, args.ls_dr, args.field)
 ra_col, dec_col, search_radius, cat2_fns, cat1_output_fns, plot_path, ext = cat_info
 plot_path = os.path.join(output_dir, plot_path)
-parent_dir = os.path.join(top_dir, 'parent/')
 
 if float(args.ls_dr)>=8:
     if args.field=='north':
@@ -66,8 +63,8 @@ if float(args.ls_dr)>=8:
 else:
     sweep_dir = os.path.join('/global/project/projectdirs/cosmo/data/legacysurvey/', 
         'dr'+args.ls_dr[0], 'sweep', args.ls_dr)
-    output_dir_allobjects = os.path.join(top_dir, 'dr'+args.ls_dr+'/allobjects/')
-    output_dir_matched = os.path.join(top_dir, 'dr'+args.ls_dr+'/matched/')
+    output_dir_allobjects = os.path.join(output_dir, 'dr'+args.ls_dr+'/allobjects/')
+    output_dir_matched = os.path.join(output_dir, 'dr'+args.ls_dr+'/matched/')
 
 cat1_paths = sorted(glob.glob(os.path.join(sweep_dir, '*.fits')))
 
