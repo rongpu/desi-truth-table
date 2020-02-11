@@ -7,13 +7,13 @@ import numpy as np
 from astropy.table import Table, hstack
 import fitsio
 
-cat_dir = '/global/cscratch1/sd/rongpu/temp/parent'
+input_dir = '/project/projectdirs/desi/target/analysis/truth/parent/original'
+output_dir = '/global/cscratch1/sd/rongpu/truth/parent'
 
 hsc_list = ['hsc-pdr2-dud-cosmos',
             'hsc-pdr2-dud-deep2_3',
             'hsc-pdr2-dud-elais_n1',
-            'hsc-pdr2-dud-sxds',
-            'hsc-pdr2-dud-xmm_lss',
+            'hsc-pdr2-dud-sxds_xmm_lss',
             'hsc-pdr2-wide-w01',
             'hsc-pdr2-wide-w02',
             'hsc-pdr2-wide-w03',
@@ -21,7 +21,7 @@ hsc_list = ['hsc-pdr2-dud-cosmos',
             'hsc-pdr2-wide-w05',
             'hsc-pdr2-wide-w06',
             'hsc-pdr2-wide-w07',]
-suffix_list = ['1', '2']
+suffix_list = ['1', '2', '3']
 
 for index1 in range(len(hsc_list)):
     cat_hstack = []
@@ -30,7 +30,7 @@ for index1 in range(len(hsc_list)):
         fn = hsc_list[index1]+'-'+suffix_list[index2]+'.fits'
         print(fn)
 
-        cat = fitsio.read(os.path.join(cat_dir, 'original', fn))
+        cat = fitsio.read(os.path.join(input_dir, fn))
         cat = Table(cat)
         print(len(cat))
 
@@ -46,6 +46,6 @@ for index1 in range(len(hsc_list)):
         cat_hstack.append(cat)
 
     cat_hstack = hstack(cat_hstack)
-    cat_hstack.write(os.path.join(cat_dir, hsc_list[index1]+'-reduced.fits'))
+    cat_hstack.write(os.path.join(output_dir, hsc_list[index1]+'-reduced.fits'))
 
     gc.collect()

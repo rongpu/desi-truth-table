@@ -25,25 +25,21 @@ SELECT
     main.g_pixelflags_bad, main.r_pixelflags_bad, main.i_pixelflags_bad, main.z_pixelflags_bad, main.y_pixelflags_bad, 
     main.g_cmodel_flag, main.r_cmodel_flag, main.i_cmodel_flag, main.z_cmodel_flag, main.y_cmodel_flag
 
-    -- ------- photo-z's -------
-    -- pz_demp.photoz_best AS demp_photoz_best, pz_demp.photoz_risk_best AS demp_photoz_risk_best, pz_demp.photoz_std_best AS demp_photoz_std_best,
-    -- pz_ephor.photoz_best AS ephor_photoz_best, pz_ephor.photoz_risk_best AS ephor_photoz_risk_best, pz_ephor.photoz_std_best AS ephor_photoz_std_best,
-    -- pz_ephor_ab.photoz_best AS ephor_ab_photoz_best, pz_ephor_ab.photoz_risk_best AS ephor_ab_photoz_risk_best, pz_ephor_ab.photoz_std_best AS ephor_ab_photoz_std_best,
-    -- pz_frankenz.photoz_best AS frankenz_photoz_best, pz_frankenz.photoz_risk_best AS frankenz_photoz_risk_best, pz_frankenz.photoz_std_best AS frankenz_photoz_std_best,
-    -- pz_mizuki.photoz_best AS mizuki_photoz_best, pz_mizuki.photoz_risk_best AS mizuki_photoz_risk_best, pz_mizuki.photoz_std_best AS mizuki_photoz_std_best,
-    -- pz_mlz.photoz_best AS mlz_photoz_best, pz_mlz.photoz_risk_best AS mlz_photoz_risk_best, pz_mlz.photoz_std_best AS mlz_photoz_std_best,
-    -- pz_nnpz.photoz_best AS nnpz_photoz_best, pz_nnpz.photoz_risk_best AS nnpz_photoz_risk_best, pz_nnpz.photoz_std_best AS nnpz_photoz_std_best
+    -- ------- photo-z's and stellar masses -------
+    -- pz_demp.photoz_best AS demp_photoz_best, pz_demp.photoz_risk_best AS demp_photoz_risk_best, pz_demp.photoz_std_best AS demp_photoz_std_best, 
+    -- pz_demp.photoz_err68_min AS demp_photoz_err68_min, pz_demp.photoz_err68_max AS demp_photoz_err68_max, pz_demp.photoz_err95_min AS demp_photoz_err95_min, pz_demp.photoz_err95_max AS demp_photoz_err95_max, 
+    -- pz_demp.stellar_mass AS demp_stellar_mass, pz_demp.stellar_mass_err68_min AS demp_stellar_mass_err68_min, pz_demp.stellar_mass_err68_max AS demp_stellar_mass_err68_max, 
+    -- pz_demp.sfr AS demp_sfr, pz_demp.sfr_err68_min AS demp_sfr_err68_min, pz_demp.sfr_err68_max AS demp_sfr_err68_max, 
+    -- pz_mizuki.photoz_best AS mizuki_photoz_best, pz_mizuki.photoz_risk_best AS mizuki_photoz_risk_best, pz_mizuki.photoz_std_best AS mizuki_photoz_std_best, 
+    -- pz_mizuki.photoz_err68_min AS mizuki_photoz_err68_min, pz_mizuki.photoz_err68_max AS mizuki_photoz_err68_max, pz_mizuki.photoz_err95_min AS mizuki_photoz_err95_min, pz_mizuki.photoz_err95_max AS mizuki_photoz_err95_max, 
+    -- pz_mizuki.stellar_mass AS mizuki_stellar_mass, pz_mizuki.stellar_mass_err68_min AS mizuki_stellar_mass_err68_min, pz_mizuki.stellar_mass_err68_max AS mizuki_stellar_mass_err68_max, 
+    -- pz_mizuki.sfr AS mizuki_sfr, pz_mizuki.sfr_err68_min AS mizuki_sfr_err68_min, pz_mizuki.sfr_err68_max AS mizuki_sfr_err68_max
 
 FROM
     pdr2_wide.forced main
     LEFT JOIN pdr2_wide.forced2 main2 USING (object_id) 
     -- LEFT JOIN pdr2_wide.photoz_demp pz_demp USING (object_id)
-    -- LEFT JOIN pdr2_wide.photoz_ephor pz_ephor USING (object_id)
-    -- LEFT JOIN pdr2_wide.photoz_ephor_ab pz_ephor_ab USING (object_id)
-    -- LEFT JOIN pdr2_wide.photoz_frankenz pz_frankenz USING (object_id)
     -- LEFT JOIN pdr2_wide.photoz_mizuki pz_mizuki USING (object_id)
-    -- LEFT JOIN pdr2_wide.photoz_mlz pz_mlz USING (object_id)
-    -- LEFT JOIN pdr2_wide.photoz_nnpz pz_nnpz USING (object_id)
 
 WHERE
     pdr2_wide.search_w01(object_id)
