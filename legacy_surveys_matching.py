@@ -33,6 +33,7 @@ output_dir = '/project/projectdirs/desi/target/analysis/truth'
 region_q = True # match only overlapping regions to reduce computation time
 correct_offset_q = True
 plot_q = True
+predr8 = False
 
 parser = argparse.ArgumentParser()
 parser.add_argument('ls_dr', help='DR number of Legacy Surveys')
@@ -48,8 +49,10 @@ args = parser.parse_args()
 cat_info = catalog_info(args.catalog, args.ls_dr, args.field)
 ra_col, dec_col, search_radius, cat2_fns, cat1_output_fns, plot_path, ext = cat_info
 plot_path = os.path.join(output_dir, plot_path)
+if not os.path.exists(plot_path):
+    os.makedirs(plot_path)
 
-if float(args.ls_dr)>=8:
+if not predr8:
     if args.field=='north':
         field_dir = 'north'
     elif args.field=='south':
@@ -65,6 +68,11 @@ else:
         'dr'+args.ls_dr[0], 'sweep', args.ls_dr)
     output_dir_allobjects = os.path.join(output_dir, 'dr'+args.ls_dr+'/allobjects/')
     output_dir_matched = os.path.join(output_dir, 'dr'+args.ls_dr+'/matched/')
+
+if not os.path.exists(output_dir_allobjects):
+    os.makedirs(output_dir_allobjects)
+if not os.path.exists(output_dir_matched):
+    os.makedirs(output_dir_matched)
 
 cat1_paths = sorted(glob.glob(os.path.join(sweep_dir, '*.fits')))
 
@@ -195,9 +203,6 @@ for cat2_index in range(len(cat2_fns)):
             ax = scatter_plot(d_ra+ra_offset, d_dec+dec_offset, markersize=markersize, alpha=0.4, axis=axis, show=False)
             if correct_offset_q and (ra_offset!=0) and (dec_offset!=0):
                 ax.plot(ra_offset, dec_offset, 'r.', markersize=9)
-            
-            if not os.path.exists(plot_path):
-                os.makedirs(plot_path)
             plt.savefig(os.path.join(plot_path, '{}_{}.png'.format(cat2_index, brick)))
             plt.close()
 
@@ -225,9 +230,6 @@ for cat2_index in range(len(cat2_fns)):
             print('%d total overlapping duplicates'%(total_duplicates))
 
         # save the boolean array of successful/unsuccessful matches
-        if not os.path.exists(output_dir_allobjects):
-            os.makedirs(output_dir_allobjects)
-
         bool_array = np.zeros(len(cat2), dtype=bool)
         bool_array[cat1_match_idx2] = True
         np.save(cat1_output_path_allobjects, bool_array)
@@ -235,8 +237,6 @@ for cat2_index in range(len(cat2_fns)):
         print('Fraction of matched objects: {}/{} = {:.2f}%'
             .format(len(cat2_match), len(cat2), 100*len(cat2_match)/len(cat2)))
         print()
-        if not os.path.exists(output_dir_matched):
-            os.makedirs(output_dir_matched)
         fitsio.write(cat1_match_output_path, cat1_match, clobber=True)
         fitsio.write(cat2_match_output_path, cat2_match, clobber=True)
 

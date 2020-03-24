@@ -10,7 +10,7 @@ def get_output_filenames(cat2_filenames, dr):
         output_filenames.append('ls-dr'+dr+'-'+filename)
     return output_filenames
 
-def catalog_info(catalog, dr, field=None):
+def catalog_info(catalog, dr, field=None, predr8=False):
     '''
     Return the essential catalog information.
     '''
@@ -30,7 +30,7 @@ def catalog_info(catalog, dr, field=None):
     search_radius = cat2_dict['search_radius']
     cat2_filenames = cat2_dict['filenames']
     output_filenames = get_output_filenames(cat2_filenames, dr)
-    if float(dr)>=8:
+    if not predr8:
         if field is None:
             raise ValueError('field is not specified!')
         plot_path = 'qaplots/dr'+dr+'/'+field+'/'+catalog+'/'
