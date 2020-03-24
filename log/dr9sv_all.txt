@@ -1,0 +1,2990 @@
+rongpu@cori07:desi-truth-table> ./job_dr9sv.sh
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+2dFGRS.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+2dflens.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+2mrs_1175_done.fits
+0 - sweep-130p025-140p030
+42 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1
+1 - sweep-130p030-140p035
+49 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 32
+2 - sweep-130p035-140p040
+40 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 2
+3 - sweep-130p065-140p070
+17 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1
+4 - sweep-130p070-140p075
+21 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+5 - sweep-140p025-150p030
+41 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 2
+6 - sweep-140p030-150p035
+58 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 56
+7 - sweep-140p035-150p040
+39 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1
+8 - sweep-140p060-150p065
+17 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+9 - sweep-140p065-150p070
+29 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 22
+10 - sweep-140p070-150p075
+14 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+11 - sweep-150p025-160p030
+33 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+12 - sweep-150p030-160p035
+18 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 17
+13 - sweep-150p035-160p040
+50 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1
+14 - sweep-150p065-160p070
+21 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1
+15 - sweep-150p070-160p075
+38 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+16 - sweep-160p025-170p030
+107 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+17 - sweep-160p030-170p035
+44 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+18 - sweep-160p035-170p040
+61 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+19 - sweep-200p045-210p050
+22 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+20 - sweep-200p050-210p055
+16 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+21 - sweep-200p055-210p060
+40 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+22 - sweep-210p025-220p030
+84 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+23 - sweep-210p030-220p035
+43 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 27
+24 - sweep-210p035-220p040
+78 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 37
+25 - sweep-210p040-220p045
+24 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 14
+26 - sweep-210p045-220p050
+31 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 6
+27 - sweep-210p050-220p055
+26 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 23
+28 - sweep-210p055-220p060
+29 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 2
+29 - sweep-220p030-230p035
+22 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1
+30 - sweep-220p035-230p040
+26 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1
+31 - sweep-220p040-230p045
+39 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 30
+32 - sweep-220p045-230p050
+40 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 4
+33 - sweep-220p050-230p055
+33 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+34 - sweep-220p055-230p060
+26 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+35 - sweep-230p040-240p045
+48 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+36 - sweep-230p045-240p050
+33 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+37 - sweep-270p035-280p040
+39 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1
+38 - sweep-270p040-280p045
+29 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 18
+39 - sweep-270p045-280p050
+40 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+40 - sweep-280p035-290p040
+30 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1
+41 - sweep-280p040-290p045
+40 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 11
+42 - sweep-280p045-290p050
+33 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+
+312 total matches
+Fraction of matched objects: 312/43533 = 0.72%
+
+40.6 seconds
+
+------------------------------------------------------
+
+Traceback (most recent call last):
+  File "/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py", line 23, in catalog_info
+    with open(catalog_yaml_fn) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'truth_catalogs/3d-hst.yaml'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "legacy_surveys_matching_dr9sv.py", line 49, in <module>
+    cat_info = catalog_info(args.catalog, args.ls_dr, args.field)
+  File "/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py", line 26, in catalog_info
+    raise IOError(catalog+' not found!')
+OSError: 3d-hst not found!
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+6dFGS.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+ages_reduced.fits
+23 - sweep-210p030-220p035
+29514 out of 40622 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 55
+Final matched objects = 28813
+Matching with offsets corrected...
+RA  offset = 0.3227 arcsec
+Dec offset = 0.1892 arcsec
+Doubly matched objects = 58
+Final matched objects = 28888
+24 - sweep-210p035-220p040
+11183 out of 40622 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 18
+Final matched objects = 10905
+Matching with offsets corrected...
+RA  offset = 0.2140 arcsec
+Dec offset = 0.1360 arcsec
+Doubly matched objects = 19
+Final matched objects = 10924
+
+39812 total matches
+Fraction of matched objects: 39812/40622 = 98.01%
+
+14.8 seconds
+
+------------------------------------------------------
+
+Traceback (most recent call last):
+  File "/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py", line 23, in catalog_info
+    with open(catalog_yaml_fn) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'truth_catalogs/cosmos2015-v1.yaml'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "legacy_surveys_matching_dr9sv.py", line 49, in <module>
+    cat_info = catalog_info(args.catalog, args.ls_dr, args.field)
+  File "/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py", line 26, in catalog_info
+    raise IOError(catalog+' not found!')
+OSError: cosmos2015-v1 not found!
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+deep2-field1.fits.gz
+27 - sweep-210p050-220p055
+17441 out of 17441 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 23
+Final matched objects = 14118
+Matching with offsets corrected...
+RA  offset = -0.0105 arcsec
+Dec offset = 0.0246 arcsec
+Doubly matched objects = 22
+Final matched objects = 14118
+
+14118 total matches
+Fraction of matched objects: 14118/17441 = 80.95%
+
+6.7 seconds
+
+------------------------------------------------------
+
+deep2-field2.fits.gz
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+deep2-field3.fits.gz
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+deep2-field4.fits.gz
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+alldeep.egs.uniq.2012jun13.fits.gz
+27 - sweep-210p050-220p055
+23822 out of 23822 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 46
+Final matched objects = 17331
+Matching with offsets corrected...
+RA  offset = 0.0030 arcsec
+Dec offset = 0.0369 arcsec
+Doubly matched objects = 46
+Final matched objects = 17330
+
+17330 total matches
+Fraction of matched objects: 17330/23822 = 72.75%
+
+6.8 seconds
+
+------------------------------------------------------
+
+Traceback (most recent call last):
+  File "/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py", line 23, in catalog_info
+    with open(catalog_yaml_fn) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'truth_catalogs/fmos-cosmos.yaml'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "legacy_surveys_matching_dr9sv.py", line 49, in <module>
+    cat_info = catalog_info(args.catalog, args.ls_dr, args.field)
+  File "/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py", line 26, in catalog_info
+    raise IOError(catalog+' not found!')
+OSError: fmos-cosmos not found!
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+GAMA-DR3-SpecObj.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+mosdef_zcat.final.reduced.fits
+27 - sweep-210p050-220p055
+394 out of 1114 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 4
+Final matched objects = 62
+
+62 total matches
+Fraction of matched objects: 62/1114 = 5.57%
+
+3.6 seconds
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+OzDES-DR1.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+primus-zcat-moustakas.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+UKBOSS_best_ukwide_v5_2-02jun2015.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+sdss-specObj-dr16-unique-trimmed.fits
+0 - sweep-130p025-140p030
+32143 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 436
+Matching with offsets corrected...
+RA  offset = 0.0207 arcsec
+Dec offset = 0.0388 arcsec
+Doubly matched objects = 0
+Final matched objects = 436
+1 - sweep-130p030-140p035
+28235 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 13108
+Matching with offsets corrected...
+RA  offset = 0.0340 arcsec
+Dec offset = 0.0276 arcsec
+Doubly matched objects = 0
+Final matched objects = 13114
+2 - sweep-130p035-140p040
+22069 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 230
+Matching with offsets corrected...
+RA  offset = 0.0076 arcsec
+Dec offset = 0.0029 arcsec
+Doubly matched objects = 0
+Final matched objects = 230
+3 - sweep-130p065-140p070
+450 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 29
+5 - sweep-140p025-150p030
+32993 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 810
+Matching with offsets corrected...
+RA  offset = 0.0048 arcsec
+Dec offset = 0.0470 arcsec
+Doubly matched objects = 0
+Final matched objects = 810
+6 - sweep-140p030-150p035
+28117 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 25049
+Matching with offsets corrected...
+RA  offset = 0.0156 arcsec
+Dec offset = 0.0469 arcsec
+Doubly matched objects = 0
+Final matched objects = 25059
+7 - sweep-140p035-150p040
+20313 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 415
+Matching with offsets corrected...
+RA  offset = 0.0171 arcsec
+Dec offset = 0.0058 arcsec
+Doubly matched objects = 0
+Final matched objects = 416
+8 - sweep-140p060-150p065
+7901 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 85
+9 - sweep-140p065-150p070
+1624 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1482
+Matching with offsets corrected...
+RA  offset = 0.0080 arcsec
+Dec offset = 0.0486 arcsec
+Doubly matched objects = 0
+Final matched objects = 1482
+10 - sweep-140p070-150p075
+13 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 8
+11 - sweep-150p025-160p030
+32575 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 678
+Matching with offsets corrected...
+RA  offset = 0.0312 arcsec
+Dec offset = 0.0488 arcsec
+Doubly matched objects = 0
+Final matched objects = 679
+12 - sweep-150p030-160p035
+28248 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 24941
+Matching with offsets corrected...
+RA  offset = 0.0168 arcsec
+Dec offset = 0.0387 arcsec
+Doubly matched objects = 0
+Final matched objects = 24946
+13 - sweep-150p035-160p040
+22422 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 547
+Matching with offsets corrected...
+RA  offset = -0.0019 arcsec
+Dec offset = 0.0163 arcsec
+Doubly matched objects = 0
+Final matched objects = 547
+14 - sweep-150p065-160p070
+1189 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 27
+15 - sweep-150p070-160p075
+9 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+16 - sweep-160p025-170p030
+26777 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 10
+17 - sweep-160p030-170p035
+24147 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 388
+Matching with offsets corrected...
+RA  offset = 0.0237 arcsec
+Dec offset = 0.0265 arcsec
+Doubly matched objects = 0
+Final matched objects = 388
+18 - sweep-160p035-170p040
+21893 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 6
+19 - sweep-200p045-210p050
+19929 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 4
+20 - sweep-200p050-210p055
+16812 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 161
+Matching with offsets corrected...
+RA  offset = -0.0018 arcsec
+Dec offset = 0.1562 arcsec
+Doubly matched objects = 0
+Final matched objects = 161
+21 - sweep-200p055-210p060
+14675 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 2
+22 - sweep-210p025-220p030
+15605 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 114
+Matching with offsets corrected...
+RA  offset = 0.0169 arcsec
+Dec offset = 0.0362 arcsec
+Doubly matched objects = 0
+Final matched objects = 115
+23 - sweep-210p030-220p035
+15494 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 7221
+Matching with offsets corrected...
+RA  offset = 0.0142 arcsec
+Dec offset = 0.0271 arcsec
+Doubly matched objects = 0
+Final matched objects = 7221
+24 - sweep-210p035-220p040
+21105 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 9727
+Matching with offsets corrected...
+RA  offset = 0.0169 arcsec
+Dec offset = 0.0064 arcsec
+Doubly matched objects = 0
+Final matched objects = 9729
+25 - sweep-210p040-220p045
+18981 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 7757
+Matching with offsets corrected...
+RA  offset = 0.0151 arcsec
+Dec offset = 0.0294 arcsec
+Doubly matched objects = 0
+Final matched objects = 7759
+26 - sweep-210p045-220p050
+18713 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 2809
+Matching with offsets corrected...
+RA  offset = 0.0269 arcsec
+Dec offset = 0.0317 arcsec
+Doubly matched objects = 0
+Final matched objects = 2813
+27 - sweep-210p050-220p055
+24700 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 22298
+Matching with offsets corrected...
+RA  offset = 0.0160 arcsec
+Dec offset = 0.1223 arcsec
+Doubly matched objects = 0
+Final matched objects = 22299
+28 - sweep-210p055-220p060
+17151 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 433
+Matching with offsets corrected...
+RA  offset = 0.0316 arcsec
+Dec offset = 0.1028 arcsec
+Doubly matched objects = 0
+Final matched objects = 433
+29 - sweep-220p030-230p035
+17186 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 169
+Matching with offsets corrected...
+RA  offset = 0.0209 arcsec
+Dec offset = 0.0311 arcsec
+Doubly matched objects = 0
+Final matched objects = 169
+30 - sweep-220p035-230p040
+20131 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 215
+Matching with offsets corrected...
+RA  offset = 0.0165 arcsec
+Dec offset = 0.0117 arcsec
+Doubly matched objects = 0
+Final matched objects = 215
+31 - sweep-220p040-230p045
+19818 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 14865
+Matching with offsets corrected...
+RA  offset = 0.0176 arcsec
+Dec offset = 0.0312 arcsec
+Doubly matched objects = 0
+Final matched objects = 14867
+32 - sweep-220p045-230p050
+17871 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 3934
+Matching with offsets corrected...
+RA  offset = 0.0167 arcsec
+Dec offset = 0.0314 arcsec
+Doubly matched objects = 0
+Final matched objects = 3936
+33 - sweep-220p050-230p055
+15724 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 356
+Matching with offsets corrected...
+RA  offset = 0.0021 arcsec
+Dec offset = 0.0861 arcsec
+Doubly matched objects = 0
+Final matched objects = 356
+34 - sweep-220p055-230p060
+14027 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 16
+35 - sweep-230p040-240p045
+19145 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 215
+Matching with offsets corrected...
+RA  offset = 0.0129 arcsec
+Dec offset = 0.0347 arcsec
+Doubly matched objects = 0
+Final matched objects = 215
+36 - sweep-230p045-240p050
+18022 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 47
+37 - sweep-270p035-280p040
+5 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 5
+38 - sweep-270p040-280p045
+860 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 794
+Matching with offsets corrected...
+RA  offset = 0.0433 arcsec
+Dec offset = 0.0456 arcsec
+Doubly matched objects = 0
+Final matched objects = 794
+40 - sweep-280p035-290p040
+1493 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 2
+41 - sweep-280p040-290p045
+518 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 350
+Matching with offsets corrected...
+RA  offset = 0.0345 arcsec
+Dec offset = 0.0453 arcsec
+Doubly matched objects = 0
+Final matched objects = 350
+42 - sweep-280p045-290p050
+510 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+
+139780 total matches
+Fraction of matched objects: 139780/5107045 = 2.74%
+
+143.4 seconds
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+VIPERS_W1_SPECTRO_PDR2.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+VIPERS_W4_SPECTRO_PDR2.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+cesam_vvds_spCDFS_DEEP_Full.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+cesam_vvds_spF02_DEEP_Full.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+cesam_vvds_spF02_UDEEP_Full.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+cesam_vvds_spF10_WIDE_Full.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+cesam_vvds_spF14_WIDE_Full.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+cesam_vvds_spF22_WIDE_Full.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+wigglez.final.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+cfhtls-d2-i.fits.gz
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+cfhtls-d2-r.fits.gz
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+cfhtls-d3-i.fits.gz
+27 - sweep-210p050-220p055
+420973 out of 420973 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 137
+Final matched objects = 51533
+Matching with offsets corrected...
+RA  offset = 0.0164 arcsec
+Dec offset = 0.0396 arcsec
+Doubly matched objects = 135
+Final matched objects = 51538
+
+51538 total matches
+Fraction of matched objects: 51538/420973 = 12.24%
+
+12.7 seconds
+
+------------------------------------------------------
+
+cfhtls-d3-r.fits.gz
+27 - sweep-210p050-220p055
+442647 out of 442647 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 126
+Final matched objects = 51081
+Matching with offsets corrected...
+RA  offset = 0.0194 arcsec
+Dec offset = 0.0389 arcsec
+Doubly matched objects = 128
+Final matched objects = 51075
+
+51075 total matches
+Fraction of matched objects: 51075/442647 = 11.54%
+
+11.8 seconds
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+cosmos-acs.fits.gz
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+hsc-pdr2-dud-cosmos-reduced.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+hsc-pdr2-dud-deep2_3-reduced.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+hsc-pdr2-dud-elais_n1-reduced.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+hsc-pdr2-dud-sxds_xmm_lss-reduced.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+hsc-pdr2-wide-w01-reduced.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+hsc-pdr2-wide-w02-reduced.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+hsc-pdr2-wide-w03-reduced.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+hsc-pdr2-wide-w04-reduced.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+hsc-pdr2-wide-w05-reduced.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+hsc-pdr2-wide-w06-reduced.fits
+25 - sweep-210p040-220p045
+3312957 out of 17107795 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 10068
+Final matched objects = 602271
+Matching with offsets corrected...
+RA  offset = 0.0116 arcsec
+Dec offset = 0.0105 arcsec
+Doubly matched objects = 10092
+Final matched objects = 602275
+31 - sweep-220p040-230p045
+3370498 out of 17107795 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 21690
+Final matched objects = 1266891
+Matching with offsets corrected...
+RA  offset = 0.0116 arcsec
+Dec offset = 0.0106 arcsec
+Doubly matched objects = 21706
+Final matched objects = 1266878
+35 - sweep-230p040-240p045
+3333859 out of 17107795 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 429
+Final matched objects = 21246
+Matching with offsets corrected...
+RA  offset = 0.0019 arcsec
+Dec offset = 0.0084 arcsec
+Doubly matched objects = 428
+Final matched objects = 21246
+
+1890399 total matches
+Fraction of matched objects: 1890399/17107795 = 11.05%
+
+930.3 seconds
+
+------------------------------------------------------
+
+hsc-pdr2-wide-w07-reduced.fits
+27 - sweep-210p050-220p055
+349613 out of 349613 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 2925
+Final matched objects = 118668
+Matching with offsets corrected...
+RA  offset = 0.0032 arcsec
+Dec offset = 0.0027 arcsec
+Doubly matched objects = 2925
+Final matched objects = 118670
+
+118670 total matches
+Fraction of matched objects: 118670/349613 = 33.94%
+
+13.7 seconds
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+shela_irac_v1.3_flux_cat.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+SpIES_ch1_only.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+SpIES_ch1andch2.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+2dFGRS.fits
+1 - sweep-020m010-030m005
+93 out of 245591 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+14 - sweep-140m005-150p000
+1440 out of 245591 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+15 - sweep-140p000-150p005
+674 out of 245591 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+23 - sweep-170m005-180p000
+8367 out of 245591 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 2796
+Matching with offsets corrected...
+RA  offset = -0.2400 arcsec
+Dec offset = -0.4624 arcsec
+Doubly matched objects = 0
+Final matched objects = 3038
+24 - sweep-170p000-180p005
+3579 out of 245591 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1362
+Matching with offsets corrected...
+RA  offset = -0.2208 arcsec
+Dec offset = -0.3992 arcsec
+Doubly matched objects = 0
+Final matched objects = 1432
+25 - sweep-180m005-190p000
+7279 out of 245591 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1554
+Matching with offsets corrected...
+RA  offset = -0.1319 arcsec
+Dec offset = -0.3196 arcsec
+Doubly matched objects = 0
+Final matched objects = 1930
+26 - sweep-180p000-190p005
+3098 out of 245591 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1703
+Matching with offsets corrected...
+RA  offset = -0.1159 arcsec
+Dec offset = -0.2335 arcsec
+Doubly matched objects = 0
+Final matched objects = 1749
+27 - sweep-190p000-200p005
+3076 out of 245591 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+30 - sweep-200p000-210p005
+3041 out of 245591 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+33 - sweep-210m005-220p000
+6465 out of 245591 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 2382
+Matching with offsets corrected...
+RA  offset = -0.1097 arcsec
+Dec offset = -0.3617 arcsec
+Doubly matched objects = 0
+Final matched objects = 2468
+34 - sweep-210p000-220p005
+1565 out of 245591 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1233
+Matching with offsets corrected...
+RA  offset = -0.0643 arcsec
+Dec offset = -0.0597 arcsec
+Doubly matched objects = 0
+Final matched objects = 1231
+37 - sweep-220m005-230p000
+1519 out of 245591 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 496
+Matching with offsets corrected...
+RA  offset = -0.0711 arcsec
+Dec offset = -0.2851 arcsec
+Doubly matched objects = 0
+Final matched objects = 505
+38 - sweep-220p000-230p005
+245 out of 245591 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 214
+Matching with offsets corrected...
+RA  offset = -0.0558 arcsec
+Dec offset = 0.0856 arcsec
+Doubly matched objects = 0
+Final matched objects = 214
+
+12567 total matches
+Fraction of matched objects: 12567/245591 = 5.12%
+
+46.0 seconds
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+2dflens.fits
+9 - sweep-130m005-140p000
+1703 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 447
+Matching with offsets corrected...
+RA  offset = 0.0434 arcsec
+Dec offset = 0.0257 arcsec
+Doubly matched objects = 0
+Final matched objects = 447
+23 - sweep-170m005-180p000
+1298 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+25 - sweep-180m005-190p000
+1541 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 85
+33 - sweep-210m005-220p000
+1224 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+37 - sweep-220m005-230p000
+1328 out of 70020 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+
+532 total matches
+Fraction of matched objects: 532/70020 = 0.76%
+
+13.6 seconds
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+2mrs_1175_done.fits
+0 - sweep-020m005-030p000
+123 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+1 - sweep-020m010-030m005
+71 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 4
+2 - sweep-030m005-040p000
+69 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 68
+3 - sweep-030m010-040m005
+73 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 33
+4 - sweep-030p000-040p005
+67 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 43
+5 - sweep-040m005-050p000
+108 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+6 - sweep-040m010-050m005
+81 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 2
+7 - sweep-120m005-130p000
+73 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 4
+8 - sweep-120p000-130p005
+62 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 3
+9 - sweep-130m005-140p000
+38 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 10
+10 - sweep-130p000-140p005
+30 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 18
+11 - sweep-130p025-140p030
+42 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1
+12 - sweep-130p030-140p035
+49 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 30
+13 - sweep-130p035-140p040
+40 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 2
+14 - sweep-140m005-150p000
+40 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 2
+15 - sweep-140p000-150p005
+58 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 4
+16 - sweep-140p025-150p030
+41 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 2
+17 - sweep-140p030-150p035
+58 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 32
+18 - sweep-150p025-160p030
+33 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+19 - sweep-150p030-160p035
+18 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 13
+20 - sweep-150p035-160p040
+50 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+21 - sweep-160p025-170p030
+107 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+22 - sweep-160p030-170p035
+44 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+23 - sweep-170m005-180p000
+88 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 22
+24 - sweep-170p000-180p005
+40 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 4
+25 - sweep-180m005-190p000
+41 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 15
+26 - sweep-180p000-190p005
+70 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 24
+27 - sweep-190p000-200p005
+53 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+28 - sweep-190p005-200p010
+68 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1
+29 - sweep-190p010-200p015
+66 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+30 - sweep-200p000-210p005
+61 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+31 - sweep-200p005-210p010
+64 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 61
+32 - sweep-200p010-210p015
+67 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1
+33 - sweep-210m005-220p000
+55 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 21
+34 - sweep-210p000-220p005
+74 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 35
+35 - sweep-210p005-220p010
+99 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 2
+36 - sweep-210p010-220p015
+76 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+37 - sweep-220m005-230p000
+44 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 6
+38 - sweep-220p000-230p005
+118 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 13
+39 - sweep-230p020-240p025
+66 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1
+40 - sweep-240p015-250p020
+121 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1
+41 - sweep-240p020-250p025
+65 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 40
+42 - sweep-240p025-250p030
+52 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+43 - sweep-250p010-260p015
+15 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+44 - sweep-250p015-260p020
+18 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1
+45 - sweep-250p020-260p025
+59 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+46 - sweep-260p010-270p015
+52 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 2
+47 - sweep-260p015-270p020
+47 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 45
+48 - sweep-260p020-270p025
+47 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+49 - sweep-270p015-280p020
+55 out of 43533 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+
+566 total matches
+Fraction of matched objects: 566/43533 = 1.30%
+
+103.6 seconds
+
+------------------------------------------------------
+
+Traceback (most recent call last):
+  File "/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py", line 23, in catalog_info
+    with open(catalog_yaml_fn) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'truth_catalogs/3d-hst.yaml'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "legacy_surveys_matching_dr9sv.py", line 49, in <module>
+    cat_info = catalog_info(args.catalog, args.ls_dr, args.field)
+  File "/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py", line 26, in catalog_info
+    raise IOError(catalog+' not found!')
+OSError: 3d-hst not found!
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+6dFGS.fits
+0 - sweep-020m005-030p000
+513 out of 124647 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 2
+1 - sweep-020m010-030m005
+571 out of 124647 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 8
+2 - sweep-030m005-040p000
+426 out of 124647 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 407
+Matching with offsets corrected...
+RA  offset = -0.0165 arcsec
+Dec offset = 0.0050 arcsec
+Doubly matched objects = 0
+Final matched objects = 407
+3 - sweep-030m010-040m005
+457 out of 124647 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 180
+Matching with offsets corrected...
+RA  offset = -0.0009 arcsec
+Dec offset = -0.0012 arcsec
+Doubly matched objects = 0
+Final matched objects = 180
+5 - sweep-040m005-050p000
+450 out of 124647 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+6 - sweep-040m010-050m005
+337 out of 124647 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 3
+7 - sweep-120m005-130p000
+415 out of 124647 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 29
+8 - sweep-120p000-130p005
+1 out of 124647 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+9 - sweep-130m005-140p000
+273 out of 124647 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 97
+14 - sweep-140m005-150p000
+301 out of 124647 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 16
+23 - sweep-170m005-180p000
+620 out of 124647 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 211
+Matching with offsets corrected...
+RA  offset = 0.0221 arcsec
+Dec offset = 0.0110 arcsec
+Doubly matched objects = 0
+Final matched objects = 211
+25 - sweep-180m005-190p000
+374 out of 124647 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 129
+Matching with offsets corrected...
+RA  offset = -0.0077 arcsec
+Dec offset = 0.0059 arcsec
+Doubly matched objects = 0
+Final matched objects = 129
+33 - sweep-210m005-220p000
+444 out of 124647 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 190
+Matching with offsets corrected...
+RA  offset = 0.0055 arcsec
+Dec offset = 0.0116 arcsec
+Doubly matched objects = 0
+Final matched objects = 190
+37 - sweep-220m005-230p000
+411 out of 124647 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 58
+
+1330 total matches
+Fraction of matched objects: 1330/124647 = 1.07%
+
+53.3 seconds
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+ages_reduced.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+Traceback (most recent call last):
+  File "/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py", line 23, in catalog_info
+    with open(catalog_yaml_fn) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'truth_catalogs/cosmos2015-v1.yaml'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "legacy_surveys_matching_dr9sv.py", line 49, in <module>
+    cat_info = catalog_info(args.catalog, args.ls_dr, args.field)
+  File "/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py", line 26, in catalog_info
+    raise IOError(catalog+' not found!')
+OSError: cosmos2015-v1 not found!
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+deep2-field1.fits.gz
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+deep2-field2.fits.gz
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+deep2-field3.fits.gz
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+deep2-field4.fits.gz
+4 - sweep-030p000-040p005
+11290 out of 11290 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 480
+Final matched objects = 10625
+Matching with offsets corrected...
+RA  offset = -0.0367 arcsec
+Dec offset = 0.0267 arcsec
+Doubly matched objects = 481
+Final matched objects = 10624
+
+10624 total matches
+Fraction of matched objects: 10624/11290 = 94.10%
+
+11.0 seconds
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+alldeep.egs.uniq.2012jun13.fits.gz
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+Traceback (most recent call last):
+  File "/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py", line 23, in catalog_info
+    with open(catalog_yaml_fn) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'truth_catalogs/fmos-cosmos.yaml'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "legacy_surveys_matching_dr9sv.py", line 49, in <module>
+    cat_info = catalog_info(args.catalog, args.ls_dr, args.field)
+  File "/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py", line 26, in catalog_info
+    raise IOError(catalog+' not found!')
+OSError: fmos-cosmos not found!
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+GAMA-DR3-SpecObj.fits
+2 - sweep-030m005-040p000
+12865 out of 160026 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 1
+Final matched objects = 12789
+Matching with offsets corrected...
+RA  offset = -0.0553 arcsec
+Dec offset = 0.0674 arcsec
+Doubly matched objects = 1
+Final matched objects = 12790
+3 - sweep-030m010-040m005
+23476 out of 160026 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 3
+Final matched objects = 14027
+Matching with offsets corrected...
+RA  offset = -0.0556 arcsec
+Dec offset = 0.0543 arcsec
+Doubly matched objects = 3
+Final matched objects = 14028
+7 - sweep-120m005-130p000
+969 out of 160026 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 931
+Matching with offsets corrected...
+RA  offset = -0.0479 arcsec
+Dec offset = 0.0112 arcsec
+Doubly matched objects = 0
+Final matched objects = 931
+8 - sweep-120p000-130p005
+1517 out of 160026 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1487
+Matching with offsets corrected...
+RA  offset = -0.0417 arcsec
+Dec offset = -0.0205 arcsec
+Doubly matched objects = 0
+Final matched objects = 1487
+9 - sweep-130m005-140p000
+8387 out of 160026 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 8308
+Matching with offsets corrected...
+RA  offset = -0.0349 arcsec
+Dec offset = 0.0053 arcsec
+Doubly matched objects = 0
+Final matched objects = 8309
+10 - sweep-130p000-140p005
+14114 out of 160026 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 14011
+Matching with offsets corrected...
+RA  offset = -0.0223 arcsec
+Dec offset = -0.0137 arcsec
+Doubly matched objects = 0
+Final matched objects = 14011
+14 - sweep-140m005-150p000
+1101 out of 160026 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1079
+Matching with offsets corrected...
+RA  offset = -0.0426 arcsec
+Dec offset = -0.0188 arcsec
+Doubly matched objects = 0
+Final matched objects = 1079
+15 - sweep-140p000-150p005
+1295 out of 160026 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1263
+Matching with offsets corrected...
+RA  offset = -0.0064 arcsec
+Dec offset = -0.0214 arcsec
+Doubly matched objects = 0
+Final matched objects = 1263
+23 - sweep-170m005-180p000
+10209 out of 160026 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 10086
+Matching with offsets corrected...
+RA  offset = -0.0522 arcsec
+Dec offset = -0.0205 arcsec
+Doubly matched objects = 0
+Final matched objects = 10101
+24 - sweep-170p000-180p005
+5107 out of 160026 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 5054
+Matching with offsets corrected...
+RA  offset = -0.0358 arcsec
+Dec offset = -0.0252 arcsec
+Doubly matched objects = 0
+Final matched objects = 5060
+25 - sweep-180m005-190p000
+8772 out of 160026 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 8646
+Matching with offsets corrected...
+RA  offset = -0.0506 arcsec
+Dec offset = -0.0083 arcsec
+Doubly matched objects = 0
+Final matched objects = 8647
+26 - sweep-180p000-190p005
+6174 out of 160026 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 6124
+Matching with offsets corrected...
+RA  offset = -0.0264 arcsec
+Dec offset = -0.0220 arcsec
+Doubly matched objects = 0
+Final matched objects = 6125
+33 - sweep-210m005-220p000
+20179 out of 160026 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 20050
+Matching with offsets corrected...
+RA  offset = -0.0083 arcsec
+Dec offset = -0.0119 arcsec
+Doubly matched objects = 0
+Final matched objects = 20049
+34 - sweep-210p000-220p005
+29709 out of 160026 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 29560
+Matching with offsets corrected...
+RA  offset = -0.0170 arcsec
+Dec offset = -0.0063 arcsec
+Doubly matched objects = 0
+Final matched objects = 29559
+37 - sweep-220m005-230p000
+7002 out of 160026 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 6934
+Matching with offsets corrected...
+RA  offset = -0.0256 arcsec
+Dec offset = -0.0018 arcsec
+Doubly matched objects = 0
+Final matched objects = 6934
+38 - sweep-220p000-230p005
+9093 out of 160026 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 1
+Final matched objects = 9003
+Matching with offsets corrected...
+RA  offset = -0.0272 arcsec
+Dec offset = -0.0107 arcsec
+Doubly matched objects = 1
+Final matched objects = 9002
+
+149375 total matches
+Fraction of matched objects: 149375/160026 = 93.34%
+
+107.3 seconds
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+mosdef_zcat.final.reduced.fits
+3 - sweep-030m010-040m005
+30 out of 1114 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 25
+
+25 total matches
+Fraction of matched objects: 25/1114 = 2.24%
+
+5.5 seconds
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+OzDES-DR1.fits
+2 - sweep-030m005-040p000
+1919 out of 14693 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1891
+Matching with offsets corrected...
+RA  offset = -0.1626 arcsec
+Dec offset = 0.1192 arcsec
+Doubly matched objects = 0
+Final matched objects = 1893
+3 - sweep-030m010-040m005
+2047 out of 14693 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1916
+Matching with offsets corrected...
+RA  offset = -0.1149 arcsec
+Dec offset = 0.1416 arcsec
+Doubly matched objects = 0
+Final matched objects = 1915
+5 - sweep-040m005-050p000
+1132 out of 14693 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+
+3808 total matches
+Fraction of matched objects: 3808/14693 = 25.92%
+
+25.6 seconds
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+primus-zcat-moustakas.fits
+2 - sweep-030m005-040p000
+21665 out of 78916 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 350
+Final matched objects = 21260
+Matching with offsets corrected...
+RA  offset = -0.2332 arcsec
+Dec offset = 0.0936 arcsec
+Doubly matched objects = 351
+Final matched objects = 21285
+3 - sweep-030m010-040m005
+13318 out of 78916 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 208
+Final matched objects = 13059
+Matching with offsets corrected...
+RA  offset = -0.2419 arcsec
+Dec offset = 0.0890 arcsec
+Doubly matched objects = 209
+Final matched objects = 13064
+15 - sweep-140p000-150p005
+5131 out of 78916 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+
+34349 total matches
+Fraction of matched objects: 34349/78916 = 43.53%
+
+34.1 seconds
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+UKBOSS_best_ukwide_v5_2-02jun2015.fits
+0 - sweep-020m005-030p000
+25221 out of 517714 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+2 - sweep-030m005-040p000
+31741 out of 517714 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 31514
+Matching with offsets corrected...
+RA  offset = -0.0295 arcsec
+Dec offset = 0.0103 arcsec
+Doubly matched objects = 0
+Final matched objects = 31514
+4 - sweep-030p000-040p005
+44480 out of 517714 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 44170
+Matching with offsets corrected...
+RA  offset = -0.0316 arcsec
+Dec offset = 0.0009 arcsec
+Doubly matched objects = 0
+Final matched objects = 44171
+5 - sweep-040m005-050p000
+12483 out of 517714 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+
+75684 total matches
+1 total overlapping duplicates
+Fraction of matched objects: 75684/517714 = 14.62%
+
+28.5 seconds
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+sdss-specObj-dr16-unique-trimmed.fits
+0 - sweep-020m005-030p000
+42629 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 217
+Matching with offsets corrected...
+RA  offset = -0.0179 arcsec
+Dec offset = -0.0126 arcsec
+Doubly matched objects = 0
+Final matched objects = 217
+1 - sweep-020m010-030m005
+14519 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 37
+2 - sweep-030m005-040p000
+53320 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 47716
+Matching with offsets corrected...
+RA  offset = -0.0430 arcsec
+Dec offset = 0.0368 arcsec
+Doubly matched objects = 0
+Final matched objects = 47729
+3 - sweep-030m010-040m005
+20689 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 9619
+Matching with offsets corrected...
+RA  offset = -0.0315 arcsec
+Dec offset = 0.0185 arcsec
+Doubly matched objects = 0
+Final matched objects = 9621
+4 - sweep-030p000-040p005
+45003 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 23057
+Matching with offsets corrected...
+RA  offset = -0.0450 arcsec
+Dec offset = 0.0189 arcsec
+Doubly matched objects = 0
+Final matched objects = 23064
+5 - sweep-040m005-050p000
+27997 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 80
+6 - sweep-040m010-050m005
+9037 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 104
+Matching with offsets corrected...
+RA  offset = -0.0059 arcsec
+Dec offset = -0.0765 arcsec
+Doubly matched objects = 0
+Final matched objects = 104
+7 - sweep-120m005-130p000
+3860 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 285
+Matching with offsets corrected...
+RA  offset = 0.0213 arcsec
+Dec offset = 0.0502 arcsec
+Doubly matched objects = 0
+Final matched objects = 285
+8 - sweep-120p000-130p005
+12701 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 834
+Matching with offsets corrected...
+RA  offset = -0.0010 arcsec
+Dec offset = -0.0040 arcsec
+Doubly matched objects = 0
+Final matched objects = 834
+9 - sweep-130m005-140p000
+4752 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 3844
+Matching with offsets corrected...
+RA  offset = 0.0073 arcsec
+Dec offset = 0.0176 arcsec
+Doubly matched objects = 0
+Final matched objects = 3845
+10 - sweep-130p000-140p005
+19297 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 10649
+Matching with offsets corrected...
+RA  offset = 0.0165 arcsec
+Dec offset = 0.0084 arcsec
+Doubly matched objects = 0
+Final matched objects = 10651
+11 - sweep-130p025-140p030
+32143 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 460
+Matching with offsets corrected...
+RA  offset = 0.0165 arcsec
+Dec offset = 0.0505 arcsec
+Doubly matched objects = 0
+Final matched objects = 461
+12 - sweep-130p030-140p035
+28235 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 12890
+Matching with offsets corrected...
+RA  offset = 0.0373 arcsec
+Dec offset = 0.0357 arcsec
+Doubly matched objects = 0
+Final matched objects = 12890
+13 - sweep-130p035-140p040
+22069 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 16
+14 - sweep-140m005-150p000
+8361 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 571
+Matching with offsets corrected...
+RA  offset = 0.0071 arcsec
+Dec offset = 0.0014 arcsec
+Doubly matched objects = 0
+Final matched objects = 571
+15 - sweep-140p000-150p005
+18232 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 961
+Matching with offsets corrected...
+RA  offset = 0.0223 arcsec
+Dec offset = -0.0193 arcsec
+Doubly matched objects = 0
+Final matched objects = 962
+16 - sweep-140p025-150p030
+32993 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 833
+Matching with offsets corrected...
+RA  offset = 0.0038 arcsec
+Dec offset = 0.0518 arcsec
+Doubly matched objects = 0
+Final matched objects = 833
+17 - sweep-140p030-150p035
+28117 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 20407
+Matching with offsets corrected...
+RA  offset = 0.0200 arcsec
+Dec offset = 0.0570 arcsec
+Doubly matched objects = 0
+Final matched objects = 20414
+18 - sweep-150p025-160p030
+32575 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 691
+Matching with offsets corrected...
+RA  offset = 0.0328 arcsec
+Dec offset = 0.0625 arcsec
+Doubly matched objects = 0
+Final matched objects = 691
+19 - sweep-150p030-160p035
+28248 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 21439
+Matching with offsets corrected...
+RA  offset = 0.0259 arcsec
+Dec offset = 0.0451 arcsec
+Doubly matched objects = 0
+Final matched objects = 21448
+20 - sweep-150p035-160p040
+22422 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 2
+21 - sweep-160p025-170p030
+26777 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 10
+22 - sweep-160p030-170p035
+24147 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 365
+Matching with offsets corrected...
+RA  offset = 0.0279 arcsec
+Dec offset = 0.0288 arcsec
+Doubly matched objects = 0
+Final matched objects = 365
+23 - sweep-170m005-180p000
+12680 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 6440
+Matching with offsets corrected...
+RA  offset = 0.0031 arcsec
+Dec offset = 0.0286 arcsec
+Doubly matched objects = 0
+Final matched objects = 6441
+24 - sweep-170p000-180p005
+17309 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 4171
+Matching with offsets corrected...
+RA  offset = 0.0089 arcsec
+Dec offset = 0.0058 arcsec
+Doubly matched objects = 0
+Final matched objects = 4171
+25 - sweep-180m005-190p000
+12573 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 6382
+Matching with offsets corrected...
+RA  offset = 0.0319 arcsec
+Dec offset = 0.0365 arcsec
+Doubly matched objects = 0
+Final matched objects = 6386
+26 - sweep-180p000-190p005
+19185 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 5540
+Matching with offsets corrected...
+RA  offset = 0.0418 arcsec
+Dec offset = 0.0275 arcsec
+Doubly matched objects = 0
+Final matched objects = 5546
+27 - sweep-190p000-200p005
+16711 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 6
+28 - sweep-190p005-200p010
+17268 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 167
+Matching with offsets corrected...
+RA  offset = 0.0380 arcsec
+Dec offset = 0.0164 arcsec
+Doubly matched objects = 0
+Final matched objects = 167
+29 - sweep-190p010-200p015
+16036 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 8
+30 - sweep-200p000-210p005
+16540 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 361
+Matching with offsets corrected...
+RA  offset = 0.0180 arcsec
+Dec offset = 0.0104 arcsec
+Doubly matched objects = 0
+Final matched objects = 362
+31 - sweep-200p005-210p010
+17439 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 15968
+Matching with offsets corrected...
+RA  offset = 0.0119 arcsec
+Dec offset = 0.0117 arcsec
+Doubly matched objects = 0
+Final matched objects = 15969
+32 - sweep-200p010-210p015
+16649 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 396
+Matching with offsets corrected...
+RA  offset = 0.0109 arcsec
+Dec offset = 0.0374 arcsec
+Doubly matched objects = 0
+Final matched objects = 396
+33 - sweep-210m005-220p000
+11579 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 6685
+Matching with offsets corrected...
+RA  offset = 0.0252 arcsec
+Dec offset = 0.0047 arcsec
+Doubly matched objects = 0
+Final matched objects = 6686
+34 - sweep-210p000-220p005
+16670 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 8973
+Matching with offsets corrected...
+RA  offset = 0.0113 arcsec
+Dec offset = 0.0062 arcsec
+Doubly matched objects = 0
+Final matched objects = 8973
+35 - sweep-210p005-220p010
+19571 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 198
+Matching with offsets corrected...
+RA  offset = 0.0207 arcsec
+Dec offset = 0.0058 arcsec
+Doubly matched objects = 0
+Final matched objects = 198
+36 - sweep-210p010-220p015
+15866 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 7
+37 - sweep-220m005-230p000
+10075 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 3181
+Matching with offsets corrected...
+RA  offset = 0.0276 arcsec
+Dec offset = 0.0310 arcsec
+Doubly matched objects = 0
+Final matched objects = 3181
+38 - sweep-220p000-230p005
+18001 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 4177
+Matching with offsets corrected...
+RA  offset = 0.0218 arcsec
+Dec offset = 0.0132 arcsec
+Doubly matched objects = 0
+Final matched objects = 4181
+39 - sweep-230p020-240p025
+16805 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 134
+Matching with offsets corrected...
+RA  offset = 0.0095 arcsec
+Dec offset = 0.0124 arcsec
+Doubly matched objects = 0
+Final matched objects = 134
+40 - sweep-240p015-250p020
+19043 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 211
+Matching with offsets corrected...
+RA  offset = 0.0356 arcsec
+Dec offset = 0.0165 arcsec
+Doubly matched objects = 0
+Final matched objects = 211
+41 - sweep-240p020-250p025
+16840 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 8271
+Matching with offsets corrected...
+RA  offset = 0.0283 arcsec
+Dec offset = 0.0157 arcsec
+Doubly matched objects = 0
+Final matched objects = 8271
+42 - sweep-240p025-250p030
+17380 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 205
+Matching with offsets corrected...
+RA  offset = 0.0241 arcsec
+Dec offset = -0.0148 arcsec
+Doubly matched objects = 0
+Final matched objects = 205
+43 - sweep-250p010-260p015
+2430 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+44 - sweep-250p015-260p020
+5157 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+45 - sweep-250p020-260p025
+15124 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+48 - sweep-260p020-270p025
+584 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+49 - sweep-270p015-280p020
+6 out of 5107045 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+
+226628 total matches
+1 total overlapping duplicates
+Fraction of matched objects: 226628/5107045 = 4.44%
+
+243.0 seconds
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+VIPERS_W1_SPECTRO_PDR2.fits
+2 - sweep-030m005-040p000
+26134 out of 60528 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 5
+Final matched objects = 25989
+Matching with offsets corrected...
+RA  offset = -0.0590 arcsec
+Dec offset = 0.0807 arcsec
+Doubly matched objects = 5
+Final matched objects = 25988
+3 - sweep-030m010-040m005
+34610 out of 60528 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 7
+Final matched objects = 34446
+Matching with offsets corrected...
+RA  offset = -0.0626 arcsec
+Dec offset = 0.0809 arcsec
+Doubly matched objects = 8
+Final matched objects = 34447
+
+60435 total matches
+Fraction of matched objects: 60435/60528 = 99.85%
+
+26.6 seconds
+
+------------------------------------------------------
+
+VIPERS_W4_SPECTRO_PDR2.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+cesam_vvds_spCDFS_DEEP_Full.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+cesam_vvds_spF02_DEEP_Full.fits
+2 - sweep-030m005-040p000
+11356 out of 11356 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 11
+Final matched objects = 10795
+Matching with offsets corrected...
+RA  offset = -0.0341 arcsec
+Dec offset = 0.3176 arcsec
+Doubly matched objects = 11
+Final matched objects = 10837
+
+10837 total matches
+Fraction of matched objects: 10837/11356 = 95.43%
+
+15.5 seconds
+
+------------------------------------------------------
+
+cesam_vvds_spF02_UDEEP_Full.fits
+2 - sweep-030m005-040p000
+1125 out of 1125 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 913
+Matching with offsets corrected...
+RA  offset = -0.0445 arcsec
+Dec offset = 0.3136 arcsec
+Doubly matched objects = 1
+Final matched objects = 920
+
+920 total matches
+Fraction of matched objects: 920/1125 = 81.78%
+
+16.0 seconds
+
+------------------------------------------------------
+
+cesam_vvds_spF10_WIDE_Full.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+cesam_vvds_spF14_WIDE_Full.fits
+30 - sweep-200p000-210p005
+3400 out of 7358 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 558
+Matching with offsets corrected...
+RA  offset = 0.1561 arcsec
+Dec offset = 0.1761 arcsec
+Doubly matched objects = 0
+Final matched objects = 566
+31 - sweep-200p005-210p010
+2216 out of 7358 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 1
+Final matched objects = 2078
+Matching with offsets corrected...
+RA  offset = 0.1024 arcsec
+Dec offset = 0.1572 arcsec
+Doubly matched objects = 1
+Final matched objects = 2084
+34 - sweep-210p000-220p005
+1079 out of 7358 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 33
+35 - sweep-210p005-220p010
+844 out of 7358 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 137
+Matching with offsets corrected...
+RA  offset = 0.1052 arcsec
+Dec offset = 0.2232 arcsec
+Doubly matched objects = 0
+Final matched objects = 141
+
+2824 total matches
+Fraction of matched objects: 2824/7358 = 38.38%
+
+35.2 seconds
+
+------------------------------------------------------
+
+cesam_vvds_spF22_WIDE_Full.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+wigglez.final.fits
+6 - sweep-040m010-050m005
+5391 out of 225415 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+9 - sweep-130m005-140p000
+1540 out of 225415 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1527
+Matching with offsets corrected...
+RA  offset = 0.0038 arcsec
+Dec offset = -0.0138 arcsec
+Doubly matched objects = 0
+Final matched objects = 1527
+10 - sweep-130p000-140p005
+7602 out of 225415 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 4605
+Matching with offsets corrected...
+RA  offset = 0.0118 arcsec
+Dec offset = -0.0103 arcsec
+Doubly matched objects = 0
+Final matched objects = 4605
+14 - sweep-140m005-150p000
+1641 out of 225415 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 217
+Matching with offsets corrected...
+RA  offset = -0.0005 arcsec
+Dec offset = -0.0203 arcsec
+Doubly matched objects = 0
+Final matched objects = 217
+15 - sweep-140p000-150p005
+8216 out of 225415 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 873
+Matching with offsets corrected...
+RA  offset = 0.0250 arcsec
+Dec offset = -0.0103 arcsec
+Doubly matched objects = 0
+Final matched objects = 873
+23 - sweep-170m005-180p000
+394 out of 225415 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+24 - sweep-170p000-180p005
+2095 out of 225415 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+30 - sweep-200p000-210p005
+30 out of 225415 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 1
+31 - sweep-200p005-210p010
+58 out of 225415 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 48
+33 - sweep-210m005-220p000
+6872 out of 225415 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 5499
+Matching with offsets corrected...
+RA  offset = 0.0089 arcsec
+Dec offset = -0.0101 arcsec
+Doubly matched objects = 0
+Final matched objects = 5498
+34 - sweep-210p000-220p005
+14035 out of 225415 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 7672
+Matching with offsets corrected...
+RA  offset = -0.0054 arcsec
+Dec offset = -0.0083 arcsec
+Doubly matched objects = 0
+Final matched objects = 7672
+35 - sweep-210p005-220p010
+4886 out of 225415 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 69
+37 - sweep-220m005-230p000
+4749 out of 225415 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 2198
+Matching with offsets corrected...
+RA  offset = -0.0149 arcsec
+Dec offset = 0.0107 arcsec
+Doubly matched objects = 0
+Final matched objects = 2198
+38 - sweep-220p000-230p005
+11965 out of 225415 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 3025
+Matching with offsets corrected...
+RA  offset = -0.0027 arcsec
+Dec offset = -0.0124 arcsec
+Doubly matched objects = 0
+Final matched objects = 3023
+
+25731 total matches
+Fraction of matched objects: 25731/225415 = 11.41%
+
+65.0 seconds
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+cfhtls-d2-i.fits.gz
+15 - sweep-140p000-150p005
+147566 out of 376060 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+cfhtls-d2-r.fits.gz
+15 - sweep-140p000-150p005
+152571 out of 385367 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+cfhtls-d3-i.fits.gz
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+cfhtls-d3-r.fits.gz
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+cosmos-acs.fits.gz
+15 - sweep-140p000-150p005
+501815 out of 1177274 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+hsc-pdr2-dud-cosmos-reduced.fits
+15 - sweep-140p000-150p005
+1053488 out of 2203724 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+hsc-pdr2-dud-deep2_3-reduced.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+hsc-pdr2-dud-elais_n1-reduced.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+hsc-pdr2-dud-sxds_xmm_lss-reduced.fits
+2 - sweep-030m005-040p000
+1223460 out of 1776746 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 10277
+Final matched objects = 677017
+Matching with offsets corrected...
+RA  offset = -0.0178 arcsec
+Dec offset = 0.0126 arcsec
+Doubly matched objects = 10316
+Final matched objects = 677022
+3 - sweep-030m010-040m005
+558005 out of 1776746 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 6020
+Final matched objects = 318501
+Matching with offsets corrected...
+RA  offset = -0.0123 arcsec
+Dec offset = 0.0127 arcsec
+Doubly matched objects = 6008
+Final matched objects = 318499
+
+995519 total matches
+2 total overlapping duplicates
+Fraction of matched objects: 995519/1776746 = 56.03%
+
+134.5 seconds
+
+------------------------------------------------------
+
+hsc-pdr2-wide-w01-reduced.fits
+0 - sweep-020m005-030p000
+592097 out of 4895030 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+hsc-pdr2-wide-w02-reduced.fits
+0 - sweep-020m005-030p000
+1267557 out of 21314684 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 531
+Final matched objects = 40883
+Matching with offsets corrected...
+RA  offset = -0.0089 arcsec
+Dec offset = 0.0135 arcsec
+Doubly matched objects = 528
+Final matched objects = 40879
+1 - sweep-020m010-030m005
+404764 out of 21314684 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 268
+Final matched objects = 26470
+Matching with offsets corrected...
+RA  offset = -0.0004 arcsec
+Dec offset = 0.0116 arcsec
+Doubly matched objects = 270
+Final matched objects = 26472
+2 - sweep-030m005-040p000
+7692402 out of 21314684 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 68289
+Final matched objects = 5661098
+Matching with offsets corrected...
+RA  offset = -0.0132 arcsec
+Dec offset = 0.0144 arcsec
+Doubly matched objects = 68380
+Final matched objects = 5661097
+3 - sweep-030m010-040m005
+3137527 out of 21314684 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 25239
+Final matched objects = 2322554
+Matching with offsets corrected...
+RA  offset = -0.0085 arcsec
+Dec offset = 0.0111 arcsec
+Doubly matched objects = 25291
+Final matched objects = 2322589
+4 - sweep-030p000-040p005
+7310991 out of 21314684 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 30371
+Final matched objects = 2344639
+Matching with offsets corrected...
+RA  offset = -0.0139 arcsec
+Dec offset = 0.0208 arcsec
+Doubly matched objects = 30428
+Final matched objects = 2344695
+5 - sweep-040m005-050p000
+64694 out of 21314684 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 129
+Final matched objects = 8280
+Matching with offsets corrected...
+RA  offset = -0.0166 arcsec
+Dec offset = 0.0199 arcsec
+Doubly matched objects = 127
+Final matched objects = 8280
+6 - sweep-040m010-050m005
+31857 out of 21314684 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 426
+Final matched objects = 20385
+Matching with offsets corrected...
+RA  offset = -0.0149 arcsec
+Dec offset = 0.0216 arcsec
+Doubly matched objects = 422
+Final matched objects = 20383
+
+10424389 total matches
+6 total overlapping duplicates
+Fraction of matched objects: 10424389/21314684 = 48.91%
+
+751.5 seconds
+
+------------------------------------------------------
+
+hsc-pdr2-wide-w03-reduced.fits
+7 - sweep-120m005-130p000
+964604 out of 32524077 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 1959
+Final matched objects = 182082
+Matching with offsets corrected...
+RA  offset = 0.0062 arcsec
+Dec offset = 0.0036 arcsec
+Doubly matched objects = 1965
+Final matched objects = 182087
+8 - sweep-120p000-130p005
+1783125 out of 32524077 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 3036
+Final matched objects = 269821
+Matching with offsets corrected...
+RA  offset = 0.0026 arcsec
+Dec offset = 0.0016 arcsec
+Doubly matched objects = 3046
+Final matched objects = 269823
+9 - sweep-130m005-140p000
+4077541 out of 32524077 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 20533
+Final matched objects = 1780323
+Matching with offsets corrected...
+RA  offset = 0.0067 arcsec
+Dec offset = 0.0072 arcsec
+Doubly matched objects = 20516
+Final matched objects = 1780332
+10 - sweep-130p000-140p005
+7909642 out of 32524077 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 34153
+Final matched objects = 2508158
+Matching with offsets corrected...
+RA  offset = 0.0036 arcsec
+Dec offset = 0.0058 arcsec
+Doubly matched objects = 34192
+Final matched objects = 2508149
+14 - sweep-140m005-150p000
+3883253 out of 32524077 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 1888
+Final matched objects = 171071
+Matching with offsets corrected...
+RA  offset = 0.0063 arcsec
+Dec offset = 0.0104 arcsec
+Doubly matched objects = 1888
+Final matched objects = 171075
+15 - sweep-140p000-150p005
+5137699 out of 32524077 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 3084
+Final matched objects = 241684
+Matching with offsets corrected...
+RA  offset = 0.0083 arcsec
+Dec offset = 0.0090 arcsec
+Doubly matched objects = 3092
+Final matched objects = 241672
+
+5153135 total matches
+3 total overlapping duplicates
+Fraction of matched objects: 5153135/32524077 = 15.84%
+
+830.3 seconds
+
+------------------------------------------------------
+
+hsc-pdr2-wide-w04-reduced.fits
+23 - sweep-170m005-180p000
+3727508 out of 47029686 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 24995
+Final matched objects = 1144803
+Matching with offsets corrected...
+RA  offset = 0.0122 arcsec
+Dec offset = 0.0126 arcsec
+Doubly matched objects = 25008
+Final matched objects = 1144773
+24 - sweep-170p000-180p005
+3320189 out of 47029686 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 24032
+Final matched objects = 932993
+Matching with offsets corrected...
+RA  offset = 0.0109 arcsec
+Dec offset = 0.0091 arcsec
+Doubly matched objects = 24058
+Final matched objects = 932994
+25 - sweep-180m005-190p000
+3793313 out of 47029686 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 22736
+Final matched objects = 1189810
+Matching with offsets corrected...
+RA  offset = 0.0134 arcsec
+Dec offset = 0.0141 arcsec
+Doubly matched objects = 22716
+Final matched objects = 1189789
+26 - sweep-180p000-190p005
+4950445 out of 47029686 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 20814
+Final matched objects = 978587
+Matching with offsets corrected...
+RA  offset = 0.0122 arcsec
+Dec offset = 0.0093 arcsec
+Doubly matched objects = 20854
+Final matched objects = 978573
+27 - sweep-190p000-200p005
+5085419 out of 47029686 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+28 - sweep-190p005-200p010
+258660 out of 47029686 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+30 - sweep-200p000-210p005
+3258142 out of 47029686 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+33 - sweep-210m005-220p000
+3821922 out of 47029686 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 30350
+Final matched objects = 1623811
+Matching with offsets corrected...
+RA  offset = 0.0104 arcsec
+Dec offset = 0.0104 arcsec
+Doubly matched objects = 30359
+Final matched objects = 1623806
+34 - sweep-210p000-220p005
+3551785 out of 47029686 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 33015
+Final matched objects = 1618978
+Matching with offsets corrected...
+RA  offset = 0.0101 arcsec
+Dec offset = 0.0114 arcsec
+Doubly matched objects = 32983
+Final matched objects = 1618947
+37 - sweep-220m005-230p000
+2370799 out of 47029686 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 14463
+Final matched objects = 760198
+Matching with offsets corrected...
+RA  offset = 0.0085 arcsec
+Dec offset = 0.0149 arcsec
+Doubly matched objects = 14477
+Final matched objects = 760182
+38 - sweep-220p000-230p005
+2915634 out of 47029686 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 14807
+Final matched objects = 947931
+Matching with offsets corrected...
+RA  offset = 0.0068 arcsec
+Dec offset = 0.0130 arcsec
+Doubly matched objects = 14809
+Final matched objects = 947932
+
+9196992 total matches
+4 total overlapping duplicates
+Fraction of matched objects: 9196992/47029686 = 19.56%
+
+1714.9 seconds
+
+------------------------------------------------------
+
+hsc-pdr2-wide-w05-reduced.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+hsc-pdr2-wide-w06-reduced.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+hsc-pdr2-wide-w07-reduced.fits
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+shela_irac_v1.3_flux_cat.fits
+0 - sweep-020m005-030p000
+640293 out of 2294786 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+No match with entire survey footprint!
+
+------------------------------------------------------
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+SpIES_ch1_only.fits
+0 - sweep-020m005-030p000
+161723 out of 6133631 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+2 - sweep-030m005-040p000
+320671 out of 6133631 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 4525
+Final matched objects = 112880
+Matching with offsets corrected...
+RA  offset = -0.0791 arcsec
+Dec offset = 0.0813 arcsec
+Doubly matched objects = 4511
+Final matched objects = 112771
+4 - sweep-030p000-040p005
+376176 out of 6133631 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 5311
+Final matched objects = 147664
+Matching with offsets corrected...
+RA  offset = -0.0558 arcsec
+Dec offset = 0.0879 arcsec
+Doubly matched objects = 5281
+Final matched objects = 147664
+
+260425 total matches
+10 total overlapping duplicates
+Fraction of matched objects: 260425/6133631 = 4.25%
+
+44.9 seconds
+
+------------------------------------------------------
+
+SpIES_ch1andch2.fits
+0 - sweep-020m005-030p000
+155775 out of 5463475 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+2 - sweep-030m005-040p000
+319096 out of 5463475 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 723
+Final matched objects = 259454
+Matching with offsets corrected...
+RA  offset = -0.0236 arcsec
+Dec offset = 0.1080 arcsec
+Doubly matched objects = 707
+Final matched objects = 259447
+4 - sweep-030p000-040p005
+300829 out of 5463475 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 629
+Final matched objects = 248030
+Matching with offsets corrected...
+RA  offset = 0.0146 arcsec
+Dec offset = 0.1107 arcsec
+Doubly matched objects = 598
+Final matched objects = 248009
+
+507421 total matches
+35 total overlapping duplicates
+Fraction of matched objects: 507421/5463475 = 9.29%
+
+54.5 seconds
+
+------------------------------------------------------
