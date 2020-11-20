@@ -24,7 +24,7 @@ import gc
 from catalog_info import catalog_info
 from match_coord import match_coord, scatter_plot
 
-time_start = time.clock()
+time_start = time.perf_counter()
 
 parent_dir = '/project/projectdirs/desi/target/analysis/truth/parent'
 output_dir = '/project/projectdirs/desi/target/analysis/truth'
@@ -240,7 +240,7 @@ for cat2_index in range(len(cat2_fns)):
         fitsio.write(cat1_match_output_path, cat1_match, clobber=True)
         fitsio.write(cat2_match_output_path, cat2_match, clobber=True)
 
-        time_end = time.clock()
+        time_end = time.perf_counter()
         print('%.1f seconds'%(time_end-time_start))
         time_start = time_end-time_start
 

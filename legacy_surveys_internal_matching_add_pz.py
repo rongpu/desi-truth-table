@@ -15,7 +15,7 @@ from astropy.table import Table, vstack, hstack
 import fitsio
 import argparse
 
-time_start = time.clock()
+time_start = time.perf_counter()
 
 parser = argparse.ArgumentParser()
 parser.add_argument('ls_dr', help='DR number of Legacy Surveys')
@@ -103,7 +103,7 @@ cat1_stack.remove_column('id')
 cat2 = hstack([cat2, cat1_stack])
 cat2.write(output_path)
 
-time_end = time.clock()
+time_end = time.perf_counter()
 print('%.1f seconds'%(time_end-time_start))
 time_start = time_end-time_start
 
