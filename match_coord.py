@@ -2,19 +2,19 @@ from __future__ import print_function, division
 import numpy as np
 from astropy import units as u
 from astropy.table import Table
-import matplotlib.pyplot as plt
 from astropy.coordinates import SkyCoord
 from matplotlib.ticker import NullFormatter
 
 
 def match_coord(ra1, dec1, ra2, dec2, search_radius=1., nthneighbor=1, plot_q=True, verbose=True,
-    keep_all_pairs=False):
+    keep_all_pairs=False, markersize=None):
     '''
     Match objects in (ra2, dec2) to (ra1, dec1). 
 
     Inputs: 
         RA and Dec of two catalogs;
         search_radius: in arcsec;
+        nthneighbor: find the n-th closest neighbor; 1 being the closest;
         (Optional) keep_all_pairs: if true, then all matched pairs are kept; otherwise, if more than
         one object in t2 is match to the same object in t1 (i.e. double match), only the closest pair
         is kept.
@@ -41,8 +41,8 @@ def match_coord(ra1, dec1, ra2, dec2, search_radius=1., nthneighbor=1, plot_q=Tr
     t2['id'] = np.arange(len(t2))
     
     # Matching catalogs
-    sky1 = SkyCoord(ra1*u.degree,dec1*u.degree, frame='icrs')
-    sky2 = SkyCoord(ra2*u.degree,dec2*u.degree, frame='icrs')
+    sky1 = SkyCoord(ra1*u.degree, dec1*u.degree, frame='icrs')
+    sky2 = SkyCoord(ra2*u.degree, dec2*u.degree, frame='icrs')
     idx, d2d, d3d = sky2.match_to_catalog_sky(sky1, nthneighbor=nthneighbor)
     # This finds a match for each object in t2. Not all objects in t1 catalog are included in the result. 
     
@@ -107,11 +107,59 @@ def match_coord(ra1, dec1, ra2, dec2, search_radius=1., nthneighbor=1, plot_q=Tr
     ##########################################
 
     if plot_q:
-        markersize = np.max([0.01, np.min([10, 0.3*100000/len(d_ra)])])    
+        if markersize is None:
+            markersize = np.max([0.01, np.min([10, 0.3*100000/len(d_ra)])])    
         axis = [-search_radius*1.05, search_radius*1.05, -search_radius*1.05, search_radius*1.05]
         scatter_plot(d_ra, d_dec, markersize=markersize, alpha=0.5, axis=axis)
 
     return np.array(t1['id']), np.array(t2['id']), np.array(t2['d2d']), np.array(d_ra), np.array(d_dec)
+
+
+
+def match_self(ra, dec, search_radius=1., return_indices=False, plot_q=False):
+    '''
+    Find objects that has a neighbor within search_radius arcsec. 
+
+    Return: 
+    Number of suspected duplicates. 
+    (Optional) idx1, idx2: arrays of indices of suspected duplicates. 
+        (Both arrays are returned so one can recreate the scatter plot)
+    '''
+
+    # protect the global variables from being changed by np.sort
+    ra, dec = map(np.copy, [ra, dec])
+
+    ra = np.array(ra)
+    dec = np.array(dec)
+    skycat = SkyCoord(ra*u.degree,dec*u.degree, frame='icrs')
+    idx, d2d, _ = skycat.match_to_catalog_sky(skycat, nthneighbor=2)
+
+    # convert distances to numpy array in arcsec
+    d2d = np.array(d2d.to(u.arcsec))
+
+    mask = d2d<search_radius
+    print(np.sum(mask), "objects with a nearby neighbor")
+    n_duplicates = np.sum(mask)
+    idx1 = np.arange(len(ra))[mask]
+    idx2 = idx[mask]
+
+    if plot_q and (n_duplicates!=0):
+        d_ra = (ra[idx1] - ra[idx2]) * 3600. # arcsec
+        d_dec = (dec[idx1] - dec[idx2]) * 3600. # arcsec
+        ##### Convert d_ra to actual arcsecs #####
+        mask = d_ra > 180*3600
+        d_ra[mask] = d_ra[mask] - 360.*3600
+        mask = d_ra < -180*3600
+        d_ra[mask] = d_ra[mask] + 360.*3600
+        d_ra = d_ra * np.cos(dec[idx1]/180*np.pi)
+        ##########################################
+        scatter_plot(d_ra, d_dec)
+
+    if return_indices:
+        return n_duplicates, idx1, idx2
+    else:
+        return n_duplicates
+
 
 
 def scatter_plot(d_ra, d_dec, markersize=1, alpha=1, figsize=8, axis=None, title='', show=True,
@@ -126,6 +174,8 @@ def scatter_plot(d_ra, d_dec, markersize=1, alpha=1, figsize=8, axis=None, title
 
      axScatter: scatter-histogram plot
     '''
+
+    import matplotlib.pyplot as plt
 
     nullfmt = NullFormatter()         # no labels
 
