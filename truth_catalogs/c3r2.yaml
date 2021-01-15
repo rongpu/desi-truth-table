@@ -1,0 +1,5 @@
+ra_col: "ra"
+dec_col: "dec"
+search_radius: 1. # arcsec
+filenames:
+  - "c3r2_DR1+DR2_2019april11-reduced.fits"

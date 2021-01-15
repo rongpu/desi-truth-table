@@ -1,0 +1,5 @@
+ra_col: "alpha_j2000"
+dec_col: "delta_j2000"
+search_radius: 1. # arcsec
+filenames:
+  - "OzDES-DR2.fits"
