@@ -4,7 +4,7 @@ python legacy_surveys_matching.py 9.0 2mrs --field north
 python legacy_surveys_matching.py 9.0 3d-hst-v4.1.5 --field north
 python legacy_surveys_matching.py 9.0 6dfgs --field north
 python legacy_surveys_matching.py 9.0 ages --field north
-python legacy_surveys_matching.py 9.0 c3r2 --field north
+python legacy_surveys_matching.py 9.0 c3r2-dr2 --field north
 python legacy_surveys_matching.py 9.0 cfhtls --field north
 python legacy_surveys_matching.py 9.0 cosmos-acs --field north
 python legacy_surveys_matching.py 9.0 cosmos2015-v1.1 --field north
@@ -33,7 +33,7 @@ python legacy_surveys_matching.py 9.0 3d-hst-v4.1.5 --field south
 python legacy_surveys_matching.py 9.0 6dfgs --field south
 python legacy_surveys_matching.py 9.0 ages --field south
 python legacy_surveys_matching.py 9.0 cfhtls --field south
-python legacy_surveys_matching.py 9.0 c3r2 --field south
+python legacy_surveys_matching.py 9.0 c3r2-dr2 --field south
 python legacy_surveys_matching.py 9.0 cosmos-acs --field south
 python legacy_surveys_matching.py 9.0 cosmos2015-v1.1 --field south
 python legacy_surveys_matching.py 9.0 deep2 --field south

@@ -5086,4 +5086,86 @@ Fraction of matched objects: 22017/225415 = 9.77%
 
 ------------------------------------------------------
 
-rongpu@cori09:desi-truth-table> 
+rongpu@cori01:desi-truth-table> python legacy_surveys_matching.py 9.0 c3r2-dr2 --field north
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+c3r2_DR1+DR2_2019april11-reduced.fits
+7 - sweep-030m005-040p000
+1002 out of 4378 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+79 - sweep-140p000-150p005
+1653 out of 4378 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 161
+Matching with offsets corrected...
+RA  offset = 0.0588 arcsec
+Dec offset = 0.0377 arcsec
+Doubly matched objects = 0
+Final matched objects = 161
+92 - sweep-150p000-160p005
+1292 out of 4378 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 113
+Matching with offsets corrected...
+RA  offset = -0.0052 arcsec
+Dec offset = 0.0225 arcsec
+Doubly matched objects = 0
+Final matched objects = 113
+170 - sweep-210p050-220p055
+475 out of 4378 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 0
+Final matched objects = 225
+Matching with offsets corrected...
+RA  offset = 0.0126 arcsec
+Dec offset = -0.0274 arcsec
+Doubly matched objects = 0
+Final matched objects = 225
+
+499 total matches
+Fraction of matched objects: 499/4378 = 11.40%
+
+9.4 seconds
+
+------------------------------------------------------
+
+rongpu@cori01:desi-truth-table> python legacy_surveys_matching.py 9.0 ozdes-dr2 --field north
+
+/global/u2/r/rongpu/git/desi-truth-table/catalog_info.py:24: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cat2_dict = yaml.load(f)
+OzDES-DR2-reduced.fits
+7 - sweep-030m005-040p000
+5102 out of 38064 objects in cat2 are in the overlapping region
+Matching...
+0 matches
+10 - sweep-040m005-050p000
+3814 out of 38064 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 1
+Final matched objects = 3193
+Matching with offsets corrected...
+RA  offset = -0.1228 arcsec
+Dec offset = 0.1353 arcsec
+Doubly matched objects = 3
+Final matched objects = 3194
+11 - sweep-040p000-050p005
+1300 out of 38064 objects in cat2 are in the overlapping region
+Matching...
+Doubly matched objects = 2
+Final matched objects = 704
+Matching with offsets corrected...
+RA  offset = -0.1681 arcsec
+Dec offset = 0.1226 arcsec
+Doubly matched objects = 1
+Final matched objects = 707
+
+3901 total matches
+Fraction of matched objects: 3901/38064 = 10.25%
+
+5.9 seconds
+
+------------------------------------------------------
