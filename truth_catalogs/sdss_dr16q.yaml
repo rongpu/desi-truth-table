@@ -1,0 +1,5 @@
+ra_col: "RA"
+dec_col: "DEC"
+search_radius: 1. # arcsec
+filenames:
+  - "DR16Q_v4.fits"
