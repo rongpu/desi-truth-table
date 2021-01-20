@@ -27,8 +27,8 @@ from match_coord import match_coord, scatter_plot
 time_start = time.perf_counter()
 
 parent_dir = '/project/projectdirs/desi/target/analysis/truth/parent'
-output_dir = '/project/projectdirs/desi/target/analysis/truth'
-# output_dir = '/global/cscratch1/sd/rongpu/truth'
+# output_dir = '/project/projectdirs/desi/target/analysis/truth'
+output_dir = '/global/cscratch1/sd/rongpu/truth'
 
 region_q = True # match only overlapping regions to reduce computation time
 correct_offset_q = True
@@ -148,6 +148,10 @@ for cat2_index in range(len(cat2_fns)):
             print('%d out of %d objects in cat2 are in the overlapping region'%(np.sum(mask), len(mask)))
         
         cat1 = fitsio.read(cat1_path, ext=1)
+
+        # Remove "DUP" objects
+        mask = (cat1['TYPE']!='DUP') & (cat1['TYPE']!='DUP ')
+        cat1 = cat1[mask]
 
         ra1 = np.array(cat1['RA'])
         dec1 = np.array(cat1['DEC'])
