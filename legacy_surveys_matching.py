@@ -152,6 +152,8 @@ for cat2_index in range(len(cat2_fns)):
         # Remove "DUP" objects
         mask = (cat1['TYPE']!='DUP') & (cat1['TYPE']!='DUP ')
         cat1 = cat1[mask]
+        if len(cat1)==0:
+            continue
 
         ra1 = np.array(cat1['RA'])
         dec1 = np.array(cat1['DEC'])
