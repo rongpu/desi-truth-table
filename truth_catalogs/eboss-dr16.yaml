@@ -1,0 +1,6 @@
+ra_col: "RA"
+dec_col: "DEC"
+search_radius: 1. # arcsec
+filenames:
+  - "eBOSS_LRG_full_ALLdata-vDR16.fits"
+  - "eBOSS_ELG_full_ALLdata-vDR16.fits"
