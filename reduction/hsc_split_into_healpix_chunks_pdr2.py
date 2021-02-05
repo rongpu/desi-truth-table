@@ -17,7 +17,8 @@ hsc_list = [
 
 for field in ['north', 'south']:
     
-    cat_dir = '/project/projectdirs/desi/target/analysis/truth/dr9.0/{}/matched/'.format(field)
+    # cat_dir = '/project/projectdirs/desi/target/analysis/truth/dr9.0/{}/matched/'.format(field)
+    cat_dir = '/global/cscratch1/sd/rongpu/truth/dr9.0/{}/matched/'.format(field)
     
     for index in range(len(hsc_list)):
         hsc_fn = hsc_list[index]
