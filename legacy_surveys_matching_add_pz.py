@@ -1,14 +1,5 @@
-# Match the truth catalogs to Legacy Surveys sweep catalogs;
-# Save the following results:
-# 1. Boolean arrays (.npy) with the same length as the truth catalogs indicating whether each
-#    object has a match;
-# 2. Catalogs containing matched objects in FITS format.
-
-# cat1 - multiple catalog files - DECaLS/BASS/MzLS
-# cat2 - single or multiple catalog files - the "truth" catalog
-
-# To run this script, e.g. match Legacy Survey DR8.0 North to DEEP2:
-# python legacy_surveys_matching.py 8.0 deep2 --field north
+# To run this script, e.g. match Legacy Survey DR9.0 North to DEEP2:
+# python legacy_surveys_matching_pz.py 9.0 s82mgc-full --field north
 
 from __future__ import division, print_function
 import matplotlib
@@ -27,18 +18,12 @@ from match_coord import match_coord, scatter_plot
 
 time_start = time.perf_counter()
 
-# parent_dir = '/project/projectdirs/desi/target/analysis/truth/parent'
-# output_dir = '/project/projectdirs/desi/target/analysis/truth'
-parent_dir = '/global/cscratch1/sd/rongpu/truth/parent'
-output_dir = '/global/cscratch1/sd/rongpu/truth'
+parent_dir = '/global/cfs/cdirs/desi/users/rongpu/truth/parent'
+output_dir = '/global/cfs/cdirs/desi/users/rongpu/truth'
 
 region_q = True # match only overlapping regions to reduce computation time
 correct_offset_q = True
 plot_q = True
-
-##########################
-test_q = False
-##########################
 
 parser = argparse.ArgumentParser()
 parser.add_argument('ls_dr', help='DR number of Legacy Surveys')
@@ -61,8 +46,9 @@ if float(args.ls_dr)>=8:
         'dr'+args.ls_dr[0], field_dir, 'sweep', args.ls_dr)
     output_dir_allobjects = os.path.join(output_dir, 'dr'+args.ls_dr, field_dir, 'allobjects')
     output_dir_matched = os.path.join(output_dir, 'dr'+args.ls_dr, field_dir, 'matched')
-    pz_dir = os.path.join('/global/project/projectdirs/cosmo/data/legacysurvey/', 
-        'dr'+args.ls_dr[0], field_dir, 'sweep', args.ls_dr+'-photo-z')
+    # pz_dir = os.path.join('/global/project/projectdirs/cosmo/data/legacysurvey/', 
+    #     'dr'+args.ls_dr[0], field_dir, 'sweep', args.ls_dr+'-photo-z')
+    pz_dir = os.path.join('/global/cscratch1/sd/rongpu/dr9_photoz', field_dir, args.ls_dr+'-photo-z')
 else:
     raise ValueError('only DR8+ is supported')
     # sweep_dir = os.path.join('/global/project/projectdirs/cosmo/data/legacysurvey/', 
@@ -70,10 +56,15 @@ else:
     # output_dir_allobjects = os.path.join(output_dir, 'dr'+args.ls_dr+'/allobjects/')
     # output_dir_matched = os.path.join(output_dir, 'dr'+args.ls_dr+'/matched/')
 
-cat1_paths = sorted(glob.glob(os.path.join(sweep_dir, '*.fits')))
+if not os.path.exists(output_dir_allobjects):
+    os.makedirs(output_dir_allobjects)
+if not os.path.exists(output_dir_matched):
+    os.makedirs(output_dir_matched)
+if not os.path.exists(plot_path):
+    os.makedirs(plot_path)
 
-if test_q:
-    cat1_paths = cat1_paths[:30]
+
+cat1_paths = sorted(glob.glob(os.path.join(sweep_dir, '*.fits')))
 
 for cat2_index in range(len(cat2_fns)):
 
@@ -146,19 +137,18 @@ for cat2_index in range(len(cat2_fns)):
             print('%d - '%cat1_index + filename)
             print('%d out of %d objects in cat2 are in the overlapping region'%(np.sum(mask), len(mask)))
         
-        if test_q:
-            cat1 = fitsio.read(cat1_path, ext=1, columns=['RA', 'DEC'])
-        else:
-            cat1 = fitsio.read(cat1_path, ext=1)
-        cat1 = Table(cat1)
+        cat1 = Table(fitsio.read(cat1_path, ext=1))
         
         # Add photo-z's
         cat1_pz_path = os.path.join(pz_dir, filename+'-pz.fits')
         cat1_pz = Table.read(cat1_pz_path)
         cat1 = hstack([cat1, cat1_pz])
 
-        if test_q:
-            cat1 = cat1[::100]
+        # Remove "DUP" objects
+        mask = (cat1['TYPE']!='DUP') & (cat1['TYPE']!='DUP ')
+        cat1 = cat1[mask]
+        if len(cat1)==0:
+            continue
 
         ra1 = np.array(cat1['RA'])
         dec1 = np.array(cat1['DEC'])
@@ -215,8 +205,6 @@ for cat2_index in range(len(cat2_fns)):
             if correct_offset_q and (ra_offset!=0) and (dec_offset!=0):
                 ax.plot(ra_offset, dec_offset, 'r.', markersize=9)
             
-            if not os.path.exists(plot_path):
-                os.makedirs(plot_path)
             plt.savefig(os.path.join(plot_path, '{}_{}.png'.format(cat2_index, brick)))
             plt.close()
 
@@ -244,9 +232,6 @@ for cat2_index in range(len(cat2_fns)):
             print('%d total overlapping duplicates'%(total_duplicates))
 
         # save the boolean array of successful/unsuccessful matches
-        if not os.path.exists(output_dir_allobjects):
-            os.makedirs(output_dir_allobjects)
-
         bool_array = np.zeros(len(cat2), dtype=bool)
         bool_array[cat1_match_idx2] = True
         np.save(cat1_output_path_allobjects, bool_array)
@@ -254,8 +239,6 @@ for cat2_index in range(len(cat2_fns)):
         print('Fraction of matched objects: {}/{} = {:.2f}%'
             .format(len(cat2_match), len(cat2), 100*len(cat2_match)/len(cat2)))
         print()
-        if not os.path.exists(output_dir_matched):
-            os.makedirs(output_dir_matched)
         cat1_match.write(cat1_match_output_path)
         fitsio.write(cat2_match_output_path, cat2_match, clobber=True)
 

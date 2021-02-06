@@ -49,8 +49,6 @@ args = parser.parse_args()
 cat_info = catalog_info(args.catalog, args.ls_dr, args.field)
 ra_col, dec_col, search_radius, cat2_fns, cat1_output_fns, plot_path, ext = cat_info
 plot_path = os.path.join(output_dir, plot_path)
-if not os.path.exists(plot_path):
-    os.makedirs(plot_path)
 
 if not predr8:
     if args.field=='north':
@@ -73,6 +71,8 @@ if not os.path.exists(output_dir_allobjects):
     os.makedirs(output_dir_allobjects)
 if not os.path.exists(output_dir_matched):
     os.makedirs(output_dir_matched)
+if not os.path.exists(plot_path):
+    os.makedirs(plot_path)
 
 cat1_paths = sorted(glob.glob(os.path.join(sweep_dir, '*.fits')))
 
