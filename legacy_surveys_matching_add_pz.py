@@ -48,7 +48,7 @@ if float(args.ls_dr)>=8:
     output_dir_matched = os.path.join(output_dir, 'dr'+args.ls_dr, field_dir, 'matched')
     # pz_dir = os.path.join('/global/project/projectdirs/cosmo/data/legacysurvey/', 
     #     'dr'+args.ls_dr[0], field_dir, 'sweep', args.ls_dr+'-photo-z')
-    pz_dir = os.path.join('/global/cscratch1/sd/rongpu/dr9_photoz', field_dir, args.ls_dr+'-photo-z')
+    pz_dir = os.path.join('/global/cscratch1/sd/rongpu/dr9_photoz', field_dir)
 else:
     raise ValueError('only DR8+ is supported')
     # sweep_dir = os.path.join('/global/project/projectdirs/cosmo/data/legacysurvey/', 
