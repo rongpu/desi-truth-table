@@ -142,6 +142,9 @@ for cat2_index in range(len(cat2_fns)):
         # Add photo-z's
         cat1_pz_path = os.path.join(pz_dir, filename+'-pz.fits')
         cat1_pz = Table.read(cat1_pz_path)
+        if not np.all(cat1['BRICKID']==cat1_pz['BRICKID']) and np.all(cat1['OBJID']==cat1_pz['OBJID']) and np.all(cat1['RELEASE']==cat1_pz['RELEASE']):
+            raise ValueError
+        cat1_pz.remove_columns(['BRICKID', 'OBJID', 'RELEASE'])
         cat1 = hstack([cat1, cat1_pz])
 
         # Remove "DUP" objects

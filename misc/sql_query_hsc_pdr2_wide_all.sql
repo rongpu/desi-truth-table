@@ -7,7 +7,7 @@ SELECT
     main2.g_psfflux_flux, main2.r_psfflux_flux, main2.i_psfflux_flux, main2.z_psfflux_flux, main2.y_psfflux_flux,
     main2.g_psfflux_fluxsigma, main2.r_psfflux_fluxsigma, main2.i_psfflux_fluxsigma, main2.z_psfflux_fluxsigma, main2.y_psfflux_fluxsigma,
     main.g_cmodel_flux, main.r_cmodel_flux, main.i_cmodel_flux, main.z_cmodel_flux, main.y_cmodel_flux,
-    main.g_cmodel_fluxsigma, main.r_cmodel_fluxsigma, main.i_cmodel_fluxsigma, main.z_cmodel_fluxsigma, main.y_cmodel_fluxsigma
+    main.g_cmodel_fluxsigma, main.r_cmodel_fluxsigma, main.i_cmodel_fluxsigma, main.z_cmodel_fluxsigma, main.y_cmodel_fluxsigma,
 
     ------- fraction of flux in de Vaucouleur component -------
     main.g_cmodel_fracdev, main.r_cmodel_fracdev, main.z_cmodel_fracdev,
@@ -23,7 +23,7 @@ SELECT
     main.g_pixelflags_saturatedcenter, main.r_pixelflags_saturatedcenter, main.i_pixelflags_saturatedcenter, main.z_pixelflags_saturatedcenter, main.y_pixelflags_saturatedcenter, 
     main.g_pixelflags_crcenter, main.r_pixelflags_crcenter, main.i_pixelflags_crcenter, main.z_pixelflags_crcenter, main.y_pixelflags_crcenter, 
     main.g_pixelflags_bad, main.r_pixelflags_bad, main.i_pixelflags_bad, main.z_pixelflags_bad, main.y_pixelflags_bad, 
-    main.g_cmodel_flag, main.r_cmodel_flag, main.i_cmodel_flag, main.z_cmodel_flag, main.y_cmodel_flag
+    main.g_cmodel_flag, main.r_cmodel_flag, main.i_cmodel_flag, main.z_cmodel_flag, main.y_cmodel_flag,
 
     ------- photo-z's and stellar masses -------
     pz_demp.photoz_best AS demp_photoz_best, pz_demp.photoz_risk_best AS demp_photoz_risk_best, pz_demp.photoz_std_best AS demp_photoz_std_best, 
