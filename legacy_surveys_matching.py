@@ -30,7 +30,7 @@ parent_dir = '/project/projectdirs/desi/target/analysis/truth/parent'
 # output_dir = '/project/projectdirs/desi/target/analysis/truth'
 output_dir = '/global/cscratch1/sd/rongpu/truth'
 
-region_q = True # match only overlapping regions to reduce computation time
+region_q = True  # match only overlapping regions to reduce computation time
 correct_offset_q = True
 plot_q = True
 predr8 = False

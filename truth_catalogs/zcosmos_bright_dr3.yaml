@@ -2,4 +2,4 @@ ra_col: "RA"
 dec_col: "Dec"
 search_radius: 1. # arcsec
 filenames:
-  - "wigglez.final.fits"
+  - "cesam_zcosbrightspec20k_dr3_catalog.fits"
