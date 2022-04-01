@@ -1,5 +1,5 @@
-ra_col: "RA"
-dec_col: "Dec"
+ra_col: "ra"
+dec_col: "dec"
 search_radius: 1. # arcsec
 filenames:
   - "cesam_zcosbrightspec20k_dr3_catalog.fits"
