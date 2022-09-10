@@ -26,8 +26,8 @@ from match_coord import match_coord, scatter_plot
 
 time_start = time.perf_counter()
 
-parent_dir = '/project/projectdirs/desi/target/analysis/truth/parent'
-output_dir = '/project/projectdirs/desi/target/analysis/truth'
+parent_dir = '/global/cfs/cdirs/desi/target/analysis/truth/parent'
+output_dir = '/global/cfs/cdirs/desi/target/analysis/truth'
 # output_dir = '/global/cscratch1/sd/rongpu/truth'
 
 region_q = True  # match only overlapping regions to reduce computation time
@@ -57,12 +57,12 @@ if not predr8:
         field_dir = 'south'
     else:
         raise ValueError('field can only be \"north\" or \"south\"!')
-    sweep_dir = os.path.join('/global/project/projectdirs/cosmo/data/legacysurvey/', 
+    sweep_dir = os.path.join('/global/global/cfs/cdirs/cosmo/data/legacysurvey/', 
         'dr'+args.ls_dr[0], field_dir, 'sweep', args.ls_dr)
     output_dir_allobjects = os.path.join(output_dir, 'dr'+args.ls_dr, field_dir, 'allobjects')
     output_dir_matched = os.path.join(output_dir, 'dr'+args.ls_dr, field_dir, 'matched')
 else:
-    sweep_dir = os.path.join('/global/project/projectdirs/cosmo/data/legacysurvey/', 
+    sweep_dir = os.path.join('/global/global/cfs/cdirs/cosmo/data/legacysurvey/', 
         'dr'+args.ls_dr[0], 'sweep', args.ls_dr)
     output_dir_allobjects = os.path.join(output_dir, 'dr'+args.ls_dr+'/allobjects/')
     output_dir_matched = os.path.join(output_dir, 'dr'+args.ls_dr+'/matched/')

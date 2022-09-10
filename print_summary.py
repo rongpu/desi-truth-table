@@ -15,8 +15,8 @@ parser.add_argument('ls_dr')
 args = parser.parse_args()
 ls_dr = args.ls_dr
 
-top_dir = '/project/projectdirs/desi/target/analysis/truth'
-# top_dir = '/global/project/projectdirs/desi/users/rongpu/truth'
+top_dir = '/global/cfs/cdirs//desi/target/analysis/truth'
+# top_dir = '/global/cfs/cdirs//desi/users/rongpu/truth'
 parent_dir = os.path.join(top_dir, 'parent/')
 
 end_string = '-match.fits'
