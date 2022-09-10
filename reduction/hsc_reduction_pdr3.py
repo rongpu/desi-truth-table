@@ -12,6 +12,7 @@ output_dir = '/global/cfs/cdirs/desi/target/analysis/truth/parent'
 
 hsc_list = [['hsc-pdr3-dud.fits'],
             ['hsc-pdr3-dud-no_mag_limit.fits'],
+            ['hsc-pdr3-dud-rev-no_mag_limit.fits'],
             ['hsc-pdr3-wide-aegis.fits'],
             ['hsc-pdr3-wide-autumn-1.fits',
              'hsc-pdr3-wide-autumn-2.fits',

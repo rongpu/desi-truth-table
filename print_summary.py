@@ -1,6 +1,6 @@
 # Print the number of matched objects in truth catalogs
-# Example: DR8.0 truth catalogs:
-# python print_summary.py 8.0
+# Example: DR9.0 truth catalogs:
+# python print_summary.py 9.0
 
 from __future__ import division, print_function
 import sys, os, time, argparse, glob
@@ -15,12 +15,13 @@ parser.add_argument('ls_dr')
 args = parser.parse_args()
 ls_dr = args.ls_dr
 
-top_dir = '/global/cfs/cdirs//desi/target/analysis/truth'
-# top_dir = '/global/cfs/cdirs//desi/users/rongpu/truth'
+top_dir = '/global/cfs/cdirs/desi/target/analysis/truth'
+# top_dir = '/global/cfs/cdirs/desi/users/rongpu/truth'
 parent_dir = os.path.join(top_dir, 'parent/')
 
 end_string = '-match.fits'
 
+# catalogs = ["hsc-dr3"]
 catalogs = sorted(glob.glob('truth_catalogs/*.yaml'))
 catalogs = [string[15:-5] for string in catalogs]
 
