@@ -1,0 +1,10 @@
+ra_col: "ra"
+dec_col: "dec"
+search_radius: 1. # arcsec
+filenames:
+  - 'hsc-pdr3-dud-reduced.fits.gz'
+  - 'hsc-pdr3-dud-no_mag_limit-reduced.fits.gz'
+  - 'hsc-pdr3-wide-aegis-reduced.fits.gz'
+  - 'hsc-pdr3-wide-autumn-reduced.fits.gz'
+  - 'hsc-pdr3-wide-hectomap-reduced.fits.gz'
+  - 'hsc-pdr3-wide-spring-reduced.fits.gz'

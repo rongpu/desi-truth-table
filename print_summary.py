@@ -13,6 +13,7 @@ from catalog_info import catalog_info
 parser = argparse.ArgumentParser()
 parser.add_argument('ls_dr')
 args = parser.parse_args()
+ls_dr = args.ls_dr
 
 top_dir = '/project/projectdirs/desi/target/analysis/truth'
 # top_dir = '/global/project/projectdirs/desi/users/rongpu/truth'
@@ -27,16 +28,16 @@ for field in ['north', 'south']:
 
     print('\n------------------------------------------------------')
     print('------------------------------------------------------\n')
-    print('DR'+args.ls_dr+' '+field)
+    print('DR'+ls_dr+' '+field)
     print('-----------\n')
 
-    output_dir_matched = os.path.join(top_dir, 'dr'+args.ls_dr, field, 'matched')
+    output_dir_matched = os.path.join(top_dir, 'dr'+ls_dr, field, 'matched')
 
     for index in range(len(catalogs)):
 
         print(catalogs[index])
         
-        cat_info = catalog_info(catalogs[index], args.ls_dr, field=field)
+        cat_info = catalog_info(catalogs[index], ls_dr, field=field)
         ra_col, dec_col, search_radius, cat2_fns, cat1_output_fns, plot_path, ext = cat_info
 
         for cat2_index in range(len(cat2_fns)):
