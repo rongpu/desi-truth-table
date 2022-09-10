@@ -21,7 +21,7 @@ def catalog_info(catalog, dr, field=None, predr8=False):
     catalog_yaml_fn = os.path.join('truth_catalogs', catalog+'.yaml')
     try:
         with open(catalog_yaml_fn) as f:
-            cat2_dict = yaml.load(f)
+            cat2_dict = yaml.safe_load(f)
     except IOError:
         raise IOError(catalog+' not found!')
 
