@@ -24,6 +24,7 @@ python legacy_surveys_matching.py 9.0 spies-dr1 --field north
 python legacy_surveys_matching.py 9.0 vipers-pdr2 --field north
 python legacy_surveys_matching.py 9.0 vvds --field north
 python legacy_surveys_matching.py 9.0 wigglez-final --field north
+python legacy_surveys_matching.py 9.0 hsc-dr3 --field north
 
 ############################################################
 
@@ -53,3 +54,4 @@ python legacy_surveys_matching.py 9.0 spies-dr1 --field south
 python legacy_surveys_matching.py 9.0 vipers-pdr2 --field south
 python legacy_surveys_matching.py 9.0 vvds --field south
 python legacy_surveys_matching.py 9.0 wigglez-final --field south
+python legacy_surveys_matching.py 9.0 hsc-dr3 --field south
