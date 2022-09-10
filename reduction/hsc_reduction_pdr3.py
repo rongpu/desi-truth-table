@@ -44,9 +44,9 @@ for index1 in range(len(hsc_list)):
 
     fn = hsc_list[index1][0]
     if len(hsc_list[index1])==1:
-        output_fn = fn[:-5]+'-reduced.fits.gz'
+        output_fn = fn[:-5]+'-reduced.fits'
     else:
-        output_fn = fn[:fn.rfind('-')]+'-reduced.fits.gz'
+        output_fn = fn[:fn.rfind('-')]+'-reduced.fits'
     output_path = os.path.join(output_dir, output_fn)
     if os.path.isfile(output_path):
         print('File already exists:', output_path)
