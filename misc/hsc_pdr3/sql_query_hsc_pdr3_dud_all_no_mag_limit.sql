@@ -9,6 +9,9 @@ SELECT
     main.g_cmodel_flux, main.r_cmodel_flux, main.i_cmodel_flux, main.z_cmodel_flux, main.y_cmodel_flux,
     main.g_cmodel_fluxerr, main.r_cmodel_fluxerr, main.i_cmodel_fluxerr, main.z_cmodel_fluxerr, main.y_cmodel_fluxerr,
 
+    ------- extinction -------
+    main.a_g, main.a_r, main.a_i, main.a_z, main.a_y,
+
     ------- fraction of flux in de Vaucouleur component -------
     main.g_cmodel_fracdev, main.r_cmodel_fracdev, main.i_cmodel_fracdev, main.z_cmodel_fracdev,
 
