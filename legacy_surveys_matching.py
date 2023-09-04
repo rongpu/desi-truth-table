@@ -29,8 +29,8 @@ from match_coord import match_coord, scatter_plot
 time_start = time.perf_counter()
 
 parent_dir = '/global/cfs/cdirs/desi/target/analysis/truth/parent'
-# output_dir = '/global/cfs/cdirs/desi/target/analysis/truth'
-output_dir = '/pscratch/sd/r/rongpu/truth'
+output_dir = '/global/cfs/cdirs/desi/target/analysis/truth'
+# output_dir = '/pscratch/sd/r/rongpu/truth'
 
 region_q = True  # match only overlapping regions to reduce computation time
 correct_offset_q = True
