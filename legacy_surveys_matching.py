@@ -1,3 +1,5 @@
+################### Work in progress ###################
+
 # Match the truth catalogs to Legacy Surveys sweep catalogs;
 # Save the following results:
 # 1. Boolean arrays (.npy) with the same length as the truth catalogs indicating whether each
@@ -11,17 +13,17 @@
 # python legacy_surveys_matching.py 9.0 deep2 --field north
 
 from __future__ import division, print_function
-import matplotlib
-matplotlib.use( "Agg" )
+# import matplotlib
+# matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
-from astropy import units as u
-from astropy.coordinates import SkyCoord
 import sys, os, time, argparse, glob
 import fitsio
 import gc
+from astropy.table import Table
 
 from catalog_info import catalog_info
+sys.path.append(os.path.expanduser('~/git/Python/user_modules/'))
 from match_coord import match_coord, scatter_plot
 
 time_start = time.perf_counter()
@@ -33,7 +35,6 @@ output_dir = '/global/cfs/cdirs/desi/target/analysis/truth'
 region_q = True  # match only overlapping regions to reduce computation time
 correct_offset_q = True
 plot_q = True
-predr8 = False
 
 parser = argparse.ArgumentParser()
 parser.add_argument('ls_dr', help='DR number of Legacy Surveys')
@@ -50,22 +51,16 @@ cat_info = catalog_info(args.catalog, args.ls_dr, args.field)
 ra_col, dec_col, search_radius, cat2_fns, cat1_output_fns, plot_path, ext = cat_info
 plot_path = os.path.join(output_dir, plot_path)
 
-if not predr8:
-    if args.field=='north':
-        field_dir = 'north'
-    elif args.field=='south':
-        field_dir = 'south'
-    else:
-        raise ValueError('field can only be \"north\" or \"south\"!')
-    sweep_dir = os.path.join('/global/cfs/cdirs/cosmo/data/legacysurvey/', 
-        'dr'+args.ls_dr[0], field_dir, 'sweep', args.ls_dr)
-    output_dir_allobjects = os.path.join(output_dir, 'dr'+args.ls_dr, field_dir, 'allobjects')
-    output_dir_matched = os.path.join(output_dir, 'dr'+args.ls_dr, field_dir, 'matched')
+if args.field=='north':
+    field_dir = 'north'
+elif args.field=='south':
+    field_dir = 'south'
 else:
-    sweep_dir = os.path.join('/global/cfs/cdirs/cosmo/data/legacysurvey/', 
-        'dr'+args.ls_dr[0], 'sweep', args.ls_dr)
-    output_dir_allobjects = os.path.join(output_dir, 'dr'+args.ls_dr+'/allobjects/')
-    output_dir_matched = os.path.join(output_dir, 'dr'+args.ls_dr+'/matched/')
+    raise ValueError('field can only be \"north\" or \"south\"!')
+sweep_dir = os.path.join('/global/cfs/cdirs/cosmo/data/legacysurvey/',
+                         'dr'+args.ls_dr[0], field_dir, 'sweep', args.ls_dr)
+output_dir_allobjects = os.path.join(output_dir, 'dr'+args.ls_dr, field_dir, 'allobjects')
+output_dir_matched = os.path.join(output_dir, 'dr'+args.ls_dr, field_dir, 'matched')
 
 if not os.path.exists(output_dir_allobjects):
     os.makedirs(output_dir_allobjects)
@@ -146,7 +141,7 @@ for cat2_index in range(len(cat2_fns)):
             cat2_idx = cat2_idx[mask]
             print('%d - '%cat1_index + filename)
             print('%d out of %d objects in cat2 are in the overlapping region'%(np.sum(mask), len(mask)))
-        
+
         cat1 = fitsio.read(cat1_path, ext=1)
 
         # Remove "DUP" objects
@@ -160,7 +155,7 @@ for cat2_index in range(len(cat2_fns)):
 
         # Matching catalogs
         print("Matching...")
-        
+
         idx1, idx2, d2d, d_ra, d_dec = match_coord(ra1, dec1, ra2, dec2, search_radius=search_radius, plot_q=False)
         if len(idx1)==0:
             continue
@@ -184,7 +179,7 @@ for cat2_index in range(len(cat2_fns)):
             idx2_original = cat2_idx[idx2]
         else:
             idx2_original = np.copy(idx2)
-        
+
         if file_count==0:
             cat1_match = cat1[idx1]
             # the corresponding indices in cat2 for objects in cat1_match:
@@ -204,7 +199,7 @@ for cat2_index in range(len(cat2_fns)):
         if plot_q & (len(idx1)>1):
 
             markersize = np.max([0.01, np.min([5, 0.2*100000/len(d_ra)])])
-            axis = [-search_radius*1.05+ra_offset, search_radius*1.05+ra_offset, 
+            axis = [-search_radius*1.05+ra_offset, search_radius*1.05+ra_offset,
                     -search_radius*1.05+dec_offset, search_radius*1.05+dec_offset]
             ax = scatter_plot(d_ra+ra_offset, d_dec+dec_offset, markersize=markersize, alpha=0.4, axis=axis, show=False)
             if correct_offset_q and (ra_offset!=0) and (dec_offset!=0):
@@ -241,7 +236,7 @@ for cat2_index in range(len(cat2_fns)):
         np.save(cat1_output_path_allobjects, bool_array)
 
         print('Fraction of matched objects: {}/{} = {:.2f}%'
-            .format(len(cat2_match), len(cat2), 100*len(cat2_match)/len(cat2)))
+              .format(len(cat2_match), len(cat2), 100*len(cat2_match)/len(cat2)))
         print()
         fitsio.write(cat1_match_output_path, cat1_match, clobber=True)
         fitsio.write(cat2_match_output_path, cat2_match, clobber=True)
