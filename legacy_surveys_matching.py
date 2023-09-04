@@ -57,7 +57,9 @@ elif args.field=='south':
     field_dir = 'south'
 else:
     raise ValueError('field can only be \"north\" or \"south\"!')
-sweep_dir = os.path.join('/global/cfs/cdirs/cosmo/data/legacysurvey/',
+# sweep_dir = os.path.join('/dvs_ro/cfs/cdirs/cosmo/data/legacysurvey/',
+#                          'dr'+args.ls_dr[0], field_dir, 'sweep', args.ls_dr)
+sweep_dir = os.path.join('/dvs_ro/cfs/cdirs/cosmo/work/legacysurvey/',
                          'dr'+args.ls_dr[0], field_dir, 'sweep', args.ls_dr)
 output_dir_allobjects = os.path.join(output_dir, 'dr'+args.ls_dr, field_dir, 'allobjects')
 output_dir_matched = os.path.join(output_dir, 'dr'+args.ls_dr, field_dir, 'matched')
