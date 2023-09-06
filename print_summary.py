@@ -37,23 +37,25 @@ for field in ['north', 'south']:
     for index in range(len(catalogs)):
 
         print(catalogs[index])
-        
+
         cat_info = catalog_info(catalogs[index], ls_dr, field=field)
         ra_col, dec_col, search_radius, cat2_fns, cat1_output_fns, plot_path, ext = cat_info
 
         for cat2_index in range(len(cat2_fns)):
-            
+
+            cat1_output_path_trim = os.path.join(output_dir_matched, cat1_output_fns[cat2_index][:-5]+end_string)
+            cat1_output_path_trim = os.path.join(output_dir_matched, cat1_output_fns[cat2_index][:-5]+end_string)
+
             cat2_fn = cat2_fns[cat2_index]
             cat2_path = os.path.join(parent_dir, cat2_fn)
-            cat2 = fitsio.read(cat2_path, ext=ext, columns=[ra_col])
-
-            cat1_output_path_trim = os.path.join(output_dir_matched, cat1_output_fns[cat2_index][:-5]+end_string)
-            cat1_output_path_trim = os.path.join(output_dir_matched, cat1_output_fns[cat2_index][:-5]+end_string)
 
             if os.path.isfile(cat1_output_path_trim):
+                cat2 = fitsio.read(cat2_path, ext=ext, columns=[ra_col])
                 t = fits.getdata(cat1_output_path_trim)
                 print('{}  {}  {:.2f}%'.format(cat2_fn, len(t), 100*len(t)/len(cat2)))
             else:
                 print(cat2_fn, ' No match')
+                continue
+
         print('\n------------------------------------------------------\n')
 
