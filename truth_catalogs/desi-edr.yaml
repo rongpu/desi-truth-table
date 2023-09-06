@@ -1,0 +1,11 @@
+ra_col: "TARGET_RA"
+dec_col: "TARGET_DEC"
+search_radius: 0.5 # arcsec
+filenames:
+  - "desi_sv1_bgs.fits"
+  - "desi_sv1_elg.fits"
+  - "desi_sv1_lrg.fits"
+  - "desi_sv1_qso.fits"
+  - "desi_sv3_bgs.fits"
+  - "desi_sv3_lrg.fits"
+  - "desi_sv3_qso.fits"

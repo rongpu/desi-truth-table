@@ -12,7 +12,6 @@ python legacy_surveys_matching.py 10.1 deep2 --field south
 python legacy_surveys_matching.py 10.1 deep3 --field south
 python legacy_surveys_matching.py 10.1 fmos-cosmos-v1.0 --field south
 python legacy_surveys_matching.py 10.1 gama-dr3 --field south
-python legacy_surveys_matching.py 10.1 hsc-dr2 --field south
 python legacy_surveys_matching.py 10.1 mosdef-final --field south
 python legacy_surveys_matching.py 10.1 ozdes-dr2 --field south
 python legacy_surveys_matching.py 10.1 primus --field south
@@ -24,4 +23,5 @@ python legacy_surveys_matching.py 10.1 spies-dr1 --field south
 python legacy_surveys_matching.py 10.1 vipers-pdr2 --field south
 python legacy_surveys_matching.py 10.1 vvds --field south
 python legacy_surveys_matching.py 10.1 wigglez-final --field south
-python legacy_surveys_matching.py 10.1 hsc-dr3 --field south
+# python legacy_surveys_matching.py 10.1 hsc-dr3 --field south
+python legacy_surveys_matching.py 10.1 desi-edr --field south
