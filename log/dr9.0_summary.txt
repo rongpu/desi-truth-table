@@ -1,0 +1,436 @@
+rongpu@login03:desi-truth-table> python print_summary.py 9.0
+
+------------------------------------------------------
+------------------------------------------------------
+
+DR9.0 north
+-----------
+
+2dfgrs
+2dFGRS.fits  183  0.07%
+
+------------------------------------------------------
+
+2dflens
+2dflens.fits  No match
+
+------------------------------------------------------
+
+2mrs
+2mrs_1175_done.fits  6320  14.52%
+
+------------------------------------------------------
+
+3d-hst-v4.1.5
+3dhst.v4.1.5.master.aegis.fits  2744  6.66%
+3dhst.v4.1.5.master.cosmos.fits  1160  3.42%
+3dhst.v4.1.5.master.goodsn.fits  2594  6.78%
+3dhst.v4.1.5.master.goodss.fits  No match
+3dhst.v4.1.5.master.uds.fits  No match
+
+------------------------------------------------------
+
+6dfgs
+6dFGS.fits  626  0.50%
+
+------------------------------------------------------
+
+ages
+ages_reduced.fits  39863  98.13%
+
+------------------------------------------------------
+
+c3r2-dr2
+c3r2_DR1+DR2_2019april11-reduced.fits  499  11.40%
+
+------------------------------------------------------
+
+cfhtls
+cfhtls-d2-i.fits.gz  14169  3.77%
+cfhtls-d2-r.fits.gz  13941  3.62%
+cfhtls-d3-i.fits.gz  51537  12.24%
+cfhtls-d3-r.fits.gz  51056  11.53%
+
+------------------------------------------------------
+
+cosmos-acs
+cosmos-acs.fits.gz  19790  1.68%
+
+------------------------------------------------------
+
+cosmos2015-v1.1
+COSMOS2015_Laigle+_v1.1.fits  26537  2.24%
+
+------------------------------------------------------
+
+deep2
+deep2-field1.fits.gz  14084  80.75%
+deep2-field2.fits.gz  8140  84.77%
+deep2-field3.fits.gz  8344  69.61%
+deep2-field4.fits.gz  9676  85.70%
+
+------------------------------------------------------
+
+deep3
+alldeep.egs.uniq.2012jun13.fits.gz  17280  72.54%
+
+------------------------------------------------------
+
+desi-edr
+desi_sv1_bgs.fits  No match
+desi_sv1_elg.fits  No match
+desi_sv1_lrg.fits  No match
+desi_sv1_qso.fits  No match
+desi_sv3_bgs.fits  No match
+desi_sv3_lrg.fits  No match
+desi_sv3_qso.fits  No match
+
+------------------------------------------------------
+
+eboss-dr16
+eBOSS_LRG_full_ALLdata-vDR16.fits  152880  49.02%
+eBOSS_ELG_full_ALLdata-vDR16.fits  58062  21.57%
+
+------------------------------------------------------
+
+fmos-cosmos-v1.0
+FMOS_COSMOS_v1.0.fits  20  1.73%
+
+------------------------------------------------------
+
+gama-dr3
+GAMA-DR3-SpecObj.fits  No match
+
+------------------------------------------------------
+
+hsc-dr1
+hsc_pdr1_udeep.forced.reduced.fits  No match
+hsc_pdr1_deep.forced.reduced.fits  No match
+hsc_pdr1_wide.forced.reduced.fits  No match
+
+------------------------------------------------------
+
+hsc-dr2
+hsc-pdr2-dud-cosmos-reduced.fits  52948  2.40%
+hsc-pdr2-dud-deep2_3-reduced.fits  347032  19.45%
+hsc-pdr2-dud-elais_n1-reduced.fits  512614  25.57%
+hsc-pdr2-dud-sxds_xmm_lss-reduced.fits  No match
+hsc-pdr2-wide-w01-reduced.fits  No match
+hsc-pdr2-wide-w02-reduced.fits  1370174  6.43%
+hsc-pdr2-wide-w03-reduced.fits  124863  0.38%
+hsc-pdr2-wide-w04-reduced.fits  No match
+hsc-pdr2-wide-w05-reduced.fits  2879809  7.30%
+hsc-pdr2-wide-w06-reduced.fits  6234448  36.44%
+hsc-pdr2-wide-w07-reduced.fits  118537  33.91%
+
+------------------------------------------------------
+
+hsc-dr3
+hsc-pdr3-dud-reduced.fits  960905  12.85%
+hsc-pdr3-wide-aegis-reduced.fits  125860  37.17%
+hsc-pdr3-wide-autumn-reduced.fits  4562022  5.76%
+hsc-pdr3-wide-hectomap-reduced.fits  6660505  39.59%
+hsc-pdr3-wide-spring-reduced.fits  124712  0.11%
+
+------------------------------------------------------
+
+mmt-elg
+MMTBinospec_Survey.fits  No match
+
+------------------------------------------------------
+
+mosdef-final
+mosdef_zcat.final.reduced.fits  115  10.32%
+
+------------------------------------------------------
+
+ozdes-dr1
+OzDES-DR1.fits  No match
+
+------------------------------------------------------
+
+ozdes-dr2
+OzDES-DR2-reduced.fits  3901  10.25%
+
+------------------------------------------------------
+
+primus
+primus-zcat-moustakas.fits  3348  4.24%
+
+------------------------------------------------------
+
+s82mgc
+UKBOSS_best_ukwide_v5_2-02jun2015.fits  237869  45.95%
+
+------------------------------------------------------
+
+sdss-dr14
+sdss-specObj-dr14-unique-trimmed.fits  No match
+
+------------------------------------------------------
+
+sdss-dr16
+sdss-specObj-dr16-unique-trimmed.fits  1842609  36.08%
+
+------------------------------------------------------
+
+sdss-dr16q
+DR16Q_v4.fits  374408  49.89%
+
+------------------------------------------------------
+
+shela
+shela_irac_v1.3_flux_cat.fits  No match
+
+------------------------------------------------------
+
+spies-dr1
+SpIES_ch1_only.fits  291012  4.74%
+SpIES_ch1andch2.fits  1182515  21.64%
+
+------------------------------------------------------
+
+vipers-pdr2
+VIPERS_W1_SPECTRO_PDR2.fits  No match
+VIPERS_W4_SPECTRO_PDR2.fits  27235  87.91%
+
+------------------------------------------------------
+
+vvds
+cesam_vvds_spCDFS_DEEP_Full.fits  No match
+cesam_vvds_spF02_DEEP_Full.fits  No match
+cesam_vvds_spF02_UDEEP_Full.fits  No match
+cesam_vvds_spF10_WIDE_Full.fits  444  7.13%
+cesam_vvds_spF14_WIDE_Full.fits  No match
+cesam_vvds_spF22_WIDE_Full.fits  6727  50.61%
+
+------------------------------------------------------
+
+wigglez-final
+wigglez.final.fits  22017  9.77%
+
+------------------------------------------------------
+
+zcosmos_bright_dr3
+cesam_zcosbrightspec20k_dr3_catalog.fits  8080  39.05%
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+------------------------------------------------------
+
+DR9.0 south
+-----------
+
+2dfgrs
+2dFGRS.fits  157553  64.15%
+
+------------------------------------------------------
+
+2dflens
+2dflens.fits  45543  65.04%
+
+------------------------------------------------------
+
+2mrs
+2mrs_1175_done.fits  18672  42.89%
+
+------------------------------------------------------
+
+3d-hst-v4.1.5
+3dhst.v4.1.5.master.aegis.fits  No match
+3dhst.v4.1.5.master.cosmos.fits  5197  15.34%
+3dhst.v4.1.5.master.goodsn.fits  No match
+3dhst.v4.1.5.master.goodss.fits  6885  13.63%
+3dhst.v4.1.5.master.uds.fits  6893  15.63%
+
+------------------------------------------------------
+
+6dfgs
+6dFGS.fits  59479  47.72%
+
+------------------------------------------------------
+
+ages
+ages_reduced.fits  10057  24.76%
+
+------------------------------------------------------
+
+c3r2-dr2
+c3r2_DR1+DR2_2019april11-reduced.fits  3146  71.86%
+
+------------------------------------------------------
+
+cfhtls
+cfhtls-d2-i.fits.gz  78820  20.96%
+cfhtls-d2-r.fits.gz  78059  20.26%
+cfhtls-d3-i.fits.gz  No match
+cfhtls-d3-r.fits.gz  No match
+
+------------------------------------------------------
+
+cosmos-acs
+cosmos-acs.fits.gz  137624  11.69%
+
+------------------------------------------------------
+
+cosmos2015-v1.1
+COSMOS2015_Laigle+_v1.1.fits  197495  16.71%
+
+------------------------------------------------------
+
+deep2
+deep2-field1.fits.gz  No match
+deep2-field2.fits.gz  6945  72.33%
+deep2-field3.fits.gz  11865  98.99%
+deep2-field4.fits.gz  10719  94.94%
+
+------------------------------------------------------
+
+deep3
+alldeep.egs.uniq.2012jun13.fits.gz  No match
+
+------------------------------------------------------
+
+desi-edr
+desi_sv1_bgs.fits  No match
+desi_sv1_elg.fits  No match
+desi_sv1_lrg.fits  No match
+desi_sv1_qso.fits  No match
+desi_sv3_bgs.fits  No match
+desi_sv3_lrg.fits  No match
+desi_sv3_qso.fits  No match
+
+------------------------------------------------------
+
+eboss-dr16
+eBOSS_LRG_full_ALLdata-vDR16.fits  189010  60.61%
+eBOSS_ELG_full_ALLdata-vDR16.fits  265279  98.55%
+
+------------------------------------------------------
+
+fmos-cosmos-v1.0
+FMOS_COSMOS_v1.0.fits  753  65.31%
+
+------------------------------------------------------
+
+gama-dr3
+GAMA-DR3-SpecObj.fits  159409  99.61%
+
+------------------------------------------------------
+
+hsc-dr1
+hsc_pdr1_udeep.forced.reduced.fits  No match
+hsc_pdr1_deep.forced.reduced.fits  No match
+hsc_pdr1_wide.forced.reduced.fits  No match
+
+------------------------------------------------------
+
+hsc-dr2
+hsc-pdr2-dud-cosmos-reduced.fits  750399  34.05%
+hsc-pdr2-dud-deep2_3-reduced.fits  1035940  58.06%
+hsc-pdr2-dud-elais_n1-reduced.fits  No match
+hsc-pdr2-dud-sxds_xmm_lss-reduced.fits  1022949  57.57%
+hsc-pdr2-wide-w01-reduced.fits  3803249  77.70%
+hsc-pdr2-wide-w02-reduced.fits  16156810  75.80%
+hsc-pdr2-wide-w03-reduced.fits  16227597  49.89%
+hsc-pdr2-wide-w04-reduced.fits  24178276  51.41%
+hsc-pdr2-wide-w05-reduced.fits  24978802  63.28%
+hsc-pdr2-wide-w06-reduced.fits  No match
+hsc-pdr2-wide-w07-reduced.fits  No match
+
+------------------------------------------------------
+
+hsc-dr3
+hsc-pdr3-dud-reduced.fits  3019583  40.38%
+hsc-pdr3-wide-aegis-reduced.fits  No match
+hsc-pdr3-wide-autumn-reduced.fits  60775227  76.71%
+hsc-pdr3-wide-hectomap-reduced.fits  No match
+hsc-pdr3-wide-spring-reduced.fits  63036499  54.74%
+
+------------------------------------------------------
+
+mmt-elg
+MMTBinospec_Survey.fits  No match
+
+------------------------------------------------------
+
+mosdef-final
+mosdef_zcat.final.reduced.fits  192  17.24%
+
+------------------------------------------------------
+
+ozdes-dr1
+OzDES-DR1.fits  No match
+
+------------------------------------------------------
+
+ozdes-dr2
+OzDES-DR2-reduced.fits  36910  96.97%
+
+------------------------------------------------------
+
+primus
+primus-zcat-moustakas.fits  78099  98.96%
+
+------------------------------------------------------
+
+s82mgc
+UKBOSS_best_ukwide_v5_2-02jun2015.fits  517393  99.94%
+
+------------------------------------------------------
+
+sdss-dr14
+sdss-specObj-dr14-unique-trimmed.fits  No match
+
+------------------------------------------------------
+
+sdss-dr16
+sdss-specObj-dr16-unique-trimmed.fits  3141041  61.50%
+
+------------------------------------------------------
+
+sdss-dr16q
+DR16Q_v4.fits  446369  59.48%
+
+------------------------------------------------------
+
+shela
+shela_irac_v1.3_flux_cat.fits  1871826  81.57%
+
+------------------------------------------------------
+
+spies-dr1
+SpIES_ch1_only.fits  2387500  38.92%
+SpIES_ch1andch2.fits  4564158  83.54%
+
+------------------------------------------------------
+
+vipers-pdr2
+VIPERS_W1_SPECTRO_PDR2.fits  60440  99.85%
+VIPERS_W4_SPECTRO_PDR2.fits  30899  99.74%
+
+------------------------------------------------------
+
+vvds
+cesam_vvds_spCDFS_DEEP_Full.fits  1574  99.31%
+cesam_vvds_spF02_DEEP_Full.fits  10870  95.72%
+cesam_vvds_spF02_UDEEP_Full.fits  941  83.64%
+cesam_vvds_spF10_WIDE_Full.fits  5989  96.15%
+cesam_vvds_spF14_WIDE_Full.fits  7145  97.11%
+cesam_vvds_spF22_WIDE_Full.fits  13210  99.39%
+
+------------------------------------------------------
+
+wigglez-final
+wigglez.final.fits  223824  99.29%
+
+------------------------------------------------------
+
+zcosmos_bright_dr3
+cesam_zcosbrightspec20k_dr3_catalog.fits  20587  99.50%
+
+------------------------------------------------------
+
+rongpu@login03:desi-truth-table> 

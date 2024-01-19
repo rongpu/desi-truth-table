@@ -25,3 +25,6 @@ python legacy_surveys_matching.py 10.1 vvds --field south
 python legacy_surveys_matching.py 10.1 wigglez-final --field south
 # python legacy_surveys_matching.py 10.1 hsc-dr3 --field south
 python legacy_surveys_matching.py 10.1 desi-edr --field south
+python legacy_surveys_matching.py 10.1 zcosmos_bright_dr3 --field south
+python legacy_surveys_matching.py 10.1 eboss-dr16 --field south
+python legacy_surveys_matching.py 10.1 desi_lrg_xcorr --field south
