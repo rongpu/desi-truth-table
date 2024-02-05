@@ -28,7 +28,7 @@ from match_coord import match_coord, scatter_plot
 
 time_start = time.perf_counter()
 
-parent_dir = '/global/cfs/cdirs/desi/target/analysis/truth/parent'
+parent_dir = '/dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent'
 output_dir = '/global/cfs/cdirs/desi/target/analysis/truth'
 # output_dir = '/pscratch/sd/r/rongpu/truth'
 
@@ -53,12 +53,7 @@ plot_path = os.path.join(output_dir, plot_path)
 
 if args.field!='north' and args.field!='south':
     raise ValueError('field can only be \"north\" or \"south\"!')
-# sweep_dir = os.path.join('/dvs_ro/cfs/cdirs/cosmo/data/legacysurvey/',
-#                          'dr'+args.ls_dr[0], args.field, 'sweep', args.ls_dr)
-
-####################################
-sweep_dir = '/dvs_ro/cfs/cdirs/cosmo/work/legacysurvey/dr10.1/{}/sweep/10.1'.format(args.field)
-####################################
+sweep_dir = os.path.join('/dvs_ro/cfs/cdirs/cosmo/data/legacysurvey/', 'dr'+args.ls_dr.split('.')[0], args.field, 'sweep', args.ls_dr)
 
 output_dir_allobjects = os.path.join(output_dir, 'dr'+args.ls_dr, args.field, 'allobjects')
 output_dir_matched = os.path.join(output_dir, 'dr'+args.ls_dr, args.field, 'matched')
@@ -143,7 +138,7 @@ for cat2_index in range(len(cat2_fns)):
             print('%d - '%cat1_index + filename)
             print('%d out of %d objects in cat2 are in the overlapping region'%(np.sum(mask), len(mask)))
 
-        cat1 = fitsio.read(cat1_path, ext=1)
+        cat1 = Table(fitsio.read(cat1_path, ext=1))
 
         # Remove "DUP" objects
         mask = (cat1['TYPE']!='DUP') & (cat1['TYPE']!='DUP ')
