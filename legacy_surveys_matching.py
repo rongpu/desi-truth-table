@@ -20,7 +20,7 @@ import numpy as np
 import sys, os, time, argparse, glob
 import fitsio
 import gc
-from astropy.table import Table
+from astropy.table import Table, hstack
 
 from catalog_info import catalog_info
 sys.path.append(os.path.expanduser('~/git/Python/user_modules/'))
@@ -32,6 +32,7 @@ parent_dir = '/dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent'
 output_dir = '/global/cfs/cdirs/desi/target/analysis/truth'
 # output_dir = '/pscratch/sd/r/rongpu/truth'
 
+add_pz = False
 region_q = True  # match only overlapping regions to reduce computation time
 correct_offset_q = True
 plot_q = True
@@ -54,6 +55,7 @@ plot_path = os.path.join(output_dir, plot_path)
 if args.field!='north' and args.field!='south':
     raise ValueError('field can only be \"north\" or \"south\"!')
 sweep_dir = os.path.join('/dvs_ro/cfs/cdirs/cosmo/data/legacysurvey/', 'dr'+args.ls_dr.split('.')[0], args.field, 'sweep', args.ls_dr)
+pz_dir = os.path.join('/dvs_ro/cfs/cdirs/cosmo/data/legacysurvey/', 'dr'+args.ls_dr.split('.')[0], args.field, 'sweep', args.ls_dr+'-photo-z')
 
 output_dir_allobjects = os.path.join(output_dir, 'dr'+args.ls_dr, args.field, 'allobjects')
 output_dir_matched = os.path.join(output_dir, 'dr'+args.ls_dr, args.field, 'matched')
@@ -139,6 +141,15 @@ for cat2_index in range(len(cat2_fns)):
             print('%d out of %d objects in cat2 are in the overlapping region'%(np.sum(mask), len(mask)))
 
         cat1 = Table(fitsio.read(cat1_path, ext=1))
+
+        # Add photo-z's
+        if add_pz:
+            cat1_pz_path = os.path.join(pz_dir, filename+'-pz.fits')
+            cat1_pz = Table.read(cat1_pz_path)
+            if not np.all(cat1['BRICKID']==cat1_pz['BRICKID']) and np.all(cat1['OBJID']==cat1_pz['OBJID']) and np.all(cat1['RELEASE']==cat1_pz['RELEASE']):
+                raise ValueError
+            cat1_pz.remove_columns(['BRICKID', 'OBJID', 'RELEASE'])
+            cat1 = hstack([cat1, cat1_pz])
 
         # Remove "DUP" objects
         mask = (cat1['TYPE']!='DUP') & (cat1['TYPE']!='DUP ')
