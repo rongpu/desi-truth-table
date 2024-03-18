@@ -10,7 +10,7 @@ def get_output_filenames(cat2_filenames, dr):
         output_filenames.append('ls-dr'+dr+'-'+filename)
     return output_filenames
 
-def catalog_info(catalog, dr, field=None, predr8=False):
+def catalog_info(catalog_yaml_fn, dr, field=None, predr8=False):
     '''
     Return the essential catalog information.
     '''
@@ -18,12 +18,13 @@ def catalog_info(catalog, dr, field=None, predr8=False):
     # by default use the default fitsio setting
     ext = None
 
-    catalog_yaml_fn = os.path.join('truth_catalogs', catalog+'.yaml')
+    catalog = os.path.basename(catalog_yaml_fn).replace('.yaml', '')
+
     try:
         with open(catalog_yaml_fn) as f:
             cat2_dict = yaml.safe_load(f)
     except IOError:
-        raise IOError(catalog+' not found!')
+        raise IOError(catalog_yaml_fn+' not found!')
 
     ra_col = cat2_dict['ra_col']
     dec_col = cat2_dict['dec_col']

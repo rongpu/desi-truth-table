@@ -1,4 +1,7 @@
-################### Work in progress ###################
+#!/usr/bin/env python
+
+# Example:
+# ./legacy_surveys_matching.py ls-dr 10.1 --catalog deep2 --field south --output-dir $SCRATCH/truth/ --add-pz --plot-qa
 
 # Match the truth catalogs to Legacy Surveys sweep catalogs;
 # Save the following results:
@@ -19,46 +22,42 @@ import matplotlib.pyplot as plt
 import numpy as np
 import sys, os, time, argparse, glob
 import fitsio
-import gc
+import argparse, gc
 from astropy.table import Table, hstack
 
 from catalog_info import catalog_info
-sys.path.append(os.path.expanduser('~/git/Python/user_modules/'))
+# sys.path.append(os.path.expanduser('~/git/Python/user_modules/'))
 from match_coord import match_coord, scatter_plot
 
 time_start = time.perf_counter()
 
-parent_dir = '/dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent'
-output_dir = '/global/cfs/cdirs/desi/target/analysis/truth'
-# output_dir = '/pscratch/sd/r/rongpu/truth'
-
-add_pz = False
-region_q = True  # match only overlapping regions to reduce computation time
-correct_offset_q = True
-plot_q = True
-
-parser = argparse.ArgumentParser()
-parser.add_argument('ls_dr', help='DR number of Legacy Surveys')
-parser.add_argument('catalog', help='truth catalog')
-parser.add_argument('--field', help='choose field: north or south?')
+parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter, description="Create LS-matched catalogs.")
+parser.add_argument('--ls-dr', required=True, help='DR number of Legacy Surveys')
+parser.add_argument('--catalog', required=True, help='truth catalog')
+parser.add_argument('--field', required=True, help='choose field: north or south?')
+parser.add_argument('--parent-dir', type=str, default='/dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent', help='path to parent/truth catalog directory')
+parser.add_argument('--output-dir', type=str, default='/global/cfs/cdirs/desi/target/analysis/truth', help='path to output directory')
+parser.add_argument('--yaml-path', type=str, default=None, help='path to YAML file containing truth catalog information and cross-matching parameters')
+parser.add_argument('--add-pz', action='store_true', help='add photo-z columns')
+parser.add_argument('--plot-qa', action='store_true', help='make QA plots')
 args = parser.parse_args()
 
-#######################################
-# if len(args.ls_dr)!=3:
-#     raise ValueError('ls_dr not in the correct format!')
-#######################################
+region_q = True  # match only overlapping regions to reduce computation time
+correct_offset_q = True  # correct for the mean RA/DEC offsets in each sweep brick
 
-cat_info = catalog_info(args.catalog, args.ls_dr, args.field)
+if args.yaml_path is None:
+    args.yaml_path = os.path.join('truth_catalogs', args.catalog+'.yaml')
+cat_info = catalog_info(args.yaml_path, args.ls_dr, args.field)
 ra_col, dec_col, search_radius, cat2_fns, cat1_output_fns, plot_path, ext = cat_info
-plot_path = os.path.join(output_dir, plot_path)
+plot_path = os.path.join(args.output_dir, plot_path)
 
 if args.field!='north' and args.field!='south':
     raise ValueError('field can only be \"north\" or \"south\"!')
 sweep_dir = os.path.join('/dvs_ro/cfs/cdirs/cosmo/data/legacysurvey/', 'dr'+args.ls_dr.split('.')[0], args.field, 'sweep', args.ls_dr)
 pz_dir = os.path.join('/dvs_ro/cfs/cdirs/cosmo/data/legacysurvey/', 'dr'+args.ls_dr.split('.')[0], args.field, 'sweep', args.ls_dr+'-photo-z')
 
-output_dir_allobjects = os.path.join(output_dir, 'dr'+args.ls_dr, args.field, 'allobjects')
-output_dir_matched = os.path.join(output_dir, 'dr'+args.ls_dr, args.field, 'matched')
+output_dir_allobjects = os.path.join(args.output_dir, 'dr'+args.ls_dr, args.field, 'allobjects')
+output_dir_matched = os.path.join(args.output_dir, 'dr'+args.ls_dr, args.field, 'matched')
 
 if not os.path.exists(output_dir_allobjects):
     os.makedirs(output_dir_allobjects)
@@ -76,7 +75,7 @@ for cat2_index in range(len(cat2_fns)):
     cat2_fn = cat2_fns[cat2_index]
     print(cat2_fn)
 
-    cat2_path = os.path.join(parent_dir, cat2_fn)
+    cat2_path = os.path.join(args.parent_dir, cat2_fn)
     cat1_output_fn = cat1_output_fns[cat2_index]
     # cat1_output_path_allobjects = os.path.join(output_dir_allobjects, cat1_output_fn)
     cat1_output_path_allobjects = os.path.join(output_dir_allobjects, cat1_output_fn[:-5]+'.npy')
@@ -143,7 +142,7 @@ for cat2_index in range(len(cat2_fns)):
         cat1 = Table(fitsio.read(cat1_path, ext=1))
 
         # Add photo-z's
-        if add_pz:
+        if args.add_pz:
             cat1_pz_path = os.path.join(pz_dir, filename+'-pz.fits')
             cat1_pz = Table.read(cat1_pz_path)
             if not np.all(cat1['BRICKID']==cat1_pz['BRICKID']) and np.all(cat1['OBJID']==cat1_pz['OBJID']) and np.all(cat1['RELEASE']==cat1_pz['RELEASE']):
@@ -203,7 +202,7 @@ for cat2_index in range(len(cat2_fns)):
 
         file_count += 1
 
-        if plot_q & (len(idx1)>1):
+        if args.plot_qa & (len(idx1)>1):
 
             markersize = np.max([0.01, np.min([5, 0.2*100000/len(d_ra)])])
             axis = [-search_radius*1.05+ra_offset, search_radius*1.05+ra_offset,
