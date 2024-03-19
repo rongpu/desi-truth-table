@@ -33,7 +33,7 @@ time_start = time.perf_counter()
 
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter, description="Create LS-matched catalogs.")
 parser.add_argument('--ls-dr', required=True, help='DR number of Legacy Surveys')
-parser.add_argument('--catalog', required=True, help='truth catalog')
+parser.add_argument('--catalog', required=False, help='name of truth catalog')
 parser.add_argument('--field', required=True, help='choose field: north or south?')
 parser.add_argument('--parent-dir', type=str, default='/dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent', help='path to parent/truth catalog directory')
 parser.add_argument('--output-dir', type=str, default='/global/cfs/cdirs/desi/target/analysis/truth', help='path to output directory')
@@ -48,9 +48,15 @@ region_q = True  # match only overlapping regions to reduce computation time
 correct_offset_q = True  # correct for the mean RA/DEC offsets in each sweep brick
 
 if args.yaml_path is None:
-    args.yaml_path = os.path.join('truth_catalogs', args.catalog+'.yaml')
+    if 'catalog' in args:
+        args.yaml_path = os.path.join('truth_catalogs', args.catalog+'.yaml')
+    else:
+        raise ValueError('One of the following needs to be specified: --catalog or --yaml-path')
 else:
-    args.yaml_path = os.path.expandvars(args.yaml_path)
+    if 'catalog' in args:
+        raise ValueError('Only one of the following can be specified: --catalog or --yaml-path')
+    else:
+        args.yaml_path = os.path.expandvars(args.yaml_path)
 cat_info = catalog_info(args.yaml_path, args.ls_dr, args.field)
 ra_col, dec_col, search_radius, cat2_fns, cat1_output_fns, plot_path, ext = cat_info
 plot_path = os.path.join(args.output_dir, plot_path)
