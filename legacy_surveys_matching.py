@@ -141,7 +141,7 @@ for cat2_index in range(len(cat2_fns)):
             dec2 = dec2full[mask]
             cat2_idx = cat2_idx[mask]
             print('%d - '%cat1_index + filename)
-            print('%d out of %d objects in cat2 are in the overlapping region'%(np.sum(mask), len(mask)))
+            print('%d out of %d objects in the external catalog are in the overlapping region'%(np.sum(mask), len(mask)))
 
         cat1 = Table(fitsio.read(cat1_path, ext=1))
 
