@@ -23,7 +23,7 @@ import numpy as np
 import sys, os, time, argparse, glob
 import fitsio
 import argparse, gc
-from astropy.table import Table, hstack
+from astropy.table import Table, hstack, vstack
 
 from catalog_info import catalog_info
 # sys.path.append(os.path.expanduser('~/git/Python/user_modules/'))
@@ -201,7 +201,7 @@ for cat2_index in range(len(cat2_fns)):
 
             idx1 = idx1[~mask_duplicate]
             idx2_original = idx2_original[~mask_duplicate]
-            cat1_match = np.concatenate((cat1_match, cat1[idx1]))
+            cat1_match = vstack([cat1_match, cat1[idx1]], join_type='exact')
             cat1_match_idx2 = np.concatenate((cat1_match_idx2, idx2_original))
 
         file_count += 1
@@ -248,7 +248,6 @@ for cat2_index in range(len(cat2_fns)):
         print('Fraction of matched objects: {}/{} = {:.2f}%'
               .format(len(cat2_match), len(cat2), 100*len(cat2_match)/len(cat2)))
         print()
-        
         cat1_match.write(cat1_match_output_path)
         cat2_match.write(cat2_match_output_path)
 
