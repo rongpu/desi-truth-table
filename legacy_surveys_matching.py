@@ -37,7 +37,7 @@ parser.add_argument('--catalog', required=False, help='name of truth catalog')
 parser.add_argument('--field', required=True, help='choose field: north or south?')
 parser.add_argument('--parent-dir', type=str, default='/dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent', help='path to parent/truth catalog directory')
 parser.add_argument('--output-dir', type=str, default='/global/cfs/cdirs/desi/target/analysis/truth', help='path to output directory')
-parser.add_argument('--yaml-path', type=str, default=None, help='path to YAML file containing truth catalog information and cross-matching parameters')
+parser.add_argument('--yaml-path', type=str, help='path to YAML file containing truth catalog information and cross-matching parameters')
 parser.add_argument('--add-pz', action='store_true', help='add photo-z columns')
 parser.add_argument('--plot-qa', action='store_true', help='make QA plots')
 args = parser.parse_args()
@@ -53,10 +53,11 @@ if args.yaml_path is None:
     else:
         raise ValueError('One of the following needs to be specified: --catalog or --yaml-path')
 else:
-    if 'catalog' in args:
+    if args.catalog is not None:
         raise ValueError('Only one of the following can be specified: --catalog or --yaml-path')
     else:
         args.yaml_path = os.path.expandvars(args.yaml_path)
+
 cat_info = catalog_info(args.yaml_path, args.ls_dr, args.field)
 ra_col, dec_col, search_radius, cat2_fns, cat1_output_fns, plot_path, ext = cat_info
 plot_path = os.path.join(args.output_dir, plot_path)
