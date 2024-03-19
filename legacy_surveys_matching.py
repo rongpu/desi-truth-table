@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 
-# Example:
+# # Example:
+# # For catalog(s) already in the truth_catalogs directory:
 # ./legacy_surveys_matching.py --ls-dr 10.1 --catalog deep2 --field south --output-dir $SCRATCH/truth/ --add-pz --plot-qa
+# # For any catalog:
+# ./legacy_surveys_matching.py --ls-dr 10.1 --yaml-path truth_catalogs/deep2.yaml --field south --output-dir $SCRATCH/truth/ --add-pz --plot-qa
 
 # Match the truth catalogs to Legacy Surveys sweep catalogs;
 # Save the following results:
@@ -255,10 +258,12 @@ for cat2_index in range(len(cat2_fns)):
         print('Fraction of matched objects: {}/{} = {:.2f}%'
               .format(len(cat2_match), len(cat2), 100*len(cat2_match)/len(cat2)))
         print()
+
         print('Writing to', cat1_match_output_path)
         cat1_match.write(cat1_match_output_path)
         print('Writing to', cat2_match_output_path)
         cat2_match.write(cat2_match_output_path)
+        print()
 
         time_end = time.perf_counter()
         print('Done! %.1f seconds'%(time_end-time_start))
