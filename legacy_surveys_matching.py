@@ -248,11 +248,13 @@ for cat2_index in range(len(cat2_fns)):
         print('Fraction of matched objects: {}/{} = {:.2f}%'
               .format(len(cat2_match), len(cat2), 100*len(cat2_match)/len(cat2)))
         print()
+        print('Writing to', cat1_match_output_path)
         cat1_match.write(cat1_match_output_path)
+        print('Writing to', cat2_match_output_path)
         cat2_match.write(cat2_match_output_path)
 
         time_end = time.perf_counter()
-        print('%.1f seconds'%(time_end-time_start))
+        print('Done! %.1f seconds'%(time_end-time_start))
         time_start = time_end-time_start
 
     print('\n------------------------------------------------------\n')
