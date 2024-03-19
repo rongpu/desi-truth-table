@@ -43,13 +43,14 @@ parser.add_argument('--plot-qa', action='store_true', help='make QA plots')
 args = parser.parse_args()
 args.parent_dir = os.path.expandvars(args.parent_dir)
 args.output_dir = os.path.expandvars(args.output_dir)
-args.yaml_path = os.path.expandvars(args.yaml_path)
 
 region_q = True  # match only overlapping regions to reduce computation time
 correct_offset_q = True  # correct for the mean RA/DEC offsets in each sweep brick
 
 if args.yaml_path is None:
     args.yaml_path = os.path.join('truth_catalogs', args.catalog+'.yaml')
+else:
+    args.yaml_path = os.path.expandvars(args.yaml_path)
 cat_info = catalog_info(args.yaml_path, args.ls_dr, args.field)
 ra_col, dec_col, search_radius, cat2_fns, cat1_output_fns, plot_path, ext = cat_info
 plot_path = os.path.join(args.output_dir, plot_path)
