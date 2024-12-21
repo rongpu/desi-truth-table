@@ -1,0 +1,6 @@
+ra_col: "ALPHA_J2000"
+dec_col: "DELTA_J2000"
+search_radius: 1. # arcsec
+filenames:
+  - "COSMOS2020_CLASSIC_R1_v2.2_p3.fits"
+  - "COSMOS2020_FARMER_R1_v2.2_p3.fits"
