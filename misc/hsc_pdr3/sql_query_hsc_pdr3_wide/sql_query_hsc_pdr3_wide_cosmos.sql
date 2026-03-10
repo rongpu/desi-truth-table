@@ -50,6 +50,6 @@ FROM
 
 WHERE
     isprimary
-    AND boxSearch(coord, 148.1, 152.1, 0.2, 4.2)
+    AND conesearch(coord, 150.1, 2.182, 10800.0)
 
 -- LIMIT 100;
