@@ -74,11 +74,11 @@ output_dir_allobjects = os.path.join(args.output_dir, 'dr'+args.ls_dr, args.fiel
 output_dir_matched = os.path.join(args.output_dir, 'dr'+args.ls_dr, args.field, 'matched')
 
 if not os.path.exists(output_dir_allobjects):
-    os.makedirs(output_dir_allobjects)
+    os.makedirs(output_dir_allobjects, exist_ok=True)
 if not os.path.exists(output_dir_matched):
-    os.makedirs(output_dir_matched)
+    os.makedirs(output_dir_matched, exist_ok=True)
 if not os.path.exists(plot_path):
-    os.makedirs(plot_path)
+    os.makedirs(plot_path, exist_ok=True)
 
 cat1_paths = sorted(glob.glob(os.path.join(sweep_dir, '*.fits')))
 
