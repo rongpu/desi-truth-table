@@ -43,6 +43,7 @@ parser.add_argument('--output-dir', type=str, default='/global/cfs/cdirs/desi/ta
 parser.add_argument('--yaml-path', type=str, help='path to YAML file containing truth catalog information and cross-matching parameters')
 parser.add_argument('--add-pz', action='store_true', help='add photo-z columns')
 parser.add_argument('--plot-qa', action='store_true', help='make QA plots')
+parser.add_argument('--overwrite', action='store_true', help='overwrite existing output files')
 args = parser.parse_args()
 args.parent_dir = os.path.expandvars(args.parent_dir)
 args.output_dir = os.path.expandvars(args.output_dir)
@@ -98,15 +99,16 @@ for cat2_index in range(len(cat2_fns)):
     cat2_output_fn = cat2_fn[:cat2_fn.find('.fits')]+'-match.fits'
     cat2_match_output_path = os.path.join(output_dir_matched, cat2_output_fn)
 
-    if os.path.isfile(cat1_output_path_allobjects):
-        print(cat1_output_path_allobjects+' already exist!!!!!!!!!!!!!!')
-        sys.exit()
-    if os.path.isfile(cat1_match_output_path):
-        print(cat1_match_output_path+' already exist!!!!!!!!!!!!!!')
-        sys.exit()
-    if os.path.isfile(cat2_match_output_path):
-        print(cat2_match_output_path+' already exist!!!!!!!!!!!!!!')
-        sys.exit()
+    if not args.overwrite:
+        if os.path.isfile(cat1_output_path_allobjects):
+            print(cat1_output_path_allobjects+' already exist!!!!!!!!!!!!!!')
+            sys.exit()
+        if os.path.isfile(cat1_match_output_path):
+            print(cat1_match_output_path+' already exist!!!!!!!!!!!!!!')
+            sys.exit()
+        if os.path.isfile(cat2_match_output_path):
+            print(cat2_match_output_path+' already exist!!!!!!!!!!!!!!')
+            sys.exit()
 
     cat2 = Table(fitsio.read(cat2_path, ext=ext))
 
