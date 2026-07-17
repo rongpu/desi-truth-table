@@ -1,0 +1,6 @@
+ra_col: "TARGET_RA"
+dec_col: "TARGET_DEC"
+search_radius: 1.0 # arcsec
+filenames:
+  - "DESI-COSMOS-v2.0.fits"
+  - "DESI-XMMLSS-v2.0.fits"

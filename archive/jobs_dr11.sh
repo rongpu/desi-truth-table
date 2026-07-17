@@ -29,7 +29,8 @@
 ./legacy_surveys_matching.py --ls-dr 11.0 --yaml-path truth_catalogs/eboss-dr16.yaml --field south --output-dir /global/cfs/cdirs/desi/target/analysis/truth --plot-qa --parent-dir /dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent
 ./legacy_surveys_matching.py --ls-dr 11.0 --yaml-path truth_catalogs/cosmos2020-v2.2.yaml --field south --output-dir /global/cfs/cdirs/desi/target/analysis/truth --plot-qa --parent-dir /dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent
 ./legacy_surveys_matching.py --ls-dr 11.0 --yaml-path truth_catalogs/desi_lrg_xcorr.yaml --field south --add-pz --output-dir /global/cfs/cdirs/desi/target/analysis/truth --plot-qa --parent-dir /dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent
-./legacy_surveys_matching.py --ls-dr 11.0 --yaml-path truth_catalogs/desi-dr1.yaml --field south --field south --output-dir /global/cfs/cdirs/desi/target/analysis/truth --plot-qa --parent-dir /dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent
+./legacy_surveys_matching.py --ls-dr 11.0 --yaml-path truth_catalogs/desi-dr1.yaml --field south --output-dir /global/cfs/cdirs/desi/target/analysis/truth --plot-qa --parent-dir /dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent
+./legacy_surveys_matching.py --ls-dr 11.0 --yaml-path truth_catalogs/desi_cosmos_xmmlss_2025.yaml --field south --output-dir /global/cfs/cdirs/desi/target/analysis/truth --plot-qa --parent-dir /dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent
 
 ############################################################
 
@@ -64,4 +65,5 @@
 ./legacy_surveys_matching.py --ls-dr 11.0 --yaml-path truth_catalogs/eboss-dr16.yaml --field north --output-dir /global/cfs/cdirs/desi/target/analysis/truth --plot-qa --parent-dir /dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent
 ./legacy_surveys_matching.py --ls-dr 11.0 --yaml-path truth_catalogs/cosmos2020-v2.2.yaml --field north --output-dir /global/cfs/cdirs/desi/target/analysis/truth --plot-qa --parent-dir /dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent
 ./legacy_surveys_matching.py --ls-dr 11.0 --yaml-path truth_catalogs/desi_lrg_xcorr.yaml --field north --add-pz --output-dir /global/cfs/cdirs/desi/target/analysis/truth --plot-qa --parent-dir /dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent
-./legacy_surveys_matching.py --ls-dr 11.0 --yaml-path truth_catalogs/desi-dr1.yaml --field north --field north --output-dir /global/cfs/cdirs/desi/target/analysis/truth --plot-qa --parent-dir /dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent
+./legacy_surveys_matching.py --ls-dr 11.0 --yaml-path truth_catalogs/desi-dr1.yaml --field north --output-dir /global/cfs/cdirs/desi/target/analysis/truth --plot-qa --parent-dir /dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent
+./legacy_surveys_matching.py --ls-dr 11.0 --yaml-path truth_catalogs/desi_cosmos_xmmlss_2025.yaml --field north --output-dir /global/cfs/cdirs/desi/target/analysis/truth --plot-qa --parent-dir /dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent
