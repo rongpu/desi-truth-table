@@ -281,9 +281,9 @@ for cat2_index in range(len(cat2_fns)):
         print()
 
         print('Writing to', cat1_match_output_path)
-        cat1_match.write(cat1_match_output_path)
+        cat1_match.write(cat1_match_output_path, overwrite=args.overwrite)
         print('Writing to', cat2_match_output_path)
-        cat2_match.write(cat2_match_output_path)
+        cat2_match.write(cat2_match_output_path, overwrite=args.overwrite)
         print()
 
         time_end = time.perf_counter()
