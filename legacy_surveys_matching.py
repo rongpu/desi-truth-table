@@ -2,9 +2,9 @@
 
 # # Example:
 # # For catalog(s) already in the truth_catalogs directory:
-# ./legacy_surveys_matching.py --ls-dr 10.1 --catalog deep2 --field south --output-dir $SCRATCH/truth/ --add-pz --plot-qa
+# ./legacy_surveys_matching.py --ls-dr 11.0 --catalog deep2 --field south --output-dir $SCRATCH/truth/ --add-pz --plot-qa
 # # For any catalog:
-# ./legacy_surveys_matching.py --ls-dr 10.1 --yaml-path truth_catalogs/deep2.yaml --field south --output-dir $SCRATCH/truth/ --add-pz --plot-qa
+# ./legacy_surveys_matching.py --ls-dr 11.0 --yaml-path truth_catalogs/deep2.yaml --field south --output-dir $SCRATCH/truth/ --add-pz --plot-qa
 
 # Match the truth catalogs to Legacy Surveys sweep catalogs;
 # Save the following results:

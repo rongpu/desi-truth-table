@@ -3,4 +3,3 @@ dec_col: "TARGET_DEC"
 search_radius: 0.5 # arcsec
 filenames:
   - "zall-pix-iron-unique.fits"
-  - "zall-tilecumulative-iron-unique.fits"
