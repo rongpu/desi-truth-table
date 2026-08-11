@@ -2,9 +2,10 @@
 
 # # Example:
 # # For catalog(s) already in the truth_catalogs directory:
+# salloc -N 1 -C cpu -t 04:00:00 -q interactive
 # ./legacy_surveys_matching.py --ls-dr 11.0 --catalog deep2 --field south --output-dir $SCRATCH/truth/ --add-pz --plot-qa
 # # For any catalog:
-# ./legacy_surveys_matching.py --ls-dr 11.0 --yaml-path truth_catalogs/deep2.yaml --field south --output-dir $SCRATCH/truth/ --add-pz --plot-qa
+# ./legacy_surveys_matching.py --ls-dr 11.0 --yaml-path truth_catalogs/deep2.yaml --field south --output-dir $SCRATCH/truth/ --add-pz --plot-qa --parent-dir /dvs_ro/cfs/cdirs/desi/target/analysis/truth/parent
 
 # Match the truth catalogs to Legacy Surveys sweep catalogs;
 # Save the following results:
@@ -27,6 +28,7 @@ import sys, os, time, argparse, glob
 import fitsio
 import argparse, gc
 from astropy.table import Table, hstack, vstack
+from multiprocessing import Pool
 
 from catalog_info import catalog_info
 # sys.path.append(os.path.expanduser('~/git/Python/user_modules/'))
@@ -83,6 +85,93 @@ if not os.path.exists(plot_path):
 
 cat1_paths = sorted(glob.glob(os.path.join(sweep_dir, '*.fits')))
 
+
+def match_one_sweep(cat1_index):
+
+    # Load sweep catalog
+
+    cat1_path = cat1_paths[cat1_index]
+    filename = cat1_path[-26:-5]
+
+    # Match only overlapping regions to reduce computation time
+    if region_q:
+        # Area of the brick from the filename
+        # # Reduced sweep files:
+        # brick = cat1_path[-28:-13]
+        # Original sweep files:
+        brick = cat1_path[-20:-5]
+        ra1min = float(brick[0:3])
+        ra1max = float(brick[8:11])
+        dec1min = float(brick[4:7])
+        if brick[3]=='m':
+            dec1min = -dec1min
+        dec1max = float(brick[-3:])
+        if brick[-4]=='m':
+            dec1max = -dec1max
+        mask = (ra2full<ra1max+1/60.) & (ra2full>ra1min-1/60.) & (dec2full<dec1max+1/360.) & (dec2full>dec1min-1/360.)
+        if np.sum(mask)==0:
+            # print('0 matches')
+            return None
+
+        # cat2_idx keeps track of cat2 original index
+        cat2_idx = np.arange(len(cat2))
+        # keep only cat2 objects in the overlapping region
+        ra2 = ra2full[mask]
+        dec2 = dec2full[mask]
+        cat2_idx = cat2_idx[mask]
+        print('%d - '%cat1_index + filename)
+        print('%d out of %d objects in the external catalog are in the overlapping region'%(np.sum(mask), len(mask)))
+
+    cat1 = Table(fitsio.read(cat1_path, ext=1))
+
+    # Add photo-z's
+    if args.add_pz:
+        cat1_pz_path = os.path.join(pz_dir, filename+'-pz.fits')
+        cat1_pz = Table.read(cat1_pz_path)
+        if not np.all(cat1['BRICKID']==cat1_pz['BRICKID']) and np.all(cat1['OBJID']==cat1_pz['OBJID']) and np.all(cat1['RELEASE']==cat1_pz['RELEASE']):
+            raise ValueError
+        cat1_pz.remove_columns(['BRICKID', 'OBJID', 'RELEASE'])
+        cat1 = hstack([cat1, cat1_pz])
+
+    # Remove "DUP" objects
+    mask = (cat1['TYPE']!='DUP') & (cat1['TYPE']!='DUP ')
+    cat1 = cat1[mask]
+    if len(cat1)==0:
+        return None
+
+    ra1 = np.array(cat1['RA'])
+    dec1 = np.array(cat1['DEC'])
+
+    # Matching catalogs
+    print("Matching...")
+
+    idx1, idx2, d2d, d_ra, d_dec = match_coord(ra1, dec1, ra2, dec2, search_radius=search_radius, plot_q=False)
+    if len(idx1)==0:
+        return None
+
+    # Correct for systematic offsets and match again
+    ra_offset, dec_offset = 0., 0.
+    # Require at least 100 matches for computing the offsets
+    if (correct_offset_q) and (len(idx1)>100):
+        print("Matching with offsets corrected...")
+
+        ra_offset = np.mean(d_ra)
+        dec_offset = np.mean(d_dec)
+        ra1 = ra1 + ra_offset/np.cos(np.mean(dec1[idx1])/180*np.pi)/3600.
+        dec1 = dec1 + dec_offset/3600.
+
+        print('RA  offset = %.4f arcsec'%(ra_offset))
+        print('Dec offset = %.4f arcsec'%(dec_offset))
+        idx1, idx2, d2d, d_ra, d_dec = match_coord(ra1, dec1, ra2, dec2, search_radius=search_radius, plot_q=False)
+
+    if region_q:
+        idx2_original = cat2_idx[idx2]
+    else:
+        idx2_original = np.copy(idx2)
+
+    return cat1[idx1], idx2_original, d_ra, d_dec, ra_offset, dec_offset, brick
+
+
 for cat2_index in range(len(cat2_fns)):
 
     # Load truth catalog
@@ -119,91 +208,21 @@ for cat2_index in range(len(cat2_fns)):
     file_count = 0
     total_duplicates = 0
 
-    for cat1_index in range(len(cat1_paths)):
+    n_process = 64
+    with Pool(processes=n_process) as pool:
+        res = pool.map(match_one_sweep, range(len(cat1_paths)))
 
-        # Load sweep catalog
+    # Remove None elements from the list
+    for index in range(len(res)-1, -1, -1):
+        if res[index] is None:
+            res.pop(index)
 
-        cat1_path = cat1_paths[cat1_index]
-        filename = cat1_path[-26:-5]
+    for cat1, idx2_original, d_ra, d_dec, ra_offset, dec_offset, brick in res:
 
-        # Match only overlapping regions to reduce computation time
-        if region_q:
-            # Area of the brick from the filename
-            # # Reduced sweep files:
-            # brick = cat1_path[-28:-13]
-            # Original sweep files:
-            brick = cat1_path[-20:-5]
-            ra1min = float(brick[0:3])
-            ra1max = float(brick[8:11])
-            dec1min = float(brick[4:7])
-            if brick[3]=='m':
-                dec1min = -dec1min
-            dec1max = float(brick[-3:])
-            if brick[-4]=='m':
-                dec1max = -dec1max
-            mask = (ra2full<ra1max+1/60.) & (ra2full>ra1min-1/60.) & (dec2full<dec1max+1/360.) & (dec2full>dec1min-1/360.)
-            if np.sum(mask)==0:
-                # print('0 matches')
-                continue
-
-            # cat2_idx keeps track of cat2 original index
-            cat2_idx = np.arange(len(cat2))
-            # keep only cat2 objects in the overlapping region
-            ra2 = ra2full[mask]
-            dec2 = dec2full[mask]
-            cat2_idx = cat2_idx[mask]
-            print('%d - '%cat1_index + filename)
-            print('%d out of %d objects in the external catalog are in the overlapping region'%(np.sum(mask), len(mask)))
-
-        cat1 = Table(fitsio.read(cat1_path, ext=1))
-
-        # Add photo-z's
-        if args.add_pz:
-            cat1_pz_path = os.path.join(pz_dir, filename+'-pz.fits')
-            cat1_pz = Table.read(cat1_pz_path)
-            if not np.all(cat1['BRICKID']==cat1_pz['BRICKID']) and np.all(cat1['OBJID']==cat1_pz['OBJID']) and np.all(cat1['RELEASE']==cat1_pz['RELEASE']):
-                raise ValueError
-            cat1_pz.remove_columns(['BRICKID', 'OBJID', 'RELEASE'])
-            cat1 = hstack([cat1, cat1_pz])
-
-        # Remove "DUP" objects
-        mask = (cat1['TYPE']!='DUP') & (cat1['TYPE']!='DUP ')
-        cat1 = cat1[mask]
-        if len(cat1)==0:
-            continue
-
-        ra1 = np.array(cat1['RA'])
-        dec1 = np.array(cat1['DEC'])
-
-        # Matching catalogs
-        print("Matching...")
-
-        idx1, idx2, d2d, d_ra, d_dec = match_coord(ra1, dec1, ra2, dec2, search_radius=search_radius, plot_q=False)
-        if len(idx1)==0:
-            continue
-
-        # Correct for systematic offsets and match again
-        ra_offset, dec_offset = 0., 0.
-        # Require at least 100 matches for computing the offsets
-        if (correct_offset_q) and (len(idx1)>100):
-            print("Matching with offsets corrected...")
-
-            ra_offset = np.mean(d_ra)
-            dec_offset = np.mean(d_dec)
-            ra1 = ra1 + ra_offset/np.cos(np.mean(dec1[idx1])/180*np.pi)/3600.
-            dec1 = dec1 + dec_offset/3600.
-
-            print('RA  offset = %.4f arcsec'%(ra_offset))
-            print('Dec offset = %.4f arcsec'%(dec_offset))
-            idx1, idx2, d2d, d_ra, d_dec = match_coord(ra1, dec1, ra2, dec2, search_radius=search_radius, plot_q=False)
-
-        if region_q:
-            idx2_original = cat2_idx[idx2]
-        else:
-            idx2_original = np.copy(idx2)
+        idx1 = np.arange(len(cat1))
 
         if file_count==0:
-            cat1_match = cat1[idx1]
+            cat1_match = cat1
             # the corresponding indices in cat2 for objects in cat1_match:
             cat1_match_idx2 = np.copy(idx2_original)
         else:
